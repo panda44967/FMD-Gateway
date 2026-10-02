@@ -52,33 +52,33 @@ The platform separates concerns across an ingestion normalization pipeline, an a
 ```mermaid
 flowchart TD
     subgraph SupplierSide["External Vendor Tier (Isolated Tenancy)"]
-        V[Vendor Portal: supplier.html?vendor=SUP-TI-001] -->|File Upload / Form Input| INGEST[Ingestion & Normalization Layer]
-        V -->|Trade Secret Claim| CBI[CBI Cryptographic Attestation State Machine]
+        V["Vendor Portal (supplier.html?vendor=SUP-TI-001)"] -->|"File Upload / Form Input"| INGEST["Ingestion & Normalization Layer"]
+        V -->|"Trade Secret Claim"| CBI["CBI Cryptographic Attestation State Machine"]
     end
 
     subgraph CoreEngine["Core Engine & Computational Layer"]
-        INGEST -->|Dynamic Column Aliasing| PARSE[XLSX / CSV / PDF Ingestion Engine]
-        PARSE --> MB[Mass-Balance Conservation Engine: Sum(w_i) in [98%, 102%]]
-        MB --> EVAL[Chemical Regulatory Evaluator]
+        INGEST -->|"Dynamic Column Aliasing"| PARSE["XLSX / CSV / PDF Ingestion Engine"]
+        PARSE --> MB["Mass-Balance Conservation Engine: 98% - 102%"]
+        MB --> EVAL["Chemical Regulatory Evaluator"]
         CBI --> EVAL
         
         subgraph Regulations["Dynamic Regulatory Ontology"]
-            R1[EU RoHS 3 & Annex III/IV]
-            R2[EU REACH SVHC Candidate List]
-            R3[PFAS OECD / EPA TSCA]
-            R4[Taiwan RoHS CNS 15663]
+            R1["EU RoHS 3 & Annex III/IV"]
+            R2["EU REACH SVHC Candidate List"]
+            R3["PFAS OECD / EPA TSCA"]
+            R4["Taiwan RoHS CNS 15663"]
         end
         Regulations --> EVAL
         
-        EVAL --> LIN[PartRevision Append-Only Temporal Lineage]
+        EVAL --> LIN["PartRevision Append-Only Temporal Lineage"]
     end
 
     subgraph ReviewerSide["OEM Reviewer & Compliance Operations"]
-        LIN --> DB[(Relational DB: 3NF Relational Store)]
-        DB --> RETRO[Retrospective Inverted Propagation Engine]
-        RETRO -->|Trigger Re-screening on Rule Mutation| EVAL
-        DB --> UI[OEM Compliance Dashboard: index.html]
-        UI --> BOM[Multi-Tier BOM Roll-up & Remediation Queue]
+        LIN --> DB[("Relational Store (3NF Schema)")]
+        DB --> RETRO["Retrospective Inverted Propagation Engine"]
+        RETRO -->|"Trigger Re-screening on Rule Mutation"| EVAL
+        DB --> UI["OEM Compliance Dashboard (index.html)"]
+        UI --> BOM["Multi-Tier BOM Roll-up & Remediation Queue"]
     end
 ```
 
@@ -97,7 +97,7 @@ FMD Gateway implements an **Inverted Retrospective Propagation Engine** (`fmd_co
 Raw material declarations are subject to floating-point representation anomalies, multi-substance rounding, and deliberate dilution exploits.
 * The system enforces a strict mathematical invariant:
 
-$$\sum_{i=1}^{n} w_i \in [98.0\%, 102.0\%]$$
+$$\sum_{i=1}^{n} w_i \in [98.0, 102.0] \quad (\text{wt}\%)$$
 
 * Declarations falling outside this envelope are rejected at ingestion time with `mass_balance_valid = False`, flagging unallocated filler chemistry as an automatic `Data gap`.
 
