@@ -1,0 +1,113 @@
+EU REACH SVHC Disclosure on Candidate List
+REACH (Registration, Evaluation, Authorization and Restriction of Chemicals, EC 1907/2006) is the
+European Union’s (EU) chemical substances regulatory framework. REACH requires Dell Technologies to
+provide customers with sufficient information on Substances of Very High Concern (SVHC) contained in
+products in concentration above 0.1% weight by weight (w/w) to allow safe use of the product.
+UK REACH SVHC Disclosure on Candidate List
+REACH (Registration, Evaluation, Authorization and Restriction of Chemical) is the UK’s chemical
+substances regulatory framework. Under the European Union (Withdrawal) Act 2018, the EU REACH
+Regulation was brought into UK law on 1 January 2021 and is known as UK REACH. REACH requires Dell
+Technologies to provide customers with sufficient information on Substances of Very High Concern (SVHC)
+contained in products in concentration above 0.1% weight by weight (w/w) to allow safe use of the product.
+UE REACH SVHC Revelación en la Lista de Candidatos
+REACH (Registro, Evaluación, Autorización de Productos Químicos, CE 1907/2006) es el marco legislativo
+de la Unión Europea (UE) sobre las sustancias químicas. REACH exige Dell Technologies para
+proporcionar al cliente información suficiente sobre las sustancias extremadamente preocupantes
+(Substances of Very High Concern, SVHC) en los productos que figuran en la concentración por encima de
+0,1% peso/peso (p/p) para permitir el uso seguro del producto.
+UE REACH SVHC Notification de substances candidates
+REACH (enregistrement, évaluation, autorisation et restriction des substances chimiques, CE No
+1907/2006) est le cadre réglementaire pour les substances chimiques de l’Union Européenne (UE). REACH
+exige que Dell Technologies fournisse aux clients des informations suffisantes sur les substances
+extrêmement préoccupantes (Substances of Very High Concern, SVHC) contenues dans les produits en
+concentration supérieure à 0,1% masse/masse (w/w) pour permettre l’utilisation sûre du produit.
+EG REACH Information für besonders besorgniserregenden Stoffe der Kandidatenliste
+REACH (Registrierung, Bewertung, Zulassung und Beschränkung chemischer Stoffe, (EG Nr. 1907/2006)
+ist die neue Chemikalienverordnung der Europäischen Gemeinschaft (EG). REACH verpflichtet Dell
+Technologies, Abnehmern und Verbrauchern ausreichende Informationen für eine sichere Verwendung des
+Erzeugnisses zur Verfügung zu stellen, wenn darin besonders besorgniserregenden Stoffe (Substances of
+Very High Concern, SVHC) in einer Konzentration von mehr als 0,1 Massenprozent (w/w) enthalten sind.
+Dell Technologies  One Dell Way, Round Rock, Texas 78682  512.338.4400  delltechnologies.com\n\nArticles in Dell Technologies products contain the following Substances of Very High Concern
+(SVHC):
+Portable computers
+Substance Name CAS Number
+Lead 7439-92-1
+Lead Titanium Zirconium Oxide 12626-81-2
+1,3-propanesultone 1120-71-4
+Dodecamethylcyclohexasiloxane 540-97-6
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Decamethyltetrasiloxane 141-62-8
+Desktop computers
+Substance Name CAS Number
+Lead 7439-92-1
+Cobalt Dichloride 7646-79-9
+1, 2-dimethoxyethane; ethylene glycol dimethyl ether (EGDME) 110-71-4
+Lead titanium zirconium oxide 12626-81-2
+Dodecamethylcyclohexasiloxane 540-97-6
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Decamethyltetrasiloxane 141-62-8
+All-in-One computers
+Substance Name CAS Number
+Lead 7439-92-1
+Lead Titanium Zirconium Oxide 12626-81-2
+1, 2-dimethoxyethane; ethylene glycol dimethyl ether (EGDME) 110-71-4
+Dodecamethylcyclohexasiloxane 540-97-6
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Decamethyltetrasiloxane 141-62-8
+Computer monitors
+Substance Name CAS Number
+Lead 7439-92-1
+Dodecamethylcyclohexasiloxane 540-97-6
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Triphenyl phosphate 115-86-6\n\nServers
+Substance Name CAS Number
+Lead 7439-92-1
+1, 2-dimethoxyethane; ethylene glycol dimethyl ether (EGDME) 110-71-4
+Lead Titanium Zirconium Oxide 12626-81-2
+Dodecamethylcyclohexasiloxane 540-97-6
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Triphenyl phosphate 115-86-6
+EMC data storage
+Substance Name CAS Number
+Lead 7439-92-1
+6,6'-di-tert-butyl-2,2'-methylenedi-p-cresol 119-47-1
+1, 2-dimethoxyethane; ethylene glycol dimethyl ether (EGDME) 110-71-4
+Lead Titanium Zirconium Oxide 12626-81-2
+2,2',6,6'-tetrabromo-4,4'-isopropylidenediphenol 79-94-7
+Dodecamethylcyclohexasiloxane 540-97-6
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Triphenyl phosphate 115-86-6
+Octamethyltrisiloxane 107-51-7
+Network switches / routers
+Substance Name CAS Number
+Lead 7439-92-1
+Dodecamethylcyclohexasiloxane 540-97-6
+Peripherals
+Substance Name CAS Number
+1,3-propanesultone 1120-71-4
+Lead 7439-92-1
+Lead Titanium Zirconium Oxide 12626-81-2
+Bis(α,α-dimethylbenzyl) peroxide 80-43-3
+Power devices
+Substance Name CAS Number
+1,3-propanesultone 1120-71-4
+Lead 7439-92-1\n\nAudio devices
+Substance Name CAS Number
+Lead 7439-92-1
+Docking stations
+Substance Name CAS Number
+Lead 7439-92-1
+Monitor arm
+Substance Name CAS Number
+Lead 7439-92-1
+Charging cart
+Substance Name CAS Number
+Lead 7439-92-1
+Printer Toner products
+Substance Name CAS Number
+Lead 7439-92-1
+Carrying cases
+Substance Name CAS Number
+N,N-dimethylformamide 68-12-2
+Status September 2025. This document will be updated when new SVHCs are added to the ECHA
+candidate list and are found to be contained in Dell and Dell EMC products.

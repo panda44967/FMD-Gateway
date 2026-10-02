@@ -1,0 +1,11 @@
+part_number,fmd_tier,material_id,material_name,material_mass_g,cas,concentration_pct,pfas_intentional_use,evidence_status
+CBL-USBC-GREEN01,Full FMD,M-01,Outer Jacket (Halogen-free TPE),6.5,308070-21-5,82.5,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-01,Outer Jacket (Halogen-free TPE),6.5,9002-88-4,17.2,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-02,Core Wire Insulation (Polypropylene),2.8,9003-07-0,99.6,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-03,Conductor Wire (Oxygen-free Copper),14.2,7440-50-8,99.99,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-04,Connector Housing (Stainless Steel SUS304),1.8,7439-89-6,71.5,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-04,Connector Housing (Stainless Steel SUS304),1.8,7440-47-3,18.5,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-04,Connector Housing (Stainless Steel SUS304),1.8,7440-02-0,9.8,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-05,Lead-free Solder Joint (SAC305),0.35,7440-31-5,96.5,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-05,Lead-free Solder Joint (SAC305),0.35,7440-22-4,3.0,No,Test report
+CBL-USBC-GREEN01,Full FMD,M-05,Lead-free Solder Joint (SAC305),0.35,7440-50-8,0.5,No,Test report

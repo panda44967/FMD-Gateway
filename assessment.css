@@ -1,0 +1,12 @@
+/* Assessment Specific Styles */
+.assessment-table-wrap table td:first-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.action-copy {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 320px;
+}

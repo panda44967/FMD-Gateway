@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FMD Compliance Gateway — Enterprise Material Disclosure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assessment.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="#">
+        <div class="brand-mark">F</div>
+        <div class="brand-text">
+          <strong>FMD Gateway</strong>
+          <span>Enterprise Suite</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <a class="nav-item active" href="#overview"><span>▦</span> Overview</a>
+        <a class="nav-item" href="#review"><span>✓</span> Review Queue <b id="issueCount">3</b></a>
+        <a class="nav-item" href="#bom"><span>⌘</span> Product BOM</a>
+        <a class="nav-item" href="#rules"><span>◈</span> Regulatory Rules</a>
+        <a class="nav-item" href="/supplier/"><span>🌐</span> Supplier Portal ↗</a>
+        <a class="nav-item" href="/admin/" target="_blank"><span>🛠️</span> Admin Console</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="env-badge">
+          <span class="env-dot"></span>
+          <span>Demo Workspace</span>
+        </div>
+        <small>Synthetic Supply Chain Data Only</small>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">Supply Chain Environmental Compliance</p>
+          <h1>Compliance Review Workspace</h1>
+        </div>
+        <div class="header-actions" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 8px; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.4); padding: 4px 10px; border-radius: 8px;">
+            <span style="font-size: 12px; font-weight: 600; color: #93c5fd;">🌐 Launch Supplier Portal:</span>
+            <select id="quickLaunchSupplierSelect" onchange="if(this.value) window.open(this.value, '_blank')" style="background: #0f172a; border: 1px solid #334155; color: #38bdf8; font-size: 12px; padding: 4px 8px; border-radius: 6px; font-weight: 600; cursor: pointer;">
+              <option value="">Select Vendor...</option>
+              <option value="/supplier/?vendor=SUP-LUX-001">Luxshare Precision (SUP-LUX-001)</option>
+              <option value="/supplier/?vendor=SUP-TI-001">Texas Instruments (SUP-TI-001)</option>
+              <option value="/supplier/?vendor=SUP-MUR-001">Murata Manufacturing (SUP-MUR-001)</option>
+              <option value="/supplier/?vendor=SUP-ADI-001">Analog Devices (SUP-ADI-001)</option>
+              <option value="/supplier/?vendor=SUP-TE-001">TE Connectivity (SUP-TE-001)</option>
+              <option value="/supplier/?vendor=SUP-FOX-002">Foxconn Technology (SUP-FOX-002)</option>
+              <option value="/supplier/?vendor=SUP-DEL-003">Delta Electronics (SUP-DEL-003)</option>
+            </select>
+          </div>
+          <a href="#supplierHub" class="btn btn-secondary btn-sm" title="Jump down to Supplier Collaboration Hub">📋 View Hub ↓</a>
+          <a href="/admin/" target="_blank" class="btn btn-secondary btn-sm">🛠️ Django Admin</a>
+          <button class="btn btn-secondary btn-sm" id="resetDemo">↺ Reset Demo</button>
+        </div>
+      </header>
+
+      <!-- Metric KPI Cards -->
+      <section class="metrics-row" aria-label="Compliance Summary">
+        <article class="metric-card">
+          <div class="metric-header">
+            <span>Disclosure Coverage</span>
+            <span>TARGET 95%</span>
+          </div>
+          <div class="metric-value" id="coverageValue">72.5%</div>
+          <div class="metric-sub">Verified material composition coverage</div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-fill" id="coverageMeter" style="width: 72.5%;"></div>
+          </div>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-header">
+            <span>Pending Reviews</span>
+            <span style="color: var(--amber);">ACTION NEEDED</span>
+          </div>
+          <div class="metric-value" style="color: var(--amber);" id="pendingMetric">03</div>
+          <div class="metric-sub">Remediation tasks assigned to suppliers</div>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-header">
+            <span>EU Market Eligible</span>
+            <span style="color: var(--emerald);">COMPLIANT</span>
+          </div>
+          <div class="metric-value" style="color: var(--emerald);" id="approvedMetric">01</div>
+          <div class="metric-sub">Includes 1 conditionally approved part</div>
+        </article>
+
+        <article class="metric-card">
+          <div class="metric-header">
+            <span>Identified Data Gaps</span>
+            <span style="color: var(--cyan);">UNRESOLVED</span>
+          </div>
+          <div class="metric-value" style="color: var(--cyan);" id="gapMetric">02</div>
+          <div class="metric-sub">Incomplete chemistry / missing evidence</div>
+        </article>
+      </section>
+
+      <!-- Review Queue & Compliance Auditing Panel -->
+      <section class="panel" id="review" style="margin-bottom: 24px;">
+        <div class="panel-header">
+          <div class="panel-title">
+            <p class="eyebrow">Quality Gate & Supplier Remediation</p>
+            <h3>Compliance Review Queue — Actionable Items</h3>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <a href="#supplierHub" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8;" title="Jump to Supplier Collaboration Hub">🌐 Supplier Portals Hub ↓</a>
+          </div>
+        </div>
+        <p class="panel-desc">
+          Automated quality gate findings requiring compliance officer audit: substance threshold exceedances, RoHS Annex III exemptions tracking, and mandatory supplier CBI non-hazardous attestations.
+        </p>
+        <div class="queue-list" id="reviewQueue"></div>
+      </section>
+
+      <!-- Evaluation Trace Panel (Dynamic) -->
+      <section class="panel trace-panel" id="assessment" hidden>
+        <div class="panel-header">
+          <div class="panel-title">
+            <p class="eyebrow">Evaluation Trace</p>
+            <h3 id="assessmentTitle">Part Disclosure Traceability</h3>
+          </div>
+          <span class="status" id="assessmentStatus"></span>
+        </div>
+        <p class="panel-desc" id="assessmentSummary"></p>
+
+        <div class="trace-summary-metrics" id="traceMetrics"></div>
+
+        <div class="table-wrap assessment-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Homogeneous Material / Substance</th>
+                <th>Data Integrity</th>
+                <th>EU RoHS</th>
+                <th>REACH SVHC</th>
+                <th>PFAS Status</th>
+                <th>Actionable Remediation Instruction</th>
+              </tr>
+            </thead>
+            <tbody id="assessmentRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Supplier Collaboration & Magic Links Simulator -->
+      <section class="panel" id="supplierHub" style="margin-bottom: 24px; border: 1px solid rgba(56, 189, 248, 0.3); background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.85) 100%);">
+        <div class="panel-header" style="align-items: flex-start; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="radar-pulse-dot" style="background: #38bdf8;"></span>
+              <p class="eyebrow" style="margin: 0; color: #38bdf8;">Tenant-Isolated Supplier Portals</p>
+            </div>
+            <h3 style="margin-top: 4px; font-size: 18px;">Supplier Collaboration & Magic Links Simulator</h3>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="status approved" id="supplierHubBadge">7 Connected Suppliers</span>
+          </div>
+        </div>
+        <p class="panel-desc" style="margin-bottom: 16px;">
+          <strong>Single-Tenant Vendor Security Architecture:</strong> In production deployments, external suppliers only access their isolated workspace via authenticated invitation links. This prevents any supplier from seeing components or disclosures from other vendors. As an OEM compliance reviewer, click any supplier link below to simulate their isolated portal view:
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Supplier Code</th>
+                <th>Organization Name</th>
+                <th>Assigned Internal Parts</th>
+                <th>Intake Campaign Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="supplierHubRows">
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-LUX-001</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">Luxshare Precision Ltd.</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">compliance@luxshare.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-CBL-001</code><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-CONN-002</code><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-CONN-006</code><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-ANT-007</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">4 / 4 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-LUX-001" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-TI-001</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">Texas Instruments Inc.</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">env-compliance@ti.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-IC-555</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">1 / 1 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-TI-001" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-MUR-001</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">Murata Manufacturing Co., Ltd.</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">chem-compliance@murata.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-CAP-104</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">1 / 1 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-MUR-001" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-ADI-001</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">Analog Devices Inc.</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">green-compliance@analog.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-PMIC-4618</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">1 / 1 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-ADI-001" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-TE-001</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">TE Connectivity Ltd.</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">product-compliance@te.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-CONN-282</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">1 / 1 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-TE-001" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-FOX-002</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">Foxconn Technology Group</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">green.compliance@foxconn.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-MB-003</code><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-CASE-004</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">2 / 2 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-FOX-002" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+              <tr>
+                <td><strong style="color: #93c5fd; font-family: var(--font-mono);">SUP-DEL-003</strong></td>
+                <td>
+                  <div style="font-weight: 600; color: #f8fafc;">Delta Electronics</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">compliance@deltaww.com</div>
+                </td>
+                <td><code style="font-size: 11px; padding: 2px 6px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-radius: 4px; margin-right: 4px; display: inline-block; margin-bottom: 3px;">IPN-PSU-005</code></td>
+                <td><span class="status approved" style="font-size: 11px; padding: 2px 8px;">1 / 1 Disclosed (100%)</span></td>
+                <td><a href="/supplier/?vendor=SUP-DEL-003" target="_blank" class="btn btn-secondary btn-sm" style="font-size: 11.5px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; white-space: nowrap;">🔗 Open Supplier Portal ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Product BOM Panel -->
+      <section class="panel" id="bom" style="margin-bottom: 24px;">
+        <div class="panel-header">
+          <div class="panel-title">
+            <p class="eyebrow">Product Eligibility</p>
+            <h3>Atlas USB‑C 65W Fast Charger · EU Market</h3>
+          </div>
+          <span class="status blocked" id="productStatus">BLOCKED (NON-COMPLIANT)</span>
+        </div>
+        <p class="panel-desc">
+          Roll-up multi-tier Bill of Materials. Market clearance requires all child components to provide verified composition and valid evidence.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Part Number</th>
+                <th>Component Description</th>
+                <th>Supplier</th>
+                <th>Disclosure Tier</th>
+                <th>EU RoHS</th>
+                <th>REACH SVHC</th>
+                <th>PFAS Status</th>
+                <th>Overall Verdict</th>
+              </tr>
+            </thead>
+            <tbody id="bomRows">
+              <tr>
+                <td><strong>IPN-CBL-001</strong></td>
+                <td style="color: #cbd5e1;">100W USB-C Fast Charging Cable Assembly</td>
+                <td style="font-size: 12px; color: #94a3b8;">Luxshare Precision Ltd.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-CONN-002</strong></td>
+                <td style="color: #cbd5e1;">USB-C 24-Pin Male Plug Sub-Assembly</td>
+                <td style="font-size: 12px; color: #94a3b8;">Luxshare Precision Ltd.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status blocked">Blocked</span></td>
+                <td><span class="status review">Review</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status blocked">Blocked</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-MB-003</strong></td>
+                <td style="color: #cbd5e1;">Mainboard Multilayer High-Speed PCB Assembly</td>
+                <td style="font-size: 12px; color: #94a3b8;">Foxconn Technology Group</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-CASE-004</strong></td>
+                <td style="color: #cbd5e1;">CNC Anodized Aluminum Uni-Chassis</td>
+                <td style="font-size: 12px; color: #94a3b8;">Foxconn Technology Group</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-PSU-005</strong></td>
+                <td style="color: #cbd5e1;">65W GaN High-Efficiency Power Module</td>
+                <td style="font-size: 12px; color: #94a3b8;">Delta Electronics</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-IC-555</strong></td>
+                <td style="color: #cbd5e1;">Precision Timer Bipolar IC</td>
+                <td style="font-size: 12px; color: #94a3b8;">Texas Instruments Inc.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status data-gap">Data gap</span></td>
+                <td><span class="status data-gap">Data gap</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-CAP-104</strong></td>
+                <td style="color: #cbd5e1;">MLCC 0402 100nF Ceramic Capacitor</td>
+                <td style="font-size: 12px; color: #94a3b8;">Murata Manufacturing Co., Ltd.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status review">Review</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status review">Review</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-PMIC-4618</strong></td>
+                <td style="color: #cbd5e1;">26V 15A Step-Down DC/DC uModule Regulator</td>
+                <td style="font-size: 12px; color: #94a3b8;">Analog Devices Inc.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-CONN-282</strong></td>
+                <td style="color: #cbd5e1;">Micro-Fit 3.0 Dual-Row Header Connector</td>
+                <td style="font-size: 12px; color: #94a3b8;">TE Connectivity Ltd.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-CONN-006</strong></td>
+                <td style="color: #cbd5e1;">3.5mm Gold-Plated Audio Jack</td>
+                <td style="font-size: 12px; color: #94a3b8;">Luxshare Precision Ltd.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+              <tr>
+                <td><strong>IPN-ANT-007</strong></td>
+                <td style="color: #cbd5e1;">Wi-Fi 7 Embedded FPC Antenna</td>
+                <td style="font-size: 12px; color: #94a3b8;">Luxshare Precision Ltd.</td>
+                <td><span class="status condition">Full FMD</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Regulatory Radar & Real-Time Synchronizer Panel -->
+      <section class="panel" id="rules" style="margin-top: 24px; border: 1px solid rgba(56, 189, 248, 0.35); background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.85) 100%);">
+        <div class="panel-header" style="align-items: flex-start; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="radar-pulse-dot"></span>
+              <p class="eyebrow" style="margin: 0; color: #38bdf8;">Automated Regulatory Intelligence & Rule Synchronizer</p>
+            </div>
+            <h3 style="margin-top: 4px; font-size: 18px;">Global Chemical Regulations Radar</h3>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span class="status approved" id="radarLastSyncBadge">Synchronizing feeds...</span>
+            <button class="btn btn-primary btn-sm" id="btnSyncClean" onclick="triggerRegulatorySync('check_only')">
+              🔄 Check for Updates Now
+            </button>
+          </div>
+        </div>
+
+        <p class="panel-desc" style="margin-bottom: 16px;">
+          <strong>Zero-Burden Retrospective Engine:</strong> As global authorities (ECHA, BSMI, US EPA) update substance restriction thresholds, the system automatically synchronizes the active ruleset and re-evaluates all existing parts in the background without requiring suppliers to re-submit documentation.
+        </p>
+
+        <!-- Tracked Global Frameworks Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 18px;" id="regGrid">
+          <!-- Populated dynamically via /api/regulations/status/ -->
+        </div>
+
+        <!-- Interactive Regulatory Simulation Bar -->
+        <div style="background: rgba(15, 23, 42, 0.6); border: 1px dashed rgba(148, 163, 184, 0.3); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 20px;">⚡</span>
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: #e2e8f0;">Live Regulation Update Simulator (Interactive Sandbox)</div>
+              <div style="font-size: 11.5px; color: var(--text-muted);">
+                Test retrospective impact on existing parts when new substances are officially gazetted:
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="btn btn-secondary btn-sm" style="border-color: #f59e0b; color: #fbbf24;" id="btnSimulateEcha" onclick="triggerRegulatorySync('simulate_reach_batch_update')">
+              ⚠️ Simulate ECHA REACH SVHC Addition (Nickel CAS 7440-02-0)
+            </button>
+            <button class="btn btn-secondary btn-sm" id="btnResetRules" onclick="triggerRegulatorySync('reset_baseline')">
+              ↺ Reset Rules to Baseline
+            </button>
+          </div>
+        </div>
+
+        <!-- Impact Results Banner (Hidden by default, shown when impact occurs) -->
+        <div id="radarImpactBanner" style="display: none; margin-top: 16px; padding: 14px 18px; border-radius: 8px; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35);">
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
+            <div>
+              <div style="font-weight: 700; color: #f59e0b; font-size: 13px;" id="radarImpactTitle">
+                ⚠️ Retrospective BOM Impact Detected
+              </div>
+              <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;" id="radarImpactDetail">
+                ...
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" onclick="document.getElementById('radarImpactBanner').style.display='none'">Dismiss</button>
+          </div>
+        </div>
+
+        <!-- Recent Regulatory Sync Audit Trail -->
+        <div style="margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Recent Synchronization & Sweep Audit Logs</span>
+            <small id="syncAuditCount" style="color: var(--text-muted); font-size: 11px;">Latest runs</small>
+          </div>
+          <div class="table-wrap" style="max-height: 180px; overflow-y: auto;">
+            <table style="font-size: 12px;">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Trigger Source</th>
+                  <th>Rules Checked</th>
+                  <th>Rules Updated</th>
+                  <th>Parts Swept</th>
+                  <th>Impacted</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="syncAuditRows">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Template for Queue Item -->
+    <template id="queueTemplate">
+      <div class="queue-item">
+        <span class="severity-pill"></span>
+        <div class="queue-content">
+          <div class="queue-title"></div>
+          <div class="queue-sub"></div>
+        </div>
+        <button class="btn btn-secondary btn-sm">Inspect</button>
+      </div>
+    </template>
+
+    <script src="engine.js?v=2.2"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+part_number,fmd_tier,material_id,material_name,material_mass_g,cas,concentration_pct,pfas_intentional_use,evidence_status
+CBL-USB4-01,Partial FMD,M-01,Cable jacket,8.3,9002-84-0,99.3,Unknown,None
+CBL-USB4-01,Partial FMD,M-02,Copper conductor,12.4,7440-50-8,99.9,No,Test report
+CBL-USB4-01,Partial FMD,M-03,Solder joint,0.5,7439-92-1,0.35,No,Supplier declaration
+CBL-USB4-01,Partial FMD,M-03,Solder joint,0.5,7440-31-5,99.65,No,Supplier declaration

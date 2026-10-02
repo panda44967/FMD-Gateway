@@ -1,0 +1,8 @@
+part_number,fmd_tier,material_id,material_name,material_mass_g,cas,concentration_pct,pfas_intentional_use,evidence_status
+CBL-USBC-CBI01,Full FMD,M-01,Outer Jacket (TPE with 7.5% CBI),6.5,308070-21-5,75.0,No,Test report
+CBL-USBC-CBI01,Full FMD,M-01,Outer Jacket (TPE with 7.5% CBI),6.5,9002-88-4,17.5,No,Test report
+CBL-USBC-CBI01,Full FMD,M-01,Outer Jacket (TPE with 7.5% CBI),6.5,CBI-SYSTEM,7.5,No,Supplier declaration
+CBL-USBC-CBI01,Full FMD,M-02,Pure Copper Conductor,14.2,7440-50-8,99.99,No,Test report
+CBL-USBC-CBI01,Full FMD,M-03,Lead-free Solder Joint (SAC305),0.35,7440-31-5,96.5,No,Test report
+CBL-USBC-CBI01,Full FMD,M-03,Lead-free Solder Joint (SAC305),0.35,7440-22-4,3.0,No,Test report
+CBL-USBC-CBI01,Full FMD,M-03,Lead-free Solder Joint (SAC305),0.35,7440-50-8,0.5,No,Test report

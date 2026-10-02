@@ -1,0 +1,1585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Portal — Full Material Disclosure Ingestion</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/assessment.css" />
+    <style>
+      .supplier-layout {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 36px 24px 80px;
+      }
+      .supplier-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 24px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--border);
+      }
+      .supplier-badge {
+        background: rgba(59, 130, 246, 0.1);
+        border: 1px solid rgba(59, 130, 246, 0.25);
+        color: #93c5fd;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin: 20px 0;
+      }
+      .step-card {
+        background: #0d1320;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 16px;
+      }
+      .step-num {
+        font-size: 11px;
+        font-weight: 800;
+        color: #38bdf8;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      .step-card h4 {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 4px;
+      }
+      .step-card p {
+        font-size: 12px;
+        color: var(--text-secondary);
+        line-height: 1.5;
+        margin: 0;
+      }
+      .attestation-card {
+        background: #0d1320;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 24px;
+        margin-top: 24px;
+      }
+      .attestation-clause {
+        font-size: 13px;
+        color: var(--text-secondary);
+        background: rgba(15, 23, 42, 0.6);
+        border-left: 3px solid var(--primary);
+        padding: 14px 18px;
+        border-radius: 4px;
+        line-height: 1.6;
+        margin: 16px 0 20px;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+      .form-group label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 6px;
+      }
+      .form-group input {
+        width: 100%;
+        background: #111827;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 10px 14px;
+        color: var(--text);
+        font-size: 13px;
+      }
+      .form-group input:focus {
+        outline: none;
+        border-color: var(--primary);
+      }
+      .checkbox-label {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 13px;
+        color: var(--text);
+        margin-bottom: 20px;
+      }
+      .checkbox-label input {
+        margin-top: 3px;
+      }
+      .receipt-banner {
+        margin-top: 24px;
+        padding: 20px;
+        background: rgba(16, 185, 129, 0.1);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .receipt-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: #10b981;
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+
+      /* Mandatory Foolproof Modal Styles */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.82);
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 16px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        z-index: 99999;
+      }
+      .modal-box {
+        background: #0f172a;
+        border: 1px solid rgba(56, 189, 248, 0.4);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 20px rgba(56, 189, 248, 0.15);
+        border-radius: var(--radius-lg);
+        max-width: 620px;
+        width: 94%;
+        max-height: 88vh;
+        overflow-y: auto;
+        padding: 22px;
+        box-sizing: border-box;
+        animation: modalAppear 0.2s ease-out;
+      }
+      @keyframes modalAppear {
+        from { opacity: 0; transform: scale(0.96); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      .modal-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .modal-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: rgba(245, 158, 11, 0.15);
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        color: #f59e0b;
+        display: grid;
+        place-items: center;
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+      .lock-banner {
+        background: rgba(239, 68, 68, 0.12);
+        border: 1px solid rgba(239, 68, 68, 0.35);
+        border-radius: var(--radius-sm);
+        padding: 14px 18px;
+        color: #fca5a5;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 18px 0;
+        gap: 16px;
+      }
+      .cbi-verified-badge {
+        background: rgba(16, 185, 129, 0.12);
+        border: 1px solid rgba(16, 185, 129, 0.35);
+        color: #34d399;
+        padding: 12px 18px;
+        border-radius: var(--radius-sm);
+        font-size: 13px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 18px 0;
+      }
+      /* Smart Dropzone & Editable Grid */
+      .smart-dropzone {
+        background: rgba(15, 23, 42, 0.65);
+        border: 2px dashed rgba(56, 189, 248, 0.35);
+        border-radius: var(--radius-md);
+        padding: 22px 20px;
+        text-align: center;
+        transition: all 0.2s ease;
+        margin-bottom: 18px;
+        cursor: pointer;
+      }
+      .smart-dropzone:hover, .smart-dropzone.dragover {
+        background: rgba(56, 189, 248, 0.08);
+        border-color: #38bdf8;
+        box-shadow: 0 0 16px rgba(56, 189, 248, 0.18);
+      }
+      .ai-input {
+        width: 100%;
+        background: rgba(15, 23, 42, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        color: var(--text);
+        font-size: 12px;
+        padding: 5px 8px;
+        box-sizing: border-box;
+        transition: border-color 0.15s ease;
+      }
+      .ai-input:focus {
+        border-color: #38bdf8;
+        outline: none;
+        background: #0b0f19;
+      }
+      .ai-btn-delete {
+        background: rgba(239, 68, 68, 0.1);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        color: #f87171;
+        border-radius: 4px;
+        padding: 3px 7px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: all 0.15s ease;
+      }
+      .ai-btn-delete:hover {
+        background: #ef4444;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Mandatory CBI Non-Hazardous Legal Attestation Modal -->
+    <div class="modal-backdrop" id="cbiModal" style="display: none;">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-icon">⚠️</div>
+          <div>
+            <h3 style="margin: 0; font-size: 17px; color: #f59e0b;">Mandatory Action: CBI Chemical Non-Use Attestation</h3>
+            <small style="color: var(--text-secondary);">Proprietary Trade Secret ingredients detected in formulation (Weight by Weight)</small>
+          </div>
+        </div>
+
+        <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px;">
+          The uploaded disclosure contains proprietary chemical ingredients within the <b>5% to 10% international tolerance limit</b>. To prevent environmental compliance blind spots, global OEM policies strictly require a certified non-hazardous attestation before this declaration can be accepted.
+        </p>
+
+        <div style="background: rgba(15, 23, 42, 0.8); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; margin-bottom: 18px;">
+          <div style="display: flex; justify-content: space-between; font-size: 12.5px; margin-bottom: 8px;">
+            <span style="color: var(--text-muted);">Impacted Homogeneous Material:</span>
+            <strong id="modalMatName" style="color: var(--text);">Outer Jacket (TPE with 7.5% CBI)</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 12.5px; margin-bottom: 8px;">
+            <span style="color: var(--text-muted);">Disclosed Chemistry (Explicit CAS):</span>
+            <span style="color: #34d399; font-weight: 700;" id="modalExplicitPct">92.5% w/w</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 12.5px;">
+            <span style="color: var(--text-muted);">Undisclosed Proprietary Chemistry (CBI):</span>
+            <span style="color: #f59e0b; font-weight: 700;" id="modalCbiPct">7.5% w/w (Allowed Range: 5%–10%)</span>
+          </div>
+        </div>
+
+        <label class="checkbox-label" style="background: rgba(245, 158, 11, 0.09); border: 1px solid rgba(245, 158, 11, 0.3); padding: 14px; border-radius: 6px; margin-bottom: 22px;">
+          <input type="checkbox" id="modalCbiCheck" />
+          <span style="font-size: 13px; line-height: 1.55; color: #fef3c7;">
+            <b>I solemnly attest under corporate legal liability</b> that the undisclosed proprietary chemical substances (<span id="modalCbiPctLabel">7.5%</span>) contain <u>ZERO</u> EU RoHS restricted substances exceeding limit thresholds, <u>ZERO</u> REACH Candidate List SVHCs exceeding 0.1% w/w, and <u>ZERO</u> intentionally added PFAS.
+          </span>
+        </label>
+
+        <div style="display: flex; justify-content: flex-end; gap: 12px;">
+          <button class="btn btn-secondary" id="btnDismissModal">Dismiss (Keep Locked)</button>
+          <button class="btn btn-primary" id="btnConfirmCbi" disabled>Confirm Non-Hazardous Attestation & Unlock</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Document Intelligence Extraction & Human-in-the-Loop Interactive Verification Modal -->
+    <div class="modal-backdrop" id="aiDocModal" style="display: none;">
+      <div class="modal-box" style="max-width: 800px; width: 94%; max-height: 85vh; padding: 16px 20px; overflow-y: auto;">
+        <div class="modal-header" style="margin-bottom: 10px; gap: 10px;">
+          <div class="modal-icon" style="width: 36px; height: 36px; font-size: 18px; background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.3); color: #38bdf8;">📄</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 15px; color: #38bdf8;">AI Document Extraction & Interactive Verification</h3>
+              <span class="status approved" id="aiDocConfidenceBadge" style="font-size: 10.5px; padding: 1px 6px;">Confidence 98%</span>
+            </div>
+            <small style="color: var(--text-secondary); font-size: 11px;">Automated extraction of unstructured PDF Test Report / MSDS · Review & edit any fields directly before committing</small>
+          </div>
+        </div>
+
+        <!-- Document Metadata Credentials Card (Editable) -->
+        <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; margin-bottom: 10px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; font-size: 11.5px;">
+            <div>
+              <span style="color: var(--text-muted); display: block; font-size: 10.5px; margin-bottom: 2px;">Testing Authority / Issuer</span>
+              <input type="text" id="aiDocLabInput" class="ai-input" style="font-weight: 600; color: #93c5fd; padding: 3px 6px; font-size: 11px;" placeholder="e.g. SGS / TÜV / Intertek" />
+            </div>
+            <div>
+              <span style="color: var(--text-muted); display: block; font-size: 10.5px; margin-bottom: 2px;">Official Report / Reference ID</span>
+              <input type="text" id="aiDocReportNoInput" class="ai-input" style="font-weight: 700; color: #60a5fa; padding: 3px 6px; font-size: 11px;" placeholder="e.g. CANEC2608821901" />
+            </div>
+            <div>
+              <span style="color: var(--text-muted); display: block; font-size: 10.5px; margin-bottom: 2px;">Issue Date & Freshness Audit</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <input type="date" id="aiDocDateInput" class="ai-input" onchange="recalcAiFreshness(this.value)" style="color: #e2e8f0; width: 125px; padding: 2px 5px; font-size: 11px;" />
+                <span class="status approved" id="aiDocFreshnessBadge" style="font-size: 10px; padding: 2px 6px; white-space: nowrap;">Fresh (&lt; 365d)</span>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary); border-top: 1px dashed var(--border); padding-top: 6px; display: flex; align-items: center; gap: 8px;">
+            <span style="color: var(--text-muted); font-size: 10.5px; white-space: nowrap;">Sample Description:</span>
+            <input type="text" id="aiDocSampleDescInput" class="ai-input" style="padding: 3px 6px; font-size: 11px;" placeholder="Sample formulation disclosure" />
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 6px;">
+          <p style="font-size: 11.5px; color: var(--text-secondary); margin: 0;">
+            <b>Human-in-the-Loop Review:</b> Edit any cell inline. Target Part: <strong id="aiTargetPartLabel" style="color: #38bdf8;">IPN-CONN-002</strong>
+          </p>
+          <div id="aiMassBalanceBadge" style="font-size: 11px; font-weight: 700; color: #34d399; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); padding: 1px 6px; border-radius: 4px;">
+            Mass Balance: 100.0%
+          </div>
+        </div>
+
+        <!-- Editable Composition Table -->
+        <div class="table-wrap" style="max-height: 180px; overflow-y: auto; margin-bottom: 8px; border: 1px solid var(--border); border-radius: 6px;">
+          <table style="font-size: 11.5px; width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="background: #111827; position: sticky; top: 0; z-index: 1;">
+                <th style="width: 20%; padding: 6px 8px;">Homogeneous Material</th>
+                <th style="width: 18%; padding: 6px 8px;">Substance Name</th>
+                <th style="width: 14%; padding: 6px 8px;">CAS Number</th>
+                <th style="width: 12%; padding: 6px 8px;">Conc. (%)</th>
+                <th style="width: 15%; padding: 6px 8px;">Evidence / Status</th>
+                <th style="width: 14%; padding: 6px 8px;">RoHS Exemption</th>
+                <th style="width: 7%; text-align: center; padding: 6px 8px;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="aiExtractedRows">
+              <!-- Dynamically populated with editable input rows -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="addAiRow()" style="font-size: 11px; padding: 3px 8px; border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; display: flex; align-items: center; gap: 4px;">
+            <span>➕</span> Add Substance Row
+          </button>
+          <small style="color: var(--text-muted); font-size: 10.5px;">💡 Adjust concentrations or add missing trace ingredients before committing.</small>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--border); padding-top: 10px;">
+          <button class="btn btn-secondary btn-sm" onclick="closeAiDocModal()" style="border-color: rgba(239, 68, 68, 0.4); color: #f87171; padding: 6px 12px; font-size: 12px;">
+            🗑️ Discard
+          </button>
+          <button class="btn btn-primary btn-sm" id="btnCommitAiExtraction" onclick="commitAiExtraction()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); border-color: #38bdf8; padding: 6px 14px; font-size: 12px;">
+            ✓ Confirm & Commit to Official FMD
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="supplier-layout">
+      <!-- Portal Header -->
+      <header class="supplier-header">
+        <div class="brand">
+          <div class="brand-mark">F</div>
+          <div class="brand-text">
+            <strong>FMD Gateway</strong>
+            <span>External Supplier Portal</span>
+          </div>
+        </div>
+        <div class="header-actions" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <div class="supplier-badge" id="vendorBadgeContainer" style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.4); padding: 6px 14px; border-radius: 8px;">
+            <span>🏢 Authorized Supplier: <strong id="vendorNameDisplay" style="color: #93c5fd;">Loading...</strong> (<code id="vendorCodeDisplay" style="color: #38bdf8;">...</code>)</span>
+          </div>
+          <span class="status approved" style="font-size: 11px; display: inline-flex; align-items: center; gap: 5px;">
+            🔒 Single-Tenant Verified
+          </span>
+          <a href="/" class="btn btn-secondary btn-sm" title="Return to OEM Compliance Reviewer Workspace">← Reviewer Workspace</a>
+        </div>
+      </header>
+
+      <!-- Multi-Tenant Isolation Callout Notice with OEM Reviewer Simulation Switcher -->
+      <div class="tenant-isolation-banner" id="tenantIsolationNotice" style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: flex-start; gap: 12px; max-width: 660px;">
+          <span style="font-size: 22px;">🔒</span>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="font-size: 13px; font-weight: 700; color: #38bdf8;">Vendor Boundary Isolation Enforced (Multi-Tenant Protection)</div>
+            </div>
+            <div style="font-size: 12px; color: var(--text-secondary); margin-top: 3px; line-height: 1.5;">
+              Authenticated as <b id="bannerVendorName" style="color: #fff;">...</b> (<code id="bannerVendorCode" style="color: #93c5fd;">...</code>). In production, this portal is accessed via a cryptographically signed one-time link dispatched to <code id="bannerVendorEmail" style="color: #34d399;">...</code>. External suppliers only have visibility into parts delegated to their supplier code.
+            </div>
+          </div>
+        </div>
+
+        <!-- OEM Reviewer Sandbox / Impersonation Switcher -->
+        <div style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(245, 158, 11, 0.45); padding: 8px 12px; border-radius: 6px; display: flex; flex-direction: column; gap: 4px; min-width: 290px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+            <span style="font-size: 11px; font-weight: 700; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.04em;">🛡️ Reviewer Simulation Mode:</span>
+            <small style="font-size: 10px; color: var(--text-muted);">Auditor Sandbox</small>
+          </div>
+          <select id="vendorSwitcher" onchange="switchVendor(this.value)" style="width: 100%; padding: 4px 8px; font-size: 12px; background: #0f172a; border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; border-radius: 4px; font-weight: 600; cursor: pointer;">
+            <!-- Populated dynamically with all 7 suppliers -->
+          </select>
+          <span style="font-size: 10px; color: var(--text-muted); line-height: 1.3;">Simulate any supplier's view. (External suppliers cannot see this switcher).</span>
+        </div>
+      </div>
+
+      <!-- Welcome Hero -->
+      <section class="panel" style="margin-bottom: 24px;">
+        <p class="eyebrow">2026 Material Compliance Ingestion Campaign</p>
+        <h2>Supplier Material Declaration Portal</h2>
+        <p class="panel-desc">
+          Welcome to the environmental compliance gateway. Please provide full formulation chemistry and supporting laboratory test reports for your supplied parts. All submissions undergo automated quality gate validation and mass-balance screening before formal review.
+        </p>
+
+        <!-- 3-Step Process -->
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">Step 01</div>
+            <h4>Download Template</h4>
+            <p>Use the standardized Excel workbook with locked column headers and validation rules.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 02</div>
+            <h4>Complete Formulation</h4>
+            <p>Declare homogeneous materials, substance CAS numbers, concentration %, and attach test reports.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 03</div>
+            <h4>Pre-check & Attest</h4>
+            <p>Upload below to receive instant quality gate feedback and sign your legal attestation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Task-Driven Push Model: Assigned Declaration Requests -->
+      <section class="panel" style="margin-bottom: 24px;">
+        <div class="panel-header">
+          <div class="panel-title">
+            <p class="eyebrow">Task-Driven Campaign Intake</p>
+            <h3>Assigned Compliance Requests (OEM Push Model)</h3>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="status review" id="assignedTasksCountBadge">Loading requests...</span>
+            <button class="btn btn-secondary btn-sm" onclick="resetDemoTasks()" title="Reset demo tasks back to Action Required">🔄 Reset Demo Tasks</button>
+          </div>
+        </div>
+        <p class="panel-desc" style="margin-bottom: 16px;">
+          <strong>Assigned Parts Compliance Queue (All items supplied by your organization):</strong> Click any row to inspect formulation details. If previous submission contained errors or chemistry was updated, <strong>click "🔄 Submit Revision" or drop an updated Excel/PDF directly onto that row</strong>. All previous revisions are retained in the compliance history and can be inspected via the formulation revision selector.
+        </p>
+
+
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Target Internal Part</th>
+                <th>Manufacturer MPN</th>
+                <th>Part Description</th>
+                <th>Due Date</th>
+                <th>FMD Status & Pre-check</th>
+                <th>Official Actions</th>
+              </tr>
+            </thead>
+            <tbody id="assignedTasksTable">
+              <!-- Dynamically rendered per vendor tenant -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Instant Quality Gate Evaluation -->
+      <section class="panel trace-panel" id="qualityGateSection" hidden>
+        <div class="panel-header">
+          <div class="panel-title">
+            <p class="eyebrow">Pre-Submission Quality Gate</p>
+            <h3 id="qgTitle">Automated Formulation Screening</h3>
+          </div>
+          <span class="status" id="qgStatusBadge"></span>
+        </div>
+        <p class="panel-desc" id="qgSummary"></p>
+
+        <!-- Formulation Revision Selector Bar -->
+        <div id="qgRevisionBox" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; background: rgba(15, 23, 42, 0.6); padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.25);">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <label for="qgRevisionSelect" style="font-size: 12px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em;">
+              Formulation Revision:
+            </label>
+            <select id="qgRevisionSelect" onchange="onRevisionSelectChange(this.value)" class="form-control" style="width: auto; min-width: 270px; padding: 5px 12px; font-size: 12.5px; background: #0f172a; border: 1px solid #334155; color: #38bdf8; border-radius: 6px; font-weight: 600; cursor: pointer;">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+          <div id="qgRevBadge" style="font-size: 12px; color: var(--text-muted);">
+            <!-- e.g. Active Production Version -->
+          </div>
+        </div>
+
+        <!-- Historical Audit Record Notice -->
+        <div id="qgHistoricalRevBanner" style="display: none; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); color: #fbbf24; padding: 12px 16px; border-radius: 6px; margin-bottom: 14px; font-size: 12.5px; line-height: 1.5;">
+          📜 <strong>Historical Compliance Audit Record:</strong> You are inspecting <b id="histRevNumLabel">Rev 1</b>, archived on <span id="histRevDateLabel">2026-09-11</span>. This formulation has been superseded by active Rev <span id="histActiveRevNumLabel">2</span>. Full historical chemical lineage is preserved for regulatory traceability and audit readiness.
+        </div>
+
+        <!-- Foolproof CBI Lock Banner -->
+        <div class="lock-banner" id="cbiLockBanner" style="display: none;">
+          <div>
+            <strong>🔒 SUBMISSION LOCKED — CBI ATTESTATION REQUIRED</strong><br>
+            <span>This formulation contains <b id="lockCbiPct">7.5%</b> proprietary chemistry. You cannot submit this declaration until you complete the mandatory non-hazardous legal attestation.</span>
+          </div>
+          <button class="btn btn-secondary btn-sm" id="btnOpenModalFromBanner" style="white-space: nowrap;">✍️ Open Attestation Dialog</button>
+        </div>
+
+        <!-- Verified CBI Badge -->
+        <div class="cbi-verified-badge" id="cbiVerifiedBadge" style="display: none;">
+          <span>🛡️ <b>CBI Non-Hazardous Attestation Confirmed:</b> 7.5% proprietary substances certified compliant with RoHS & REACH limits under corporate legal liability.</span>
+        </div>
+
+        <div class="trace-summary-metrics" id="qgMetrics"></div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Material / Substance</th>
+                <th>Integrity</th>
+                <th>EU RoHS</th>
+                <th>REACH SVHC</th>
+                <th>PFAS</th>
+                <th>Quality Gate Feedback</th>
+              </tr>
+            </thead>
+            <tbody id="qgRows"></tbody>
+          </table>
+        </div>
+
+        <!-- Supplier Legal Attestation -->
+        <div class="attestation-card" id="attestationBlock">
+          <h3 style="font-size: 16px; margin-bottom: 6px;">Supplier Legal Attestation & Sign-off</h3>
+          <p style="font-size: 13px; color: var(--text-secondary);">
+            Before your declaration is logged into the official compliance registry, an authorized representative must execute this attestation.
+          </p>
+
+          <div class="attestation-clause">
+            "I hereby attest that I am an authorized corporate officer or designated compliance representative of <b>Luxshare Precision Ltd.</b>, and that the substance concentrations, mass balances, and attached test reports submitted herein are accurate, verifiable, and representative of current production shipments in full accordance with EU RoHS Directive 2011/65/EU and EU REACH Regulation (EC) 1907/2006."
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Representative Name</label>
+              <input type="text" id="signerName" value="David Chen" />
+            </div>
+            <div class="form-group">
+              <label>Corporate Title</label>
+              <input type="text" id="signerTitle" value="Lead Environmental Compliance Engineer" />
+            </div>
+            <div class="form-group">
+              <label>Corporate Email</label>
+              <input type="email" id="signerEmail" value="david.chen@luxshare-demo.com" />
+            </div>
+          </div>
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="attestCheck" checked />
+            <span>I confirm that all disclosed chemistry is authentic and agree to provide physical laboratory verification upon OEM request.</span>
+          </label>
+
+          <button class="btn btn-primary" id="btnSubmitOfficial">
+            ✍️ Sign & Submit Official Declaration
+          </button>
+        </div>
+
+        <!-- Receipt Confirmation -->
+        <div class="receipt-banner" id="receiptBanner" hidden>
+          <div class="receipt-icon">✓</div>
+          <div>
+            <h4 style="font-size: 15px; color: #34d399; margin-bottom: 4px;">Declaration Officially Submitted!</h4>
+            <p style="font-size: 13px; color: #d1fae5; margin: 0;">
+              Submission reference <b id="subRefCode">FMD-2026-0904-8891</b> has been logged to the internal reviewer workspace. You can view the aggregated product BOM in the internal console.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/engine.js"></script>
+    <script>
+      const cbiSample = `part_number,fmd_tier,material_id,material_name,material_mass_g,cas,concentration_pct,pfas_intentional_use,evidence_status
+CBL-USBC-CBI01,Full FMD,M-01,Outer Jacket (TPE with 7.5% CBI),6.5,308070-21-5,75.0,No,Test report
+CBL-USBC-CBI01,Full FMD,M-01,Outer Jacket (TPE with 7.5% CBI),6.5,9002-88-4,17.5,No,Test report
+CBL-USBC-CBI01,Full FMD,M-01,Outer Jacket (TPE with 7.5% CBI),6.5,CBI-SYSTEM,7.5,No,Supplier declaration
+CBL-USBC-CBI01,Full FMD,M-02,Pure Copper Conductor,14.2,7440-50-8,99.99,No,Test report
+CBL-USBC-CBI01,Full FMD,M-03,Lead-free Solder Joint (SAC305),0.35,7440-31-5,96.5,No,Test report
+CBL-USBC-CBI01,Full FMD,M-03,Lead-free Solder Joint (SAC305),0.35,7440-22-4,3.0,No,Test report
+CBL-USBC-CBI01,Full FMD,M-03,Lead-free Solder Joint (SAC305),0.35,7440-50-8,0.5,No,Test report`;
+
+      // DOM Elements
+      const supplierUpload = document.getElementById('supplierUpload');
+      const btnLoadGreen = document.getElementById('btnLoadGreen');
+      const btnLoadCbi = document.getElementById('btnLoadCbi');
+      const btnLoadDefective = document.getElementById('btnLoadDefective');
+      const qualityGateSection = document.getElementById('qualityGateSection');
+      const qgTitle = document.getElementById('qgTitle');
+      const qgStatusBadge = document.getElementById('qgStatusBadge');
+      const qgSummary = document.getElementById('qgSummary');
+      const qgMetrics = document.getElementById('qgMetrics');
+      const qgRows = document.getElementById('qgRows');
+      const btnSubmitOfficial = document.getElementById('btnSubmitOfficial');
+      const receiptBanner = document.getElementById('receiptBanner');
+      const attestCheck = document.getElementById('attestCheck');
+
+      // Modal & Foolproof Lock Elements
+      const cbiModal = document.getElementById('cbiModal');
+      const modalMatName = document.getElementById('modalMatName');
+      const modalExplicitPct = document.getElementById('modalExplicitPct');
+      const modalCbiPct = document.getElementById('modalCbiPct');
+      const modalCbiPctLabel = document.getElementById('modalCbiPctLabel');
+      const modalCbiCheck = document.getElementById('modalCbiCheck');
+      const btnConfirmCbi = document.getElementById('btnConfirmCbi');
+      const btnDismissModal = document.getElementById('btnDismissModal');
+      const cbiLockBanner = document.getElementById('cbiLockBanner');
+      const cbiVerifiedBadge = document.getElementById('cbiVerifiedBadge');
+      const lockCbiPct = document.getElementById('lockCbiPct');
+      const btnOpenModalFromBanner = document.getElementById('btnOpenModalFromBanner');
+
+      // State
+      let currentPartData = null;
+      let currentActivePartObject = null;
+      let currentRawCsv = '';
+      let isCbiDetected = false;
+      let isCbiAttested = false;
+      let detectedCbiPct = 0;
+      let detectedMatName = '';
+
+      function openCbiModal() {
+        modalCbiCheck.checked = isCbiAttested;
+        btnConfirmCbi.disabled = !modalCbiCheck.checked;
+        cbiModal.style.display = 'flex';
+      }
+
+      function closeCbiModal() {
+        cbiModal.style.display = 'none';
+        updateLockState();
+      }
+
+      function updateLockState() {
+        if (isCbiDetected) {
+          if (isCbiAttested) {
+            cbiLockBanner.style.display = 'none';
+            cbiVerifiedBadge.style.display = 'flex';
+            btnSubmitOfficial.disabled = false;
+            btnSubmitOfficial.style.opacity = '1';
+            btnSubmitOfficial.style.cursor = 'pointer';
+            qgStatusBadge.className = 'status condition';
+            qgStatusBadge.textContent = 'CONDITION';
+          } else {
+            cbiLockBanner.style.display = 'flex';
+            cbiVerifiedBadge.style.display = 'none';
+            btnSubmitOfficial.disabled = true;
+            btnSubmitOfficial.style.opacity = '0.5';
+            btnSubmitOfficial.style.cursor = 'not-allowed';
+            qgStatusBadge.className = 'status data-gap';
+            qgStatusBadge.textContent = 'LOCKED (CBI GAP)';
+          }
+        } else {
+          cbiLockBanner.style.display = 'none';
+          cbiVerifiedBadge.style.display = 'none';
+          btnSubmitOfficial.disabled = false;
+          btnSubmitOfficial.style.opacity = '1';
+          btnSubmitOfficial.style.cursor = 'pointer';
+        }
+      }
+
+      modalCbiCheck.onchange = () => {
+        btnConfirmCbi.disabled = !modalCbiCheck.checked;
+      };
+
+      btnDismissModal.onclick = () => {
+        closeCbiModal();
+        alert('⚠️ Submission remains LOCKED.\n\nYou cannot submit this FMD declaration until the mandatory CBI Non-Hazardous Attestation is confirmed.');
+      };
+
+      btnOpenModalFromBanner.onclick = () => {
+        openCbiModal();
+      };
+
+      // Check text for CBI
+      function inspectCbi(csvText) {
+        let lines = csvText.trim().split(/\r?\n/).slice(1);
+        let cbiFound = false;
+        let cbiSum = 0;
+        let explicitSum = 0;
+        let mat = 'Unknown Material';
+
+        for (let l of lines) {
+          let cols = l.split(',');
+          if (cols.length >= 7) {
+            let cas = (cols[5] || '').trim().toLowerCase();
+            let conc = parseFloat(cols[6] || '0');
+            if (cas.includes('cbi') || cas.includes('proprietary') || cas.includes('trade secret')) {
+              cbiFound = true;
+              cbiSum += conc;
+              mat = cols[3] || 'Material';
+            } else {
+              explicitSum += conc;
+            }
+          }
+        }
+
+        isCbiDetected = cbiFound && (cbiSum >= 5.0 && cbiSum <= 10.0);
+        detectedCbiPct = cbiSum;
+        detectedMatName = mat;
+
+        if (isCbiDetected) {
+          modalMatName.textContent = detectedMatName;
+          modalExplicitPct.textContent = explicitSum.toFixed(1) + '% w/w';
+          modalCbiPct.textContent = detectedCbiPct.toFixed(1) + '% w/w (Tolerance: ≤ 10%)';
+          modalCbiPctLabel.textContent = detectedCbiPct.toFixed(1) + '%';
+          lockCbiPct.textContent = detectedCbiPct.toFixed(1) + '%';
+        }
+      }
+
+      function populateRevisionDropdown(partObj, selectedRevNo = null) {
+        const sel = document.getElementById('qgRevisionSelect');
+        const badge = document.getElementById('qgRevBadge');
+        if (!sel) return;
+
+        sel.innerHTML = '';
+        let revs = (partObj && partObj.revisions && partObj.revisions.length > 0) ? partObj.revisions : [];
+
+        if (revs.length === 0) {
+          let opt = document.createElement('option');
+          opt.value = '1';
+          opt.textContent = 'Rev 1 (Active · Current Disclosure)';
+          sel.appendChild(opt);
+          if (badge) badge.innerHTML = '<span style="color:#34d399; font-weight:600;">Active Production Version</span>';
+          const histBanner = document.getElementById('qgHistoricalRevBanner');
+          if (histBanner) histBanner.style.display = 'none';
+          return;
+        }
+
+        // Revisions are sorted descending by revision_number: [Rev 2, Rev 1]
+        let maxRev = revs[0].revision_number;
+        revs.forEach((r) => {
+          let opt = document.createElement('option');
+          opt.value = String(r.revision_number);
+          let isLatest = (r.revision_number === maxRev);
+          let dateStr = r.formatted_created_at || (r.created_at ? r.created_at.slice(0, 16).replace('T', ' ') : 'Recent');
+          let fileLabel = r.file_name ? ` — ${r.file_name}` : '';
+          opt.textContent = `Rev ${r.revision_number} (${isLatest ? 'Active' : 'Superseded'} · ${dateStr})${fileLabel}`;
+          sel.appendChild(opt);
+        });
+
+        let targetVal = selectedRevNo ? String(selectedRevNo) : String(maxRev);
+        sel.value = targetVal;
+        updateRevisionBannerState(targetVal, maxRev, revs);
+      }
+
+      function updateRevisionBannerState(selectedRevNo, maxRev, revs) {
+        const histBanner = document.getElementById('qgHistoricalRevBanner');
+        const histRevNumLabel = document.getElementById('histRevNumLabel');
+        const histRevDateLabel = document.getElementById('histRevDateLabel');
+        const histActiveRevNumLabel = document.getElementById('histActiveRevNumLabel');
+        const badge = document.getElementById('qgRevBadge');
+        const attestBlock = document.getElementById('attestationBlock');
+
+        let isLatest = String(selectedRevNo) === String(maxRev);
+        let currentRevObj = revs.find(r => String(r.revision_number) === String(selectedRevNo));
+
+        if (!isLatest && currentRevObj) {
+          if (histBanner) histBanner.style.display = 'block';
+          if (histRevNumLabel) histRevNumLabel.textContent = `Rev ${currentRevObj.revision_number}`;
+          if (histRevDateLabel) histRevDateLabel.textContent = currentRevObj.formatted_created_at || (currentRevObj.created_at ? currentRevObj.created_at.slice(0, 10) : 'Archived');
+          if (histActiveRevNumLabel) histActiveRevNumLabel.textContent = maxRev;
+          if (badge) badge.innerHTML = `<span style="color:#f59e0b; font-weight:600;">⚠️ Historical Archive (Superseded by Rev ${maxRev})</span>`;
+          if (attestBlock) {
+            attestBlock.style.opacity = '0.45';
+            attestBlock.style.pointerEvents = 'none';
+          }
+        } else {
+          if (histBanner) histBanner.style.display = 'none';
+          if (badge) badge.innerHTML = `<span style="color:#34d399; font-weight:600;">Active Production Version (Rev ${maxRev})</span>`;
+          if (attestBlock) {
+            attestBlock.style.opacity = '1';
+            attestBlock.style.pointerEvents = 'auto';
+          }
+        }
+      }
+
+      function onRevisionSelectChange(revNo) {
+        if (!currentActivePartObject) return;
+        let revs = currentActivePartObject.revisions || [];
+        let maxRev = revs.length > 0 ? revs[0].revision_number : 1;
+        let targetRev = revs.find(r => String(r.revision_number) === String(revNo));
+
+        updateRevisionBannerState(revNo, maxRev, revs);
+
+        if (String(revNo) !== String(maxRev) && targetRev) {
+          let snapshotPayload = targetRev.snapshot_data || {};
+          let formatted = formatServerPartData(snapshotPayload);
+          renderSupplierView(formatted, false);
+        } else {
+          renderSupplierView(formatServerPartData(currentActivePartObject), false);
+        }
+      }
+
+      function renderSupplierView(d, updateRevisions = true) {
+        currentPartData = d;
+        qualityGateSection.hidden = false;
+        receiptBanner.hidden = true;
+        qgTitle.textContent = `Part Disclosure: ${d.part} · Tier: ${d.tier}`;
+        qgStatusBadge.className = `status ${c(d.overall)}`;
+        qgStatusBadge.textContent = d.overall.toUpperCase();
+
+        if (isCbiDetected && isCbiAttested) {
+          qgSummary.textContent = '✅ Quality gate passed under CBI Tolerance! 7.5% proprietary ingredients certified compliant via supplier legal attestation.';
+        } else if (d.overall === 'Approved') {
+          qgSummary.textContent = '✅ Quality gate passed! All materials meet mass-balance tolerances and comply with EU RoHS & REACH requirements.';
+        } else {
+          qgSummary.textContent = '⚠️ Issues detected! Please review the automated findings below before executing your legal attestation.';
+        }
+
+        if (updateRevisions && currentActivePartObject) {
+          populateRevisionDropdown(currentActivePartObject);
+        }
+
+        qgMetrics.innerHTML = `
+          <div class="trace-stat-box"><b>${d.materials}</b><span>Homogeneous Materials</span></div>
+          <div class="trace-stat-box"><b>${d.out.length}</b><span>Disclosed Substances</span></div>
+          <div class="trace-stat-box"><b style="color:${d.issues.length ? 'var(--amber)' : 'var(--emerald)'}">${d.issues.length}</b><span>Quality Gate Findings</span></div>
+          <div class="trace-stat-box"><b>${d.tier}</b><span>Declaration Tier</span></div>
+        `;
+
+        qgRows.innerHTML = d.out.map(x => `
+          <tr>
+            <td>
+              <strong>${x.r.material_name}</strong><br>
+              <small style="color: var(--text-muted);">${x.z?.n || 'Chemical Substance'} · CAS ${x.r.cas} · ${x.r.concentration_pct}%</small>
+              ${x.r.exemption && x.r.exemption !== 'None' ? `<br><span style="display:inline-block; margin-top:3px; background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35); font-size: 10.5px; padding: 1px 6px; border-radius: 4px; font-weight: 600;">⚖️ Exemption: ${x.r.exemption}</span>` : ''}
+              ${x.r.evidence_status ? `<br><span style="display:inline-block; margin-top:3px; background: rgba(56, 189, 248, 0.12); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.25); font-size: 10.5px; padding: 1px 6px; border-radius: 4px;">📑 ${x.r.evidence_status}</span>` : ''}
+            </td>
+            <td>${tag(x.bad ? 'Data gap' : 'Approved')}</td>
+            <td>${tag(x.rohs)}</td>
+            <td>${tag(x.reach)}</td>
+            <td>${tag(x.pfas)}</td>
+            <td class="action-copy">${x.action}</td>
+          </tr>
+        `).join('');
+
+        updateLockState();
+        qualityGateSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // Helper to update row status immediately
+      function setRowLoading(partNumber, msg = 'Ingesting and screening formulation...') {
+        let b = document.getElementById('statusBadge_' + partNumber);
+        let m = document.getElementById('fileMeta_' + partNumber);
+        if (b) b.innerHTML = '<span class="status review">⏳ Processing...</span>';
+        if (m) m.innerHTML = `<span style="color:#93c5fd;">${msg}</span>`;
+      }
+
+      function updateRowPostUpload(partNumber, data, isCbi, fileName = '') {
+        let b = document.getElementById('statusBadge_' + partNumber);
+        let m = document.getElementById('fileMeta_' + partNumber);
+        if (!b || !m) return;
+        if (isCbi && !isCbiAttested) {
+          b.innerHTML = '<span class="status condition">⚠️ CBI Attestation Required</span>';
+          m.innerHTML = `
+            <span style="color:#f59e0b; font-weight:600;">7.5% Proprietary Chemistry Detected</span>
+            <button class="btn btn-secondary btn-sm" style="background:#d97706; border-color:#b45309; padding:2px 8px; font-size:11px; margin-left:6px; cursor:pointer;" onclick="openCbiModal()">✍️ Review & Attest</button>
+          `;
+        } else if (data.part && data.part.overall_status === 'Approved') {
+          b.innerHTML = '<span class="status approved">Pre-check Passed ✓</span>';
+          let docDesc = fileName.toLowerCase().endsWith('.pdf') ? `AI Verified Evidence (${fileName})` : '100% Mass Balance Valid';
+          m.innerHTML = `<span style="color:#34d399;">${docDesc} · Ready to sign declaration below</span>`;
+        } else {
+          b.innerHTML = '<span class="status blocked">❌ Pre-check Rejected</span>';
+          m.innerHTML = `<span style="color:#f87171;">Formulation gaps found. See automated findings below.</span>`;
+        }
+      }
+
+      async function uploadSupplierCsv(csvText, fileName = 'formulation_upload.csv') {
+        currentRawCsv = csvText;
+        inspectCbi(csvText);
+        isCbiAttested = false;
+
+        setRowLoading(activePartNumber, `Uploading & validating ${fileName}...`);
+
+        let res = await fetch(`${API_BASE}/fmd/upload/`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ csv_text: csvText, part_number: activePartNumber, cbi_attested: 'false' })
+        });
+        if (res.ok) {
+          let data = await res.json();
+          if (data.is_ai_fallback && data.extraction) {
+            currentAiExtraction = data.extraction;
+            openAiDocModal(data.extraction);
+            let m = document.getElementById('fileMeta_' + activePartNumber);
+            if (m) m.innerHTML = '<span style="color:#38bdf8;">🤖 Non-standard spreadsheet auto-converted by AI · Reviewing in modal</span>';
+            return;
+          }
+          if (data.part) {
+            currentActivePartObject = data.part;
+            populateRevisionDropdown(data.part);
+            renderSupplierView(formatServerPartData(data.part), false);
+            updateRowPostUpload(activePartNumber, data, isCbiDetected, fileName);
+            if (isCbiDetected) {
+              openCbiModal();
+            }
+            loadPortalContext(currentVendor);
+          }
+        } else {
+          let errData = await res.json().catch(() => ({}));
+          alert('Upload failed: ' + (errData.error || res.statusText));
+          let b = document.getElementById('statusBadge_' + activePartNumber);
+          let m = document.getElementById('fileMeta_' + activePartNumber);
+          if (b) b.innerHTML = '<span class="status blocked">❌ Upload Rejected</span>';
+          if (m) m.innerHTML = `<span style="color:#f87171;">${errData.error || 'Failed to process file'}</span>`;
+        }
+      }
+
+      // Multi-Tenant Isolation & Task Context
+      let currentVendor = new URLSearchParams(window.location.search).get('vendor') || 'SUP-LUX-001';
+      let currentSupplierContext = null;
+      let activePartNumber = '';
+
+      async function loadPortalContext(vendorCode) {
+        try {
+          const res = await fetch(`${API_BASE}/supplier/context/?vendor=${encodeURIComponent(vendorCode)}`);
+          if (!res.ok) throw new Error('Failed to fetch context');
+          const data = await res.json();
+          currentSupplierContext = data;
+          renderPortalVendor(data);
+        } catch (err) {
+          console.error('Portal context error:', err);
+        }
+      }
+
+      function renderPortalVendor(data) {
+        const supp = data.current_supplier;
+        if (!supp) return;
+
+        // Update Header Badge
+        document.getElementById('vendorNameDisplay').textContent = supp.name;
+        document.getElementById('vendorCodeDisplay').textContent = supp.supplier_code;
+
+        // Update Isolation Notice Banner
+        document.getElementById('bannerVendorName').textContent = supp.name;
+        document.getElementById('bannerVendorCode').textContent = supp.supplier_code;
+        document.getElementById('bannerVendorEmail').textContent = supp.contact_email;
+
+        // Populate Switcher Dropdown
+        const switcher = document.getElementById('vendorSwitcher');
+        if (switcher && data.available_suppliers) {
+          switcher.innerHTML = data.available_suppliers.map(s => `
+            <option value="${s.supplier_code}" ${s.supplier_code === supp.supplier_code ? 'selected' : ''}>
+              ${s.name} (${s.supplier_code}) — [${s.parts_count} parts]
+            </option>
+          `).join('');
+        }
+
+        // Update Pending Count
+        const parts = data.assigned_parts || [];
+        const pendingCount = parts.filter(p => !p.has_submission).length;
+        const badge = document.getElementById('assignedTasksCountBadge');
+        if (badge) {
+          badge.textContent = `${pendingCount} Pending Request${pendingCount === 1 ? '' : 's'}`;
+          badge.className = pendingCount === 0 ? 'status approved' : 'status review';
+        }
+
+        // Render Assigned Parts Table Rows
+        const tbody = document.getElementById('assignedTasksTable');
+        if (!parts.length) {
+          tbody.innerHTML = `
+            <tr>
+              <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 24px;">
+                No compliance intake requests assigned to ${supp.name} at this time.
+              </td>
+            </tr>
+          `;
+          activePartNumber = '';
+          return;
+        }
+
+        activePartNumber = parts[0].part_number;
+
+        tbody.innerHTML = parts.map((p, idx) => `
+          <tr id="taskRow_${p.part_number}" onclick="onPartRowClick('${p.part_number}', ${p.has_submission})" 
+              ondragover="handleRowDragOver(event, this)" 
+              ondragleave="handleRowDragLeave(event, this)" 
+              ondrop="handleRowDrop(event, this, '${p.part_number}')"
+              style="${idx === 0 ? 'background: rgba(56, 189, 248, 0.05); border-left: 3px solid #38bdf8;' : 'border-left: 3px solid transparent;'} cursor: pointer; transition: all 0.2s ease;">
+            <td><strong style="color: #38bdf8; font-size: 14px;">${p.part_number}</strong></td>
+            <td><code>${p.mpn}</code></td>
+            <td>${p.part_name}</td>
+            <td>${p.due_date}</td>
+            <td id="statusCol_${p.part_number}">
+              <div id="statusBadge_${p.part_number}" style="display: flex; align-items: center; gap: 6px;">
+                <span class="status ${p.has_submission ? 'approved' : 'review'}">${p.has_submission ? 'Submitted ✓' : 'Action Required'}</span>
+                ${p.has_submission ? `<span style="display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 4px; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3);">Rev ${p.revision_number}</span>` : ''}
+              </div>
+              <div id="fileMeta_${p.part_number}" style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+                ${p.has_submission ? `<span style="color:#34d399;">Official Rev ${p.revision_number} on file (${p.total_revisions > 1 ? p.total_revisions + ' versions preserved' : 'Baseline'}) · Upload anytime to revise</span>` : 'Drop file directly onto this row, or click Smart Upload'}
+              </div>
+            </td>
+            <td style="white-space: nowrap;">
+              ${p.has_submission ? `
+                <button type="button" class="btn btn-secondary btn-sm" onclick="event.stopPropagation(); viewExistingPart('${p.part_number}')" title="Inspect submitted formulation and audit history">👁️ View Formulation</button>
+                <label class="btn btn-secondary btn-sm" style="cursor: pointer; margin-left: 6px; border-color: rgba(56, 189, 248, 0.5); color: #38bdf8; background: rgba(56, 189, 248, 0.08);" title="Submit revised formulation. Rev 1 and all previous versions are safely preserved in the audit trail.">
+                  🔄 Submit Revision
+                  <input type="file" style="display: none;" accept=".xlsx,.xls,.csv,.pdf" onchange="handleSmartUpload(this, '${p.part_number}')">
+                </label>
+              ` : `
+                <a href="${p.template_download_url}" class="btn btn-secondary btn-sm" title="Download pre-populated Excel template for this part">📥 Download Template</a>
+                <label class="btn btn-primary btn-sm" style="cursor: pointer; margin-left: 6px; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); border-color: #38bdf8;" title="Smart upload: Auto-detects Excel (.xlsx, .csv) or lab test reports / MSDS (.pdf)">
+                  ⬆️ Smart Upload
+                  <input type="file" style="display: none;" accept=".xlsx,.xls,.csv,.pdf" onchange="handleSmartUpload(this, '${p.part_number}')">
+                </label>
+              `}
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      function switchVendor(vendorCode) {
+        currentVendor = vendorCode;
+        const url = new URL(window.location);
+        url.searchParams.set('vendor', vendorCode);
+        window.history.pushState({}, '', url);
+        qualityGateSection.hidden = true;
+        receiptBanner.hidden = true;
+        loadPortalContext(vendorCode);
+      }
+
+      async function resetDemoTasks() {
+        try {
+          let res = await fetch(`${API_BASE}/supplier/reset-demo/`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ vendor: currentVendor })
+          });
+          if (res.ok) {
+            qualityGateSection.hidden = true;
+            receiptBanner.hidden = true;
+            loadPortalContext(currentVendor);
+            alert('🔄 Demo tasks have been reset to Action Required!');
+          }
+        } catch (e) {
+          alert('Failed to reset demo tasks: ' + e);
+        }
+      }
+
+      async function onPartRowClick(partNumber, hasSubmission) {
+        setActivePart(partNumber);
+        if (hasSubmission) {
+          await viewExistingPart(partNumber);
+        }
+      }
+
+      async function viewExistingPart(partNumber) {
+        setActivePart(partNumber);
+        setRowLoading(partNumber, 'Loading archived formulation disclosure...');
+        try {
+          let res = await fetch(`${API_BASE}/parts/?part_number=${encodeURIComponent(partNumber)}`);
+          if (!res.ok) throw new Error('Failed to fetch part data');
+          let list = await res.json();
+          let target = list.find(p => p.part_number === partNumber) || list[0];
+          if (target && target.materials && target.materials.length > 0) {
+            currentActivePartObject = target;
+            populateRevisionDropdown(target);
+            renderSupplierView(formatServerPartData(target), false);
+            let b = document.getElementById('statusBadge_' + partNumber);
+            let m = document.getElementById('fileMeta_' + partNumber);
+            let revCount = (target.revisions || []).length;
+            let revNum = revCount > 0 ? target.revisions[0].revision_number : 1;
+            if (b) {
+              b.innerHTML = `
+                <span class="status ${target.overall_status === 'Approved' ? 'approved' : 'review'}">On File (${target.overall_status})</span>
+                <span style="display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 4px; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3);">Rev ${revNum}</span>
+              `;
+            }
+            if (m) m.innerHTML = `<span style="color:#34d399;">Rev ${revNum} formulation loaded below · Click "🔄 Submit Revision" or drop new file to revise</span>`;
+          } else {
+            let m = document.getElementById('fileMeta_' + partNumber);
+            if (m) m.innerHTML = `<span style="color:#93c5fd;">No detailed formulation on file. Please upload Excel or lab report.</span>`;
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      }
+
+      function setActivePart(partNumber) {
+        activePartNumber = partNumber;
+        const dropzoneLabel = document.getElementById('dropzoneTargetPart');
+        if (dropzoneLabel) dropzoneLabel.textContent = partNumber;
+
+        if (!currentSupplierContext) return;
+        for (let p of currentSupplierContext.assigned_parts) {
+          let row = document.getElementById(`taskRow_${p.part_number}`);
+          if (row) {
+            if (p.part_number === partNumber) {
+              row.style.background = 'rgba(56, 189, 248, 0.05)';
+              row.style.borderLeft = '3px solid #38bdf8';
+            } else {
+              row.style.background = 'transparent';
+              row.style.borderLeft = '3px solid transparent';
+            }
+          }
+        }
+      }
+
+
+
+      function uploadForRowFile(inputEl, partNumber) {
+        setActivePart(partNumber);
+        let f = inputEl.files[0];
+        if (!f) return;
+
+        // Smart Format Routing: If user accidentally picked a PDF under Upload Excel, route to AI engine
+        if (f.name.toLowerCase().endsWith('.pdf')) {
+          uploadAiPdf(inputEl, partNumber);
+          return;
+        }
+        
+        setRowLoading(partNumber, `Uploading & validating ${f.name}...`);
+
+        if (f.name.toLowerCase().endsWith('.xlsx') || f.name.toLowerCase().endsWith('.xls')) {
+          let formData = new FormData();
+          formData.append('file', f);
+          formData.append('part_number', partNumber);
+          fetch(`${API_BASE}/fmd/upload/`, { method: 'POST', body: formData })
+            .then(res => res.json())
+            .then(data => {
+              if (data.is_ai_fallback && data.extraction) {
+                currentAiExtraction = data.extraction;
+                openAiDocModal(data.extraction);
+                let m = document.getElementById('fileMeta_' + partNumber);
+                if (m) m.innerHTML = '<span style="color:#38bdf8;">🤖 Non-standard spreadsheet auto-converted by AI · Reviewing in modal</span>';
+              } else if (data.part) {
+                isCbiDetected = false;
+                currentActivePartObject = data.part;
+                populateRevisionDropdown(data.part);
+                renderSupplierView(formatServerPartData(data.part), false);
+                updateRowPostUpload(partNumber, data, false, f.name);
+                loadPortalContext(currentVendor);
+              } else if (data.error) {
+                alert('Quality Gate Rejection: ' + data.error);
+                let b = document.getElementById('statusBadge_' + partNumber);
+                let m = document.getElementById('fileMeta_' + partNumber);
+                if (b) b.innerHTML = '<span class="status blocked">❌ Upload Rejected</span>';
+                if (m) m.innerHTML = `<span style="color:#f87171;">${data.error}</span>`;
+              }
+            })
+            .catch(err => alert('Upload failed: ' + err));
+        } else {
+          let r = new FileReader();
+          r.onload = () => uploadSupplierCsv(r.result, f.name);
+          r.readAsText(f);
+        }
+      }
+
+      btnConfirmCbi.onclick = async () => {
+        if (!modalCbiCheck.checked) return;
+        isCbiAttested = true;
+        closeCbiModal();
+
+        // Re-evaluate on server with cbi_attested=true
+        let res = await fetch(`${API_BASE}/fmd/upload/`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ csv_text: currentRawCsv, cbi_attested: 'true' })
+        });
+        if (res.ok) {
+          let data = await res.json();
+          currentActivePartObject = data.part;
+          populateRevisionDropdown(data.part);
+          renderSupplierView(formatServerPartData(data.part), false);
+          let b = document.getElementById('statusBadge_' + activePartNumber);
+          let m = document.getElementById('fileMeta_' + activePartNumber);
+          if (b) b.innerHTML = '<span class="status approved">CBI Attested ✓</span>';
+          if (m) m.innerHTML = `<span style="color:#34d399;">Non-hazardous CBI certified · Ready to submit official declaration below</span>`;
+          loadPortalContext(currentVendor);
+        }
+      };
+
+      btnSubmitOfficial.onclick = () => {
+        if (isCbiDetected && !isCbiAttested) {
+          alert('🚫 SUBMISSION BLOCKED!\n\nYou must complete the mandatory CBI Non-Hazardous Legal Attestation before this declaration can be accepted.');
+          openCbiModal();
+          return;
+        }
+        if (!attestCheck.checked) {
+          alert('Please check the general legal attestation checkbox to confirm authenticity before submitting.');
+          return;
+        }
+        const signer = document.getElementById('signerName').value;
+        const ref = 'FMD-SUB-' + Math.floor(100000 + Math.random() * 900000);
+        document.getElementById('subRefCode').textContent = ref;
+        receiptBanner.hidden = false;
+
+        // Update task campaign status directly in the row
+        let b = document.getElementById('statusBadge_' + activePartNumber);
+        let m = document.getElementById('fileMeta_' + activePartNumber);
+        if (b) b.innerHTML = '<span class="status approved">Submitted ✓</span>';
+        if (m) m.innerHTML = `<span style="color:#34d399; font-weight:600;">Official Reference: ${ref}</span>`;
+
+        // Update remaining pending badge
+        const remaining = document.querySelectorAll('#assignedTasksTable .status.review, #assignedTasksTable .status.condition, #assignedTasksTable .status.blocked').length;
+        const countBadge = document.getElementById('assignedTasksCountBadge');
+        if (countBadge) {
+          countBadge.textContent = `${remaining} Pending Request${remaining === 1 ? '' : 's'}`;
+          if (remaining === 0) countBadge.className = 'status approved';
+        }
+
+        receiptBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        alert(`Official FMD Declaration submitted successfully!\n\nTarget Part: ${activePartNumber}\nAttested by: ${signer}\nReference Code: ${ref}\n\nInternal review queue has been updated.`);
+      };
+
+      // Smart Upload & Unified File Sniffing
+      function handleSmartUpload(inputEl, partNumber) {
+        if (!partNumber) partNumber = activePartNumber;
+        setActivePart(partNumber);
+        const f = inputEl.files ? inputEl.files[0] : null;
+        if (!f) return;
+
+        const ext = f.name.toLowerCase();
+        if (ext.endsWith('.pdf')) {
+          uploadAiPdf(inputEl, partNumber);
+        } else if (ext.endsWith('.xlsx') || ext.endsWith('.xls') || ext.endsWith('.csv')) {
+          uploadForRowFile(inputEl, partNumber);
+        } else {
+          alert('Unsupported file format: Please upload an Excel workbook (.xlsx, .xls), CSV (.csv), or PDF report (.pdf).');
+        }
+      }
+
+      // Row-Level Drag and Drop Handlers (Direct per-part drop)
+      function handleRowDragOver(e, rowEl) {
+        e.preventDefault();
+        e.stopPropagation();
+        rowEl.style.background = 'rgba(56, 189, 248, 0.16)';
+        rowEl.style.outline = '2px dashed #38bdf8';
+      }
+
+      function handleRowDragLeave(e, rowEl) {
+        e.preventDefault();
+        e.stopPropagation();
+        rowEl.style.background = '';
+        rowEl.style.outline = 'none';
+      }
+
+      function handleRowDrop(e, rowEl, partNumber) {
+        e.preventDefault();
+        e.stopPropagation();
+        rowEl.style.background = '';
+        rowEl.style.outline = 'none';
+        const dt = e.dataTransfer;
+        if (dt && dt.files && dt.files.length > 0) {
+          handleSmartUpload({ files: dt.files }, partNumber);
+        }
+      }
+
+
+
+      // Interactive AI Document Intelligence Handlers
+      let currentAiExtraction = null;
+      let aiRowCounter = 0;
+
+      function recalcAiFreshness(dateStr) {
+        const badge = document.getElementById('aiDocFreshnessBadge');
+        if (!badge || !dateStr) return;
+        try {
+          const issueDate = new Date(dateStr);
+          const today = new Date();
+          const diffDays = Math.floor((today - issueDate) / (1000 * 60 * 60 * 24));
+          if (diffDays <= 365 && diffDays >= 0) {
+            badge.className = 'status approved';
+            badge.textContent = `Fresh (< 365d: ${diffDays}d)`;
+          } else {
+            badge.className = 'status condition';
+            badge.textContent = `Expired (${diffDays}d ago)`;
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      function recalcAiMassBalance() {
+        const concInputs = document.querySelectorAll('#aiExtractedRows .ai-input-conc');
+        let sum = 0;
+        concInputs.forEach(inp => {
+          sum += parseFloat(inp.value || 0);
+        });
+        const badge = document.getElementById('aiMassBalanceBadge');
+        if (badge) {
+          badge.textContent = `Mass Balance: ${sum.toFixed(2)}%`;
+          if (sum >= 98.0 && sum <= 102.0) {
+            badge.style.color = '#34d399';
+            badge.style.background = 'rgba(16, 185, 129, 0.12)';
+            badge.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+          } else {
+            badge.style.color = '#f59e0b';
+            badge.style.background = 'rgba(245, 158, 11, 0.12)';
+            badge.style.borderColor = 'rgba(245, 158, 11, 0.3)';
+          }
+        }
+      }
+
+      function addAiRow(matName = '', subName = '', cas = '', conc = 0.0, ev = 'Test report', ex = 'None') {
+        const tbody = document.getElementById('aiExtractedRows');
+        if (!tbody) return;
+        aiRowCounter++;
+        const rowId = `aiRow_${aiRowCounter}`;
+        const tr = document.createElement('tr');
+        tr.id = rowId;
+        tr.className = 'ai-data-row';
+        const exOptions = ['None', '6(c)', '7(a)', '7(c)-I', '6(a)', '6(b)', '7(c)-II'];
+        const exOptionsHtml = exOptions.map(opt => `<option value="${opt}" ${opt === ex ? 'selected' : ''}>${opt}</option>`).join('');
+        tr.innerHTML = `
+          <td><input type="text" class="ai-input ai-input-mat" value="${matName || 'Main Body'}" placeholder="e.g. Copper Shell" /></td>
+          <td><input type="text" class="ai-input ai-input-name" value="${subName || ''}" placeholder="e.g. Copper" /></td>
+          <td><input type="text" class="ai-input ai-input-cas" value="${cas || ''}" placeholder="e.g. 7440-50-8" onblur="handleAiCasBlur(this)" /></td>
+          <td><input type="number" step="0.01" min="0" max="100" class="ai-input ai-input-conc" value="${conc}" oninput="recalcAiMassBalance()" /></td>
+          <td><input type="text" class="ai-input ai-input-ev" value="${ev || 'Test report'}" placeholder="Evidence" /></td>
+          <td>
+            <select class="ai-input ai-input-ex" style="font-size: 11px; padding: 4px 6px;">
+              ${exOptionsHtml}
+            </select>
+          </td>
+          <td style="text-align: center;">
+            <button type="button" class="ai-btn-delete" onclick="deleteAiRow('${rowId}')" title="Delete substance">🗑️</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+        recalcAiMassBalance();
+      }
+
+      function deleteAiRow(rowId) {
+        const row = document.getElementById(rowId);
+        if (row) {
+          row.remove();
+          recalcAiMassBalance();
+        }
+      }
+
+      function handleAiCasBlur(casInput) {
+        const cas = (casInput.value || '').trim();
+        if (!cas) return;
+        const tr = casInput.closest('tr');
+        const nameInput = tr ? tr.querySelector('.ai-input-name') : null;
+        if (nameInput && !nameInput.value.trim()) {
+          const dict = {
+            '7440-50-8': 'Copper (Cu)',
+            '7440-31-5': 'Tin (Sn)',
+            '7440-22-4': 'Silver (Ag)',
+            '7439-92-1': 'Lead (Pb)',
+            '7440-43-9': 'Cadmium (Cd)',
+            '7439-97-6': 'Mercury (Hg)',
+            '7440-47-3': 'Chromium VI (Cr VI)',
+            '30965-26-5': 'Polybutylene Terephthalate (PBT)',
+            '65997-17-3': 'Glass Fiber Reinforcement',
+            '308070-21-5': 'Thermoplastic Elastomer (TPE)',
+            '9002-88-4': 'Polyethylene (PE)',
+            'CBI-SYSTEM': 'Proprietary Non-Hazardous Flame Retardant'
+          };
+          if (dict[cas]) {
+            nameInput.value = dict[cas];
+          }
+        }
+      }
+
+
+
+      async function uploadAiPdf(inputEl, partNumber) {
+        setActivePart(partNumber);
+        let f = inputEl.files ? inputEl.files[0] : null;
+        if (!f) return;
+
+        setRowLoading(partNumber, `AI parsing document layout & chemistry: ${f.name}...`);
+        let formData = new FormData();
+        formData.append('file', f);
+        formData.append('part_number', partNumber);
+
+        try {
+          let res = await fetch(`${API_BASE}/fmd/ai-extract/`, {
+            method: 'POST',
+            body: formData
+          });
+          if (res.ok) {
+            let data = await res.json();
+            currentAiExtraction = data;
+            openAiDocModal(data);
+          } else {
+            alert('AI Extraction failed: ' + res.statusText);
+          }
+        } catch (e) {
+          alert('AI Extraction error: ' + e);
+        }
+      }
+
+      function openAiDocModal(data) {
+        const modal = document.getElementById('aiDocModal');
+        if (!modal) return;
+        
+        document.getElementById('aiTargetPartLabel').textContent = activePartNumber;
+        document.getElementById('aiDocConfidenceBadge').textContent = `Confidence ${Math.round((data.confidence_score || 0.95) * 100)}%`;
+        
+        // Editable metadata inputs
+        document.getElementById('aiDocLabInput').value = data.metadata.lab_name || 'SGS-CSTC Standards Technical Services Ltd.';
+        document.getElementById('aiDocReportNoInput').value = data.metadata.report_number || 'DOC-REF-001';
+        document.getElementById('aiDocDateInput').value = data.metadata.issue_date || '2026-03-15';
+        document.getElementById('aiDocSampleDescInput').value = data.metadata.sample_description || 'Sample formulation disclosure';
+        
+        recalcAiFreshness(document.getElementById('aiDocDateInput').value);
+
+        // Populate editable table rows
+        const tbody = document.getElementById('aiExtractedRows');
+        tbody.innerHTML = '';
+        aiRowCounter = 0;
+
+        if (data.materials && data.materials.length > 0) {
+          for (let mat of data.materials) {
+            for (let sub of (mat.substances || [])) {
+              addAiRow(mat.material_name, sub.name, sub.cas, sub.concentration_pct, sub.evidence_status, sub.exemption || 'None');
+            }
+          }
+        } else {
+          addAiRow('Material Layer 1', '', '', 100.0, 'Test report', 'None');
+        }
+
+        recalcAiMassBalance();
+        modal.style.display = 'flex';
+      }
+
+      function closeAiDocModal() {
+        const modal = document.getElementById('aiDocModal');
+        if (modal) modal.style.display = 'none';
+        let b = document.getElementById('statusBadge_' + activePartNumber);
+        let m = document.getElementById('fileMeta_' + activePartNumber);
+        if (b && (!currentPartData || currentPartData.part_number !== activePartNumber)) {
+          b.innerHTML = '<span class="status review">Action Required</span>';
+          if (m) m.innerHTML = 'Extraction discarded. No formulation saved.';
+        }
+      }
+
+      async function commitAiExtraction() {
+        const btn = document.getElementById('btnCommitAiExtraction');
+        if (btn) btn.disabled = true;
+
+        try {
+          // Read metadata inputs
+          const labName = document.getElementById('aiDocLabInput').value.trim();
+          const reportNo = document.getElementById('aiDocReportNoInput').value.trim();
+          const issueDate = document.getElementById('aiDocDateInput').value;
+          const sampleDesc = document.getElementById('aiDocSampleDescInput').value.trim();
+
+          // Read editable table rows
+          const rows = document.querySelectorAll('#aiExtractedRows tr');
+          if (rows.length === 0) {
+            alert('Please keep or add at least one chemical substance row.');
+            if (btn) btn.disabled = false;
+            return;
+          }
+
+          // Group substances by material name
+          const matMap = new Map();
+          let matIdx = 1;
+
+          rows.forEach(tr => {
+            const matName = (tr.querySelector('.ai-input-mat').value || '').trim() || 'Material 1';
+            const subName = (tr.querySelector('.ai-input-name').value || '').trim();
+            const cas = (tr.querySelector('.ai-input-cas').value || '').trim();
+            const conc = parseFloat(tr.querySelector('.ai-input-conc').value || 0);
+            const ev = (tr.querySelector('.ai-input-ev').value || '').trim() || `Test report (${reportNo})`;
+            const ex = (tr.querySelector('.ai-input-ex')?.value || 'None').trim();
+
+            if (!matMap.has(matName)) {
+              matMap.set(matName, {
+                material_id: `M-${String(matIdx++).padStart(2, '0')}`,
+                material_name: matName,
+                material_mass_g: 1.0,
+                substances: []
+              });
+            }
+
+            matMap.get(matName).substances.push({
+              cas: cas,
+              name: subName || cas,
+              concentration_pct: conc,
+              pfas_intentional_use: 'No',
+              evidence_status: ev,
+              exemption: ex
+            });
+          });
+
+          const materials = Array.from(matMap.values());
+
+          const payload = {
+            part_number: activePartNumber,
+            extraction_data: {
+              metadata: {
+                lab_name: labName,
+                report_number: reportNo,
+                issue_date: issueDate,
+                sample_description: sampleDesc
+              },
+              materials: materials
+            }
+          };
+
+          let res = await fetch(`${API_BASE}/fmd/ai-commit/`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+
+          if (res.ok) {
+            let data = await res.json();
+            closeAiDocModal();
+            isCbiDetected = data.is_cbi_detected;
+            currentActivePartObject = data.part;
+            populateRevisionDropdown(data.part);
+            renderSupplierView(formatServerPartData(data.part), false);
+            updateRowPostUpload(activePartNumber, data, isCbiDetected, `${reportNo || 'AI_Verified'}.pdf`);
+            if (isCbiDetected) {
+              openCbiModal();
+            }
+            loadPortalContext(currentVendor);
+          } else {
+            alert('Failed to commit AI extraction: ' + res.statusText);
+          }
+        } catch (e) {
+          alert('Commit error: ' + e);
+        } finally {
+          if (btn) btn.disabled = false;
+        }
+      }
+
+      // Initialize on load
+      loadPortalContext(currentVendor);
+    </script>
+  </body>
+</html>

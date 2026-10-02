@@ -1,0 +1,1387 @@
+Apple Regulated Substances Specification
+069-0135-M
+Revision ECO # Approver Date Revision Description
+M 0040069980 Adrian Liga Gondawijaya March 21, 2023 See Section 13 for full revision history.\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+1. Scope
+It’s Apple’s mission to make sure that anyone who assembles, uses, or recycles
+an Apple product can do so safely. We have led the industry in removing many
+harmful substances from our product designs, and we go to great lengths to make
+sure that they stay that way. We are constantly designing our products to be better
+for the environment, and for people.
+This Regulated Substances Specification describes Apple’s global requirements and
+restrictions on the use of certain chemical substances or materials in Apple products,
+accessories, manufacturing processes, and packaging used for shipping products to
+Apple’s end-customers. Restrictions are derived from international laws or
+directives, regulatory agencies, eco-label requirements, environmental standards,
+and Apple policies. Apple’s restrictions may go beyond regulatory requirements in
+order to protect human health and the environment.
+This specification is not an exhaustive list of all chemicals of concern. Apple suppliers
+should take action to understand the human health and environmental impacts of
+all chemicals used in the manufacturing process and present in parts and materials
+supplied to Apple. Suppliers should take action to reduce or eliminate the use of
+chemicals of concern listed in this specification as a first step, as well as comply
+with all applicable regulations. Suppliers must demonstrate compliance with this
+specification and provide required documentation (including required test data, Full
+Material Disclosure (FMD), and disclosure of reportable substances). Suppliers must
+notify Apple of any changes in formulation of materials or parts.
+We hold our suppliers accountable by conducting factory audits and testing materials
+and components at certified laboratories for substances of high concern. Apple
+may verify supplier data and compliance to this specification utilizing our in-house
+laboratory or external third-party certified laboratories.
+Effective Date: This specification takes effect on May 15, 2023. Prior to this date,
+revision L of the Regulated Substances Specification is in effect.
+Questions: Questions regarding the Apple Regulated Substances Specification
+should be directed to Apple at environment@apple.com.
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--LM || MMaayrc 2h0 220123 2\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+2. Definitions
+Alloy: A metallic material, homogeneous on a macroscopic scale, consisting of two Homogeneous material: One material of uniform composition throughout or
+or more elements so combined that they cannot be readily separated by mechanical a material, consisting of a combination of materials, that cannot be disjointed,
+means. disaggregated, or separated into different materials by mechanical actions such
+as unscrewing, cutting, crushing, grinding, and abrasive processes. The definition
+Apple Policy: Apple restrictions that go beyond regulatory requirements, based on is consistent with Directive 2011/65/EU on the Restriction of the Use of Certain
+best industry practices or toxicological properties. Hazardous Substances in Electrical and Electronic Equipment (RoHS 2). Per this
+document, the following examples illustrate what is and is not a homogeneous material:
+Brominated flame retardant: Brominated organic substance that has an inhibitory
+effect on the ignition of combustible organic materials. • A plastic cover is a homogeneous material if it consists of one type of plastic that is
+not coated with other materials, or has other materials attached to it.
+CAS: Chemical Abstracts Service registry numbers that identify unique substances.
+• A cable that consists of metal wires surrounded by nonmetallic insulation materials isn’t
+Chemical Safety Disclosure (CSD): Initiative that requires suppliers to provide a homogeneous material because mechanical processes could separate the different
+information on the chemicals used in Apple manufacturing processes, to report materials. In this case, restrictions apply to each of the separated materials individually.
+practices in place to ensure compliance with occupational health and safety • A semiconductor package contains many homogeneous materials that include the
+regulations and Apple requirements, and to support initiatives to advance the mold compound, die attach adhesive, die coatings, bonding wires, lead frame, and
+adoption of safer, environmentally preferable alternatives. See Section 12 for details. lead frame platings. Restrictions apply to each individual homogeneous material.
+• Printed circuit board laminated materials consist of glass cloth, resins, and copper
+Coating: Product in liquid, paste, or powder form that, when applied to a substrate,
+foil that are each a homogeneous material. Restrictions apply to each individual
+forms a layer possessing protective, decorative, and/or other specific properties.
+homogeneous material.
+Metallic plating layers are exempted from coating requirements.
+Incidentally present: Present as an unavoidable impurity or unintentional trace
+Elemental Chlorine Free (ECF): Process by which packaging material is produced
+contaminant.
+with pulp that has been bleached using a chlorine derivative such as chlorine dioxide
+(ClO2), but without the use of elemental chlorine (Cl). Intentionally added: Substance deliberately used in the formulation of a material
+or component, where the presence of the substance in the final product provides a
+Endocrine Disrupting Chemicals (EDCs): Chemicals that can interfere with the
+specific characteristic, appearance, or quality.
+endocrine (hormone) system to cause possible adverse effects in humans and wildlife.
+Mixture: Solutions composed of two or more substances in which they do not react.
+External Materials: Materials that are accessible to a customer under reasonable or
+foreseeable use. Nanomaterials: A natural, incidental, or manufactured material containing particles,
+in an unbound state or as an aggregate or as an agglomerate; and where, for
+Final assembly: Manufacturing process involving assembly of a product that is then
+50 percent or more of the particles in the number size distribution, one or more external
+directly sold to Apple customers, retail stores, or distribution channels.
+dimensions are in the 1 nm–100 nm size range. In addition, fullerenes, graphene
+Full Material Disclosure (FMD): Initiative that requires suppliers to provide the entire flakes, and single-wall carbon nanotubes with one or more external dimensions below
+chemical composition of the parts and materials used in Apple products to ensure 1 nm should be considered as nanomaterials.
+compliance to regulatory requirements, corporate initiatives, and to support assessment
+of the impact to human and environmental health. See Section 11 for details.
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 3\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+No intentional use: Substance must not be intentionally added. Proof of compliance Process chemical: Chemicals, used on their own or in formulations, that are not
+requires either 1) the substance is not listed in “Section 3 Composition/information intentionally incorporated (partly or fully) into the product. Examples of a process
+on ingredients” of submitted Safety Data Sheet (SDS), which meets Globally chemical: cleaning agent, degreaser, demolder solution, lubricant, metal working
+Harmonized System (GHS) cutoff value requirement or 2) chemical manufacturer fluid, heat transfer fluid, etching solution. Examples of a non-process chemical:
+provides self-declaration of no intentional use. paint, coating, ink, adhesive, primer, resin, flux, solder paste.
+Non-use: Substance must not be intentionally or unintentionally present. Apple Processed Chlorine Free (PCF): Process by which material is produced with pulp
+requires test reports from certified labs as proof of compliance. For all Section 6 from virgin and/or recycled content that has been bleached without any type of
+restrictions, the substance must be under the method detection level by using chlorine, or that has not been bleached at all. Recycled content may have originally
+Apple specified analytical methods. been bleached with chlorine or chlorine derivatives.
+Packaging: Packaging materials used to enclose or protect Apple products during Test Report Mapping (TRM) Form: The form used to map test reports to declared
+shipment to the end-customer. Packaging shipped to suppliers or OEMs (e.g., tape materials. The TRM form is created in and exported from the FMD Portal. The TRM
+and reel, trays), and inter- and intra-factory protective packaging that does not form and mapped test reports are collected by Apple manufacturing partners to
+remain in final product are not covered by the RSS. document compliance of the parts and materials used in Apple products. The
+information required to create a TRM form for Apple’s manufacturing partners is the
+Paint: Coatings containing pigments that, when applied to a substrate, form a dry
+foundation of an FMD declaration required by Apple. These processes have been
+film with protective, decorative, or special functions.
+harmonized to eliminate duplicative work and align requirements across the Apple
+Per- and Polyfluoroalkyl Substances (PFAS): Substances that contain one or supply chain.
+more perfluoroalkyl moieties, –CnF2n+1.
+Textile: A flexible material made by creating an interlocking network of yarns or
+Personal protective equipment (PPE): Equipment for protecting manufacturing threads, which are produced by spinning raw fibers (from either natural or synthetic
+employees from exposure to hazardous materials in the workplace specific to the sources) into long threads.
+job function.
+Totally Chlorine Free (TCF): Process by which packaging material is produced with
+ppb: Parts per billion by weight of a substance; equivalent to 0.001 mg/kg or pulp from virgin content that has been bleached without any type of chlorine, or that
+0.0000001 percent by weight. has not been bleached at all.
+ppm: Parts per million by weight of a substance; equivalent to 1 mg/kg or Varnish: Transparent coating material.
+0.0001 percent by weight.
+Wearable products: Electronics or accessories that can be comfortably worn on the
+Primer: Surface treatment chemical used to increase adhesion when used in body, such as Apple Watch. These products will occlude the skin.
+conjunction with a coating or adhesive system.
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 4\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+3. Restricted Substances in Products
+Restrictions in Section 3 apply to all homogeneous materials used in Apple products, accessories, and packaging. Restrictions also apply to all homogeneous materials applied to or
+cured onto parts in Apple products, accessories, and packaging. This includes adhesives, inks, coatings, primers, and other wet formulations manufactured by the material manufacturer
+in addition to the cured materials in the finished good. In certain cases, the scope may be more limited, which is indicated in the table below. Otherwise, if “All materials” is indicated in
+the scope, the general restriction scope applies. Substances and their respective restrictions are listed in alphabetical order.
+Chemical or Chemical Group Substance Identifier or CAS No. Threshold Limit Scope Examples References
+No intentional use; 1000 ppm for
+Adhesive monomers Group I See Appendix O Adhesives in wearable products UV-cured adhesives Apple Policy
+incidentally present
+Must pass toxicological review for UV-cured adhesives in earphones and
+Adhesive monomers Group II See Appendix P Adhesives in wearable products Apple Policy
+approval headphones
+Antimony 1309-64-4
+1000 ppm All materials Flame retardant Apple Policy
+Antimony compounds Several
+No intentional use
+Wood products Pallets REACH 1907/2006 and amendments
+2 ppm for incidentally present
+All other materials except
+No intentional use LCD display glass, camera lens, trackpad
+semiconductors (substrates and
+Arsenic 7440-38-2 50 ppm for incidentally present dopants) and metal alloys glass, display cover glass, antifouling agent
+Arsenic compounds Several
+Apple Policy
+No intentional use
+Metals Copper alloys
+1000 ppm for incidentally present
+Semiconductor substrates and
+Exempt GaAs semiconductors
+dopants
+1332-21-4
+12001-28-4
+12001-29-5
+12172-73-5
+Asbestos and compounds Non-use All materials Insulator, filler REACH 1907/2006 and amendments
+77536-66-4
+77536-67-5
+77536-68-6
+132207-32-0
+REACH 1907/2006 and amendments
+Bedarfsgegenstande
+Azo dyes, Arylamines, Anilines Appendix A 30 ppm total content All materials Dye or colorant for plastics, textiles, leather Verordnung
+GB 18401-2010, China
+GB 20400-2006, China
+Paints, coatings, inks, adhesives, and
+Benzene 71-43-2 1000 ppm All materials primers manufactured by the material Apple Policy
+manufacturer and in the finished good
+No intentional use
+1000 ppm total content for All materials Metals, alloys, solder, and ceramic materials
+Beryllium 7440-41-7 incidentally present in connectors, stiffeners, AC inlets, springs, Apple Policy
+Beryllium compounds Several EMI finger/spring, transceivers, brackets, IEEE 1680.1-2018 criterion 4.1.4.1
+Products shipped before housing, buttons, and speaker wire.
+Exempt
+September 2014
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 5\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Chemical or Chemical Group Substance Identifier or CAS No. Threshold Limit Scope Examples References
+Non-use in thermal paper Thermal paper Thermal paper Apple Policy
+Report detectable levels of California Proposition 65
+All materials Adhesives, plastics, epoxy resin
+Bisphenol A (BPA) 80-05-7 unpolymerized BPA Apple Policy
+All other materials, unless
+1000 ppm Adhesives, plastics, epoxy resin REACH 1907/2006 and amendments
+preapproved by Apple
+Bromine 7726-95-6 900 ppm total content Apple Policy
+All materials Flame retardant, flux, solder paste
+Brominated compounds Several UL 110, criterion 9.2.3
+1500 ppm (Cl + Br) total content
+Brominated Flame Retardants See definition No intentional use All materials Plastics, electronic components Apple Policy
+2013/56/EU
+20 ppm Battery cells and packs Nickel cadmium battery
+IEEE 1680.1-2018 criterion 4.1.2.1
+Cadmium 7440-43-9
+Cadmium compounds Several 2011/65/EU
+50 ppm in all other materials All other materials Pigment stabilizer, copper alloys GB/T 26572
+Taiwan BSMI RoHS
+Paints, coatings, inks, adhesives, and
+1000 ppm total content and Cl <
+Chlorinated Organic Solvents Appendix G All materials primers manufactured by the material Apple Policy
+900 ppm
+manufacturer and in the finished good
+REACH 1907/2006 and its
+amendments
+Chlorinated Paraffins, Short and 1000 ppm total content and Cl < Paint, coating, sealant, flame retardant, EPA, SNUR 2070-AJ73,
+Appendix B All materials
+Medium Chain (SCCP and MCCP) 900 ppm textiles, lubricants Dec. 2014
+IEEE 1680
+Apple Policy
+Non-use; IEEE 1680.1-2018 criteria 4.1.5.1 &
+Must be Elemental Chlorine Free 4.1.5.2
+Fiber-based packaging Fiber-based packaging
+(ECF), Totally Chlorine Free (TCF) UL 110, criteria 9.2.3 & 12.7.1
+or Process Chlorine Free (PCF) Apple Policy
+Chlorine 7782-50-5
+Chlorinated compounds Several 900 ppm total content in all
+materials
+All materials Flame retardant, flux, solder paste Apple Policy
+1500 ppm (Cl + Br) total content
+in all materials
+All materials
+Dimethylfumarate (DMFu) 624-49-7 0.1 ppm Biocide, desiccant pack 2010/153/EC
+ChemVerbotsV
+Formaldehyde 50-00-0 300 ppm All materials Wood, adhesives, plastics, coatings GB 18401-2003/2005, China
+GB 20400-2006, China
+76253-60-6
+REACH 1907/2006 and amendments
+Halogenated Diphenyl Methanes 81161-70-8 1000 ppm and Br / Cl < 900 ppm All materials Capacitor, transformer
+Apple Policy
+99688-47-8
+7440-43-9
+Heavy Metals (Cd + Cr (VI) + Hg + 18540-29-9
+100 ppm combined total Packaging Packaging materials 94/62/EC
+Pb) 7439-97-6
+7439-92-1
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 6\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Chemical or Chemical Group Substance Identifier or CAS No. Threshold Limit Scope Examples References
+25637-99-4
+3194-55-6
+Hexabromocyclododecane (HBCDD) 134237-50-6 Non-use or 100 ppm total All materials Flame retardant 2019/1021/EU
+134237-51-7
+134237-52-8
+All wearable products and Watch band materials including leather and
+1 ppm REACH 1907/2006 Entry 72
+accessories textiles
+Hexavalent Chromium (Cr (VI), Cr6+) 18540-29-9 REACH 1907/2006 Entry 47
+3 ppm Leather in all other applications Leather
+Hexavalent Chromium compounds Several Taiwan BSMI RoHS
+2011/65/EU, GB/T 26572
+500 ppm All other materials Metal coating, pigment
+Taiwan BSMI RoHS
+US Lacey Act (16 U.S.C. §§ 3371–3378)
+Lacey Act and EU Timber Regulation Not Applicable Non-use All materials
+EU Timber Regulation
+No intentional use
+Battery cells and packs Lead-acid, Zn-Mn, alkaline batteries 2013/56/EU
+40 ppm for incidentally present
+Plastics, inks, surface coatings,
+No intentional use IEEE 1680.1-2018
+Lead 7439-92-1 displays (including housing, Paints, cable jacketing and insulation
+50 ppm for incidentally present CPSIA, 2008
+Lead compounds Several wiring, and printed circuit board)
+All other materials except all 2011/65/EU
+No intentional use Solder, glass, steel, copper alloys, aluminum
+exemptions in 2011/65/EU and its GB/T 26572
+1000 ppm for incidentally present alloys
+amendments Taiwan BSMI RoHS
+No intentional use Mercury oxide, zinc-manganese, alkaline
+Battery cells and packs 2013/56/EU
+Mercury 5 ppm for incidentally present manganese batteries
+7439-97-6
+Mercury compounds
+Several 2011/65/EU, IEEE 1680-1 criterion
+No intentional use
+All other materials CCFL lamps, switches, dyes 4.1.3.1,
+100 ppm for incidentally present
+GB/T 26572, Taiwan BSMI RoHS
+95-48-7
+106-44-5 Cleaning compound, adhesives, resin, Canadian Environmental Protection
+Methyl-phenol compounds 10 ppm total content All materials
+108-39-4 coatings at all tiers of the supply chain Act, 1999
+1319-77-3
+ASTM D6499 for screening antigens. If
+Natural rubber, latex Latex proteins Non-use All wearable materials positive, use Western Blot / SDS PAGE
+for confirmation
+Paints, coatings, inks, adhesives, and
+n-Hexane 110-54-3 1000 ppm All materials primers manufactured by the material Apple Policy
+manufacturer and in the finished good
+7440-02-0 Parts with direct and prolonged Metal alloys with nickel, plating material, REACH 1907/2006 and amendments
+Nickel and its compounds 0.28 µg/cm2/week leach rate
+Several skin contact anti-corrosive alloy
+Glass coatings, antifouling coatings, REACH 1907/2006 and amendments
+Organotin compounds Appendix C 1000 ppm total content All materials
+silicones, polyurethanes, paints, adhesives Apple Policy
+7601-89-0
+7778-74-7 CA DTSC
+Perchlorates 7790-98-9 0.1 ppm total content All materials Lithium perchlorate coin cell batteries Perchlorate Contamination Prevention
+7791-03-9 Act
+10034-81-8
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 7\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Chemical or Chemical Group Substance Identifier or CAS No. Threshold Limit Scope Examples References
+Compounds with the formula C4F9SO3H, their salts
+and any combinations thereof. This includes any
+substance having a perfluoroalkyl group (linear or
+www.miljodirektoratet.no/globalassets/
+PFBS and related substances branched) C4F9- directly attached to a sulfur atom. 1000 ppm total content All materials Flame retardant additive for plastic resins
+publikasjoner/M759/M759.pdf
+Including but not limited to the list of
+compounds on pages 14, 15, 24, and 25 in the
+reference link.
+Compounds that are perfluoroalkyl carboxylic
+acids (branched and/or linear) with the formula:
+CF3-(CF2)n-, n=8-13 as a structural element,
+including their salts. In addition, any related 25 ppb for the sum of C9-C14 2021/1297/EU
+PFCAs (C9-C14), their salts and substance (including their salts and polymers) PFCAs and their salts echa.europa.eu/documents/
+All materials
+related substances with the above defined linear and/or branched 260 ppb for the sum of C9-C14 10162/2ec5dfdd-0e63-0b49-
+perfluoroalkyl structural elements that can PFCA-related substances d756-4dc1bae7ec61
+degrade to C9-C14 PFCA. Including but not
+limited to compounds listed on pages 31, 56,
+and 198-205 in the reference link.
+See Apple Engineering Requirements 25 ppb for the sum of PFHxA and
+See Apple Engineering Requirements
+PFHxA, its salts and related Specification: Poly- and Perfluoroalkyl substances its salts
+All materials Protective and oleophobic coatings Specification: PFAS & PFHxA Definition
+substances (PFAS) and Perfluorohexanoic acid (PFHxA) 1000 ppb for the sum of PFHxA-
+and Reporting, 099-39076
+Definitions and Substance Lists, 099-39076 related substances
+Compounds with the formula C6F13SO3H, their
+salts and any combinations thereof. This includes
+25 ppb for the sum of PFHxS and
+any substance having a perfluoroalkyl group echa.europa.eu/documents/10162/
+PFHxS, its salts and related its salts
+substances
+(linear or branched) C6F13- directly attached to a
+1000 ppb for the sum of PFHxS
+All materials a22da803-0749-81d8-bc6d-
+sulfur atom. Including but not limited to ef551fc24e19
+related substances
+compounds listed on pages 168-192 in the
+reference link.
+P to F P O F A O a A n , d in it c s lu s d a i l n ts g a a n n d y c s o u m bs p ta o n u c n e d s s ( t i h n a c t l u d d e i g ng ra de < 1 µg/m2 coated area T m e a x t t e il r e ia s l s and other coated Norway FOR-2004-06-01-922
+2019/1021/EU
+salts and polymers) having a linear or branched
+PFOA, its salts and PFOA-related oecd.org/officialdocuments/
+compounds
+perfluoroheptyl group with the moiety (C7F15)C as 25 ppb for sum of PFOA and its Surfactant, impregnation agent in textiles
+publicdisplaydocumentpdf/?
+one of the structural elements. Including but not salts
+All other materials doclanguage=en&cote=env/jm/
+limited to compounds on pages 79-81 in the 1000 ppb for individual PFOA-
+mono(2006)15
+reference link. related substances
+C sa o lt m s p a o n u d n a d n s y w c i o th m t b h i e n a fo ti r o m n u s l t a h C er 8 e F o 17 f S . T O h 3 i H s , i n th c e lu ir d es ≤ 1 µg/m2 coated area T m e a x t t e il r e ia s l s and other coated 2019/1021/EU
+www.oecd.org/officialdocuments/
+any substance having a perfluoroalkyl group
+PFOS and its derivatives 10 ppm Preparations Surfactant, impregnation agent in textiles publicdisplaydocumentpdf/?
+(linear or branched) C8F17- directly attached to a
+doclanguage=en&cote=env/jm/
+sulfur atom. Including but not limited to
+compounds on pages 24-44 in reference link. 1000 ppm total content All other materials mono(2006)15
+Phenyl, Isopropylated Phosphate Plasticizer, flame retardant, or anti-wear
+68937-41-7 No intentional use All materials TSCA Section 6(h)
+(3:1) or PIP 3:1 additive in plastics, adhesives, lubricants
+California Proposition 65
+Phthalates Appendix E 1000 ppm total content All materials Plasticizer REACH 1907/2006 and amendments
+2011/65/EU
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 8\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Chemical or Chemical Group Substance Identifier or CAS No. Threshold Limit Scope Examples References
+2011/65/EU
+59536-65-1
+Polybrominated Biphenyls (PBBs) 1000 ppm and Br < 900 ppm All materials Flame retardants GB/T 26572
+Several
+Apple Policy
+2011/65/EU
+Polybrominated Diphenyl Ethers 10 ppm individually and 500 ppm for sum
+Appendix N All materials Flame retardants GB/T 26572
+(PBDEs) of total PBDEs
+Apple Policy
+2019/1021/EU
+1336-36-3 Capacitor, transformer, heat transfer fluids,
+Polychlorinated Biphenyl (PCB) Non-detect (< 0.1 ppm) All materials 85/467/EEC
+Several lubricants
+CRS 001/1983, Brazil
+Lubricant, paint, cable insulation, wood
+preservatives, lubricants, electroplating masking
+compounds, feedstock for dye production, dye
+Polychlorinated Naphthalene (PCN) 70776-03-3 5 ppm All materials carriers, capacitor fluids, flame proofing, Apple Policy
+preservatives, moisture proofing sealant, temporary
+binders for ceramic component manufacturing,
+casting material for alloys
+85/467/EEC
+Capacitor, transformer, heat transfer fluids,
+Polychlorinated Terphenyl (PCT) 61788-33-8 5 ppm All materials REACH 1907/2006
+lubricants
+Apple Policy
+Inks
+Polycyclic Aromatic Hydrocarbons 0.5 ppm individually and 10 ppm for sum of Carbon black, plastics, dyes, combustion EC/1272/2013
+Appendix F Otherwise, external
+(PAHs) total PAHs by-products Apple Policy
+materials only
+No intentional use
+900 ppm Cl for incidentally present Electrical insulator, wire, tape, tubing, cable
+Polyvinyl Chloride (PVC) 9002-86-2 All materials Apple Policy
+enclosure, vibration dampener, films
+No intentional use
+1500 ppm (Cl + Br) for incidentally present
+Detectable levels of ionized radiation in
+parts, components, materials, and products
+above regional background levels. Japanese Laws for the Regulation of
+Radioactive substances Several Restrictions under international regulations All materials Electrical sensor, phosphorescent ink Nuclear Source Material, Nuclear Fuel
+will apply, if appropriate. Any exceedance Material, and Reactors, 1986
+above the background levels must be
+reviewed and preapproved by Apple.
+Check the ECHA website for the individual
+REACH 1907/2006
+REACH Annex XVII restrictions at echa.europa.eu/substances- As applicable All materials REACH, Annex XVII
+and amendments
+restricted-under-reach
+1000 ppm in all materials unless allowed
+REACH 1907/2006
+Check the ECHA website for the updated list per Apple SVHC disclosures. Must also
+REACH Candidate List of SVHCs All materials REACH, Candidate List and amendments
+at http://echa.europa.eu/candidate-list-table report to Apple all uses when > 1000
+Apple Policy
+ppm in materials
+Tetrabromobisphenyl A (TBBA, 900 ppm Br Flame retardant for electrical insulator, wire, tape,
+79-94-7 All materials Apple Policy
+TBBPA) tubing, cable enclosure, vibration dampener
+1500 ppm (Cl + Br)
+Paints, coatings, inks, adhesives, and primers
+Toluene 108-88-3 1000 ppm All materials manufactured by the material manufacturer and in Apple policy
+the finished good
+This document contains proprietary information of Apple Inc.
+Apple Regulated Substances Specification—069-0135-M | March 2023 9\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+4. Reportable Substances and Future Restrictions in Products
+Suppliers are required to report the use of all substances listed in Section 4, regardless of the future restriction timeline, in any homogeneous materials used in Apple products,
+accessories, and packaging as well as in any homogeneous materials applied to or cured onto parts in Apple products, accessories, and packaging. This includes the wet
+formulations of adhesives, inks, coatings, primers, and other wet formulations manufactured by the material manufacturer in addition to the cured materials in the finished good.
+In some cases, reporting is required only if the substances exceed a defined permissible limit. Apple is prioritizing the chemicals it intends to restrict in the future in order to
+work effectively with its supply chain. Suppliers are required to report via FMD Portal and/or the Test Report Mapping (TRM) form for evaluation and approval for use prior to use
+in Apple products. Where indicated, Apple expects future restrictions based on regulation or Apple Policy. Some substances will require immediate phase-out; suppliers must start
+reformulating existing or qualifying new materials that do not intentionally use the substance(s). In some cases, use will be allowed under a specific threshold limit.
+Chemical or Chemical Group Substance Identifier or CAS No. Reporting Threshold Examples Phase-Out & Future References
+Restrictions
+See Apple Engineering
+Begin phase-out immediately.
+See Apple Engineering Requirements Specification: Poly- Lubricants, corrosion resistance Requirements Specification:
+25 ppb for non-polymeric PFAS Restriction by October 2025 for all
+Per- and Polyfluoroalkyl Substances (PFAS) and Perfluoroalkyl substances (PFAS) and Perfluorohexanoic coatings, top coats, water PFAS & PFHxA Definitions and
+50 ppm for polymeric PFAS but EU-approved essential use
+acid (PFHxA) Definitions and Substance Lists, 099-39076 repellency coatings, plastics Substance Lists, 099-39076;
+exemptions.
+Annex XV Restriction Report
+25 ppb for the sum of PFHxA and See Apple Engineering
+See Apple Engineering Requirements Specification: Poly-
+its salts Protective coatings, color filter Requirements Specification:
+Perfluorohexanoic Acid (PFHxA) and Perfluoroalkyl substances (PFAS) and Perfluorohexanoic Restricted (See Section 3)
+1000 ppb for the sum of PFHxA- resist coatings PFAS & PFHxA Definitions and
+acid (PFHxA) Definitions and Substance Lists,099-39076
+related substances Substance List, 099-39076
+Check the ECHA website for the updated list at http:// Begin phase-out immediately. REACH Candidate List of
+REACH Candidate List of SVHCs 1000 ppm at the material level
+echa.europa.eu/candidate-list-table Expect future restrictions SVHCs
+Begin phase-out immediately.
+Bisphenol Chemicals See Appendix L 100 ppm Adhesives, plastics, epoxy resin Apple Policy
+Expect future restrictions
+Begin phase-out immediately.
+Brominated Organic Solvents See Appendix M 100 ppm Apple Policy
+Expect future restrictions
+Formaldehyde released from
+substance exceeds a echa.europa.eu/documents/
+Including but not limited to the compounds in the concentration of 0.124 mg/m3 in Begin phase-out immediately. 10162/13641/
+Formaldehyde-releasing substances
+reference link. the air of a test chamber used Expect future restrictions rest_formaldehyde_axvreport_
+under the conditions prescribed en.pdf/
+in EN 717-1.
+Parts/Components utilizing RoHS http://ec.europa.eu/environment/waste/rohs_eee/ Individual substance thresholds Begin phase-out immediately.
+2011/65/EU
+exemptions index_en.htm as per the RoHS directive Expect future restrictions
+Plasticizer, flame retardant, or
+Phenyl, Isopropylated Phosphate (3:1) or
+68937-41-7 Any intentional use anti-wear additive in plastics, Restricted (See Section 3) TSCA Section 6(h)
+PIP 3:1
+adhesives, lubricants
+Only applicable to leather, textile, echa.europa.eu/de/registry-of-
+Including but not limited to the compounds in the Begin phase-out immediately.
+Skin sensitizing substances Various hide, and fur articles. Natural restriction-intentions/-/dislist/
+reference link. Expect future restrictions
+leather is exempt. details/0b0236e182446136
+See latest revision of 099-22549 Begin phase-out immediately.
+as applicable. Report detectable Expect future restrictions. Includes
+See latest revision of 099-22549 Apple Specification
+Volatile Organic Compounds (VOCs) See latest revision of 099-22549 as applicable levels. Vendors must meet all VOC content and substance
+as applicable 099-22549
+applicable VOC regulations in the restrictions for paints, coatings, inks,
+areas in which they are operating. adhesives, primers, and cleaners
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 10\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Chemical or Chemical Group Substance Identifier or CAS No. Reporting Threshold Examples Phase-Out & Future References
+Restrictions
+Sweden Chemical Tax
+Additive Phosphorous Flame Retardants Examples include substances in Appendix K 1000 ppm Plastics, printed circuit boards Expect future restrictions
+(2016:1067)
+Detectable levels.
+Several
+Treated articles must use Additive in polymers, leather,
+Biocides echa.europa.eu/regulations/biocidal-products-regulation/ Expect future restrictions EU No 528/2012 (BPR)
+biocides that are approved or other coated materials
+understanding-bpr
+under review
+REACH 1907/2006 and
+Cobalt 7440-48-4 Moisture indicator, additive in
+1000 ppm Expect future restrictions amendments
+Cobalt Compounds Several rubber, cobalt alloys
+Apple Policy
+Endocrine Disrupting Chemicals (EDCs) Examples include substances in Appendix J Detectable levels All materials Expect future restrictions Apple Policy
+IEC 62474 Substances std.iec.ch/iec62474 Various, as required by standard All materials Expect future restrictions Apple Policy
+Detectable levels in electronic
+Indium Phosphide 22398-80-7 Electronic components Expect future restrictions Apple Policy
+components
+Melamine 108-78-1 1000 ppm Plastics Expect future restrictions Apple Policy
+France Decree No. 2012-232,
+Silver nanoparticles, carbon
+Environmental Code Article L.
+nanotubes and graphene,
+523-4—
+nano-scale cerium dioxide, nano
+Nanomaterials Several Detectable levels Expect future restrictions Annual declaration of
+titanium dioxide,
+substances in nanoparticle
+nano-scale iron, nanometer-sized
+2011/696/EU
+copper particles
+Paints, coatings, inks, adhesives,
+primers manufactured by the
+N-Ethyl-2-pyrrolidone 2687-91-4 1000 ppm Expect future restrictions Apple Policy
+material supplier and in the
+finished good
+All chemicals listed in the following link: http://oehha.ca.gov/
+Proposition 65 list of chemicals Detectable levels All materials Expect future restrictions California Proposition 65
+prop65/prop65_list/Newlist.html
+Practical quantification limit
+Washington State’s List of Chemicals of All chemicals listed in the following link: http:// (PQL) if added intentionally
+All materials Expect future restrictions Children’s Safe Products Act
+High Concern to Children (CHCC) apps.leg.wa.gov/WAC/default.aspx?cite=173-334-130
+100 ppm if present as a
+contaminant
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 11\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+5. Notifying Apple of Chemical Phase Out and Reformulation from Suppliers
+Suppliers are required to communicate promptly any change in chemical manufacturing processes, manufacturing site, or any other change that will affect any attribute of the material
+either in its chemical composition (intentional or residual) or its lead time. For example, if for environmental or other purposes the supplier wishes to modify the goods or the processes,
+production lines, or site(s) used to manufacture the parts or finished goods, the supplier must provide Apple with the reason (e.g., an internal initiative to a phase out or to reformulate
+any material/part due to a chemical or any other concern), by contacting the supplier’s Apple Global Supply Manager(s) and the Apple Environmental Team at environment@apple.com
+prior to any such modification. Apple will review the submission and decide whether, or to what extent, a modification is permitted. For any such modification, the supplier must, at
+a minimum, provide test reports to meet the requirements of Section 9 and test reports for other substances may also be requested. Subject to the above, suppliers must agree to
+not modify the goods or the processes used to manufacture the goods in any way after qualification without Apple’s prior written consent.
+6. Restrictions in Manufacturing Processes
+Restrictions in Section 6 apply to manufacturing process chemicals used to create components or materials for Apple products and the assembly of Apple products including:
+direct use during production or indirect use for manufacturing equipment, machines, or tools during maintenance. Restrictions do not apply to laboratory, housekeeping,
+wastewater treatment plant, or other non-manufacturing processes. Suppliers must comply with threshold limits for the chemicals listed in this section. Test reports are required to
+demonstrate compliance of non-use. “Non-use” and “no intentional use” are defined in Section 2. Per the Apple Supplier Code of Conduct, suppliers shall identify, evaluate, and
+manage occupational health and safety hazards through a prioritized process of hazard elimination, engineering controls, and/or administrative controls. Suppliers shall provide
+their employees with suitable job-related, appropriately maintained personal protective equipment and instruction on its proper use.
+Chemical or Chemical Group Substance Identifier or CAS No. Threshold & Scope References
+Non-use for cleaning agents, degreasers, and demolder solutions
+Benzene 71-43-2 Apple Policy
+No intentional use for all other manufacturing process chemicals
+All Brominated Organic Solvents. See Non-use for cleaning agents, degreasers, and demolder solutions
+Brominated Organic Solvents Apple Policy
+Appendix M for examples No intentional use for all other manufacturing process chemicals
+All Chlorinated Organic Solvents. See Non-use for cleaning agents, degreasers, and demolder solutions
+Chlorinated Organic Solvents Apple Policy
+Appendix G for examples No intentional use for all other manufacturing process chemicals
+Methanol 67-56-1 No intentional use for cleaning agents, degreasers, and demolder solutions Apple Policy
+Non-use for cleaning agents, degreasers, and demolder solutions
+n-Hexane 110-54-3 Apple Policy
+No intentional use for all other manufacturing process chemicals
+N-Methylpyrrolidone (NMP) 872-50-4 Non-use for cleaning agents, degreasers, demolder solutions Apple Policy
+Montreal Protocol
+Ozone Depleting Chemicals (ODC) Appendix H and Appendix I No intentional use for all manufacturing process chemicals
+EC No. 2037/2000
+Toluene 108-88-3 Non-use for cleaning agents, degreasers, demolder solutions Apple Policy
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 12\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+7. Reportable Substances and Future Restrictions in Manufacturing Processes
+Suppliers are required to report the use of substances listed in Section 7 in any manufacturing process used to create components or materials for Apple products regardless of phase
+out priority. Apple is prioritizing the chemicals it intends to phase out of Apple manufacturing processes in order to work effectively with its supply chain. Suppliers are required to report
+use through the Chemical Safety Disclosure Portal. Apple may require disclosure of the use of manufacturing process chemicals and their chemical composition as deemed necessary.
+Chemical or Chemical Group Substance Identifier or CAS No. Reporting Threshold Scope Phase Out & Future Restrictions References
+Ethylbenzene 100-41-4 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+Formaldehyde 50-00-0 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+Hydrogen Fluoride (HF) 7664-39-3 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+Methanol 67-56-1 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+N-Methylpyrrolidone (NMP) 872-50-4 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+Toluene 108-88-3 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+Xylene 1330-20-7 Detectable levels (Content) All manufacturing processes Expect future restrictions Apple Policy
+TThhiiss ddooccuummeenntt ccoonnttaaiinnss pprroopprriieettaarryy iinnffoorrmmaattiioonn ooff AAppppllee IInncc..
+AAppppllee RReegguullaatteedd SSuubbssttaanncceess SSppeecciiffiiccaattiioonn——006699--00113355--MM || MMaarrcchh 22002233 13\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+8. Supplementary Specifications whether those metals directly or indirectly financed or benefited armed groups that
+are perpetrators of serious human rights abuses in the DRC or an adjoining country.
+All Apple products must comply with the restrictions listed in this Regulated
+Suppliers may only source tin, tantalum, tungsten, gold, or cobalt through smelters
+Substances Specification. In cases when new restrictions are introduced over
+and refiners participating in a verification of their sourcing practices by an
+a transition period, Apple may release supplementary specifications referencing
+independent third-party organization or program recognized by Apple.
+those specific restrictions. Drawings, fabrication notes, and product specifications
+Apple expects each supplier to provide complete and accurate reporting of its due
+will reference the supplementary specification as applicable. The supplementary
+diligence efforts for all tin, tantalum, tungsten, gold, or cobalt used in Apple Component
+specifications are available to qualified suppliers upon request by contacting
+Goods. Apple will audit suppliers’ Conflict Minerals data submissions to ensure
+Apple at environment@apple.com.
+conformity with Apple requirements. If any supplier becomes aware that it has
+sourced tin, tantalum, tungsten, gold, or cobalt that is from the DRC or any adjoining
+8.1 Apple Environmental Quality Specification, 069-8496
+country and that directly or indirectly financed or benefited armed groups, in any
+The Apple Environmental Quality Specification sets forth Apple’s requirements for
+Component Goods incorporated into Apple products, the supplier must immediately
+final assembly facilities, module suppliers, and component suppliers to maintain
+notify Apple in writing at mineralsreporting@apple.com.
+an environmental quality control program to ensure the environmental compliance
+of Apple products. The environmental quality control program for supplier facilities
+8.4 Apple Volatile Organic Compound (VOC) Specification,
+must include a material declaration process, in-process controls, and audits of raw
+099-22549
+materials and finished goods. All final assembly and module suppliers are required
+to adhere to these requirements and provide information to Apple in a timely manner. This specification sets forth Apple’s requirements for compliance with all
+restrictions, regulations, and reporting requirements for VOC (Volatile Organic
+8.2 Apple Regulated Substances Specification for Prolonged Skin Compound)-containing materials applicable to Apple products and packaging, and
+related manufacturing processes. Compliance is applicable to the following
+Contact Materials, 099-3470
+stakeholders: all contract manufacturing partners, suppliers, and vendors, including
+The Apple Regulated Substances Specification for Prolonged Skin Contact Materials
+all component, module, or system-level assembly facilities applying VOC-containing
+applies to materials with direct or indirect prolonged skin contact in both wearable
+materials. Apple expects these stakeholders to ensure that materials under the
+and non-wearable products. Materials with no or incidental skin contact will not
+scope of this specification used by their suppliers also comply with restrictions,
+need to comply with this specification. All materials, regardless of whether they are
+regulations, and reporting requirements defined in this specification.
+in prolonged skin contact, must also comply with the Apple Regulated Substances
+Specification (069-0135).
+8.5 Engineering Requirements Specification: PFAS and PFHxA
+Definitions and Substances Lists, 099-39076
+8.3 Conflict Minerals Restrictions, 069-5202
+This document is the material specification defining chemicals that may be
+All suppliers of materials, parts, sub-components, components, or products
+considered “Poly- or perfluoro alkyls substances” or PFAS and “Perfluorohexanoic
+(Component Goods) that are to be incorporated into an Apple product and
+acid and its related compounds”, the most comprehensive (though non-exhaustive)
+containing tantalum, tungsten, tin, gold, or cobalt must comply with the specification
+list of PFAS and PFHxA chemicals, and information that helps material vendors
+on Conflict Minerals Restrictions, 069-5202. Suppliers may only use tin, tantalum,
+provide information to Apple in order to satisfy Apple RSS reporting requirements for
+tungsten, gold, or cobalt in Component Goods if the supplier demonstrates that it
+PFAS.
+has exercised due diligence in the sourcing of such materials and reports to Apple
+on the source and chain of custody of such metals in accordance with the OECD
+Due Diligence Guidance for Responsible Supply Chains of Minerals from Conflict-
+Affected and High-Risk Areas. This will enable a determination as to whether those
+metals are from the Democratic Republic of the Congo (DRC) or any adjoining
+country and, if so,
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 14\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+9. Demonstrating Compliance
+In addition to requiring test reports for the substances below, Apple may request analytical test reports demonstrating compliance for any of the substances listed in this
+specification, at the supplier’s expense. Besides the prescribed test methods below, other test methods may be acceptable by Apple if preapproved.
+Apple requires test reports from certified labs as proof of compliance for the following substances in homogeneous materials:
+Chemical or Chemical Group Test Results Required for: Test Method
+Arsenic (As) Glass Total acid digestion followed by ICP-MS, ICP-OES, ICP-AES
+Metal alloys that contain copper and beryllia ceramics US EPA 3050B
+For metals and alloys that contain copper and solder, it is acceptable to submit a US EPA 3052
+Beryllium
+Certified Mill Test Report (also known as a Mill Test Certificate) in lieu of a test ICP-AES in addition to ICP-MS
+report as defined later in this section, if it provides full composition information ICP-OES in addition to ICP-MS
+Bis(2-ethylhexyl) phthalate (DEHP)
+Butyl benzyl phthalate (BBP)
+Cadmium (Cd)
+Dibutyl phthalate (DBP) Methods described or referenced in IEC 62321
+All materials.
+Diisobutyl phthalate (DIBP) ISO17075-2 for Hexavalent Chromium (Cr6+) in leather
+Test reports are not required for PBB, PBDE, DEHP, BBP, DBP, and DiBP in metals,
+Hexavalent Chromium (Cr6+) EN 14372 followed by GC-MS for Phthalates
+glass, or ceramic
+Lead (Pb)
+Mercury (Hg)
+Polybrominated biphenyl (PBB)
+Polybrominated diphenyl ether (PBDE)
+Bromine (Br) EN 14582
+Chlorine (Cl) All materials except metals and ceramics US EPA SW-846 5050/9056
+Fluorine (F) ASTM D 7359-14a, DIN 53474:2017-12, or IEC62321-3-2, followed by IC testing
+PFOA Inks, leather, coated textiles, lubricants, coatings (e.g., primers, varnishes, paints, DIN CEN/TS 15968
+PFOS CVDs, photoresist, solder resist; see Definitions section), fluoropolymer materials LC-MS-MS methods that can achieve an MDL of 25 ppb
+Any other substance listed in this specification Any material if requested by Apple As required
+Apple requires test reports from certified labs as proof of non-use for the following manufacturing process chemicals:
+Chemical or Chemical Group Test Results Required for: Test Method
+Solvent extraction, analyzed by GC-MS or HPLC-MS
+Benzene Cleaning agents, degreasers, demolder solutions
+5 ppm Minimum Detection Limit
+EN 14582 for total bromine or US EPA SW-846 5050/9056
+Brominated Organic Solvents Cleaning agents, degreasers, demolder solutions 50 ppm Minimum Detection Limit
+Others preapproved by Apple
+EN 14582 for total chlorine or US EPA SW-846 5050/9056
+Chlorinated Organic Solvents Cleaning agents, degreasers, demolder solutions 50 ppm Minimum Detection Limit
+Others preapproved by Apple
+Solvent extraction, analyzed by GC-MS or HPLC-MS
+n-Hexane Cleaning agents, degreasers, demolder solutions
+5 ppm Minimum Detection Limit
+Solvent extraction, analyzed by GC-MS or HPLC-MS
+N-Methylpyrrolidone (NMP) Cleaning agents, degreasers, demolder solutions
+5 ppm Minimum Detection Limit
+Solvent extraction, analyzed by GC-MS or HPLC-MS
+Toluene Cleaning agents, degreasers, demolder solutions
+5 ppm Minimum Detection Limit
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 15\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+All test reports must meet the following requirements: Apple or Apple’s manufacturing partners may request test reports on a case-by-
+• Test reports must be no more than two years old from the date submitted to Apple case basis, at the supplier’s expense, if there are concerns regarding the validity of
+or Apple’s manufacturing partners. Material test reports are required for each use of the test data or compliance of the parts.
+that material in a new product design. Suppliers are obligated to maintain
+All compliance documentation (e.g., test reports and declarations) must be retained
+appropriate processes and systems to manage test reports so that the valid reports
+by the supplier for a minimum of 10 years as part of the supplier’s record-keeping
+can be submitted to Apple in a timely manner. Materials tested must be
+process. Digital formats are acceptable unless otherwise noted. Suppliers are also
+homogeneous.
+expected to have compliance assurance processes and systems to control and
+Test reports that are not at a homogeneous material level are not acceptable
+maintain compliance. Refer to the Apple Environmental Quality Specification
+(e.g., modules made up of several homogeneous materials tested after grinding
+(069-8496) for additional information on supplier’s internal environmental quality
+the entire subassembly).
+assurance requirements. Questions relating to test requirements may be directed to
+• Apple requires unaltered test reports of homogeneous materials from certified labs Apple Global Supply Managers (GSM), or emailed to Apple at
+as proof of compliance for the substances listed in Section 9. Digital test reports environment@apple.com.
+must be in the form of original, unaltered PDF files containing text and images as
+provided by the certified lab(s). Scanned, photographed, modified, and/or image- For substances that are restricted or regulated and have been replaced with an
+only PDF files are prohibited without Apple’s prior approval, and will be rejected at alternative substance, the supplier is required to ensure the alternative substance is
+Apple’s discretion. an environmentally responsible substitution. Substitutions should be selected based
+on minimizing unintended consequences that might occur in phasing out a
+• A nationally or internationally certified laboratory must issue the test report.
+potentially hazardous substance. Suppliers shall conduct alternative assessments
+Supplier-owned laboratories are acceptable if they are independently certified
+or obtain these assessments from their raw materials suppliers prior to making a
+and evidence of certification is submitted to environment@apple.com for approval.
+replacement. Contact Apple at environment@apple.com for more information on
+One example of international certification is ISO 17025.
+conducting alternative assessments.
+• Test reports based on X-ray Fluorescence Spectroscopy (XRF) are not acceptable
+forms of compliance documentation.
+• Testing must be conducted on the material in the form present in the final Apple
+product, accessory, or retail packaging item (i.e., “dry” or “cured”).
+• When conducting test method (EN14582) for halogens (Br, Cl, F), supplier must
+ensure with test laboratory that the method is validated for different halogens using
+certified reference materials.
+• Test reports submitted to Apple must be issued in English or include English if a
+multilingual report.
+• It is the supplier’s responsibility to provide test reports at the supplier’s expense.
+• Redacted test reports will not be accepted by Apple. They may, however, satisfy
+contract manufacturer requirements. Contact the Apple Environmental Quality Team
+for guidance as required. (Source: Current version of Apple Environmental Quality
+Specification [069-8496] on Section 4.1 General Requirement).
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 16\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+10. Waiver Process 12. Chemical Safety Disclosure (CSD)
+Any instances of materials exceeding the thresholds in this specification must Suppliers must submit the required information in Apple SupplierCare System to
+immediately be reported to Apple. Suppliers that are seeking a temporary waiver of enable Apple to evaluate conformity with the requirements in Section 6 and Section
+restrictions in the Apple Regulated Substances Specification must make the request 7 of this specification. Please contact CSD@group.apple.com for more information.
+to Apple in writing. Apple will review the request and provide its decision via email to
+the requester. Contact Apple at environment@apple.com for more information on
+this process.
+11. Full Material Disclosure (FMD)
+Apple has implemented the Full Material Disclosure (FMD) initiative that requires
+suppliers to provide the entire chemical composition of the parts and materials used
+in Apple products. Implementation of FMD requires suppliers to disclose the
+complete, accurate, and precise identity of the parts and materials used in Apple
+products. Apple’s Full Material Disclosure (FMD) requirements are documented in
+the FMD Data Requirements for Part Suppliers (080-00316) and the FMD Data
+Requirements for Material Suppliers (080-01462) specifications. The use of the
+FMD data collected from suppliers is governed by the Apple FMD Data Use Policy
+(080-00967), which restricts access to and use of the FMD data submitted to
+Apple.
+Apple will audit supplier FMD data submissions to ensure conformity with the
+requirements. Apple will conduct analyses to ensure submissions accurately
+reflect the composition of the parts and materials provided. The analyses will
+include comparison of FMD data to supplier-provided test reports and may include
+comparison to Apple test reports. Please contact FMD_Support@apple.com for
+more information.
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 17\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+13. Revision History
+Revision Date Revision Description
+M March 21, 2023 Section 2: Added definitions for Brominated flame retardant and intentionally added. Section 3: Updated Adhesive monomers Group I to include adhesives in wearable products within the scope. Updated Mercury, Lead,
+Arsenic, Brominated flame retardants, PVC, and Beryllium to indicate “No intentional use” under the threshold limit. Removed Benzenamine, N-phenyl-, reaction products with styrene and 2,4,4-trimethylpentene (BNST).
+Added Brominated flame retardants restriction. Added PFHxA, its salts, and related substances restriction. Added Phenyl, Isopropylated Phosphate (3:1), or PIP 3:1 restriction. Added “1000 ppm in all materials unless
+allowed per Apple SVHC disclosures. Must also report to Apple all use when > 1000 ppm in materials” for REACH SVHC restriction. Added Toluene restriction. Section 4: Updated the threshold section of PFAS section to
+include 50 ppm for polymeric PFAS, 25 ppb for non-polymeric PFAS, and a link to pre-published draft Annex XV report. Added Perfluorohexanoic Acid (PFHxA). Added REACH Candidate List of SVHCs. Added Phenyl,
+Isopropylated Phosphate (3:1), or PIP 3:1. Removed Aminoethyl ethanolamine and Diphenylamines, Substituted (SDPA) (including Appendix H). Regulation references updated for POP, PFOA, and PFCAs. Section 8: Added
+Engineering Requirements Specification: PFAS and PFHxA Definitions and Substances (099-39076)Section 9: Added the following test methods for Beryllium “ICP-AES in addition to ICP-MS and ICP-OES in addition to
+ICP-MS”. Added Fluorine. Added “LC-MS-MS methods that can achieve an MDL of 25 ppb” test method for PFOA and PFOS. Included language for conducting test method EN14582. Section 14: Updated POP regulation
+to 2019/1021/EC. Section 15: Updated substances in Appendix O and P.
+L March 15, 2021 Multiple Sections: Updated Section 3, Section 4, and Section 6 introductions to include a clarified scope. Added a larger list of Brominated Organic Solvents that expands on “n-Propyl bromide” in Section 4, Section 6, and
+Section 9. Section 2: Added definitions for Alloys, Chemical Safety Disclosure (CSD), Coating, Mixture, No intentional use, Paint, ppb, Primer, Process chemical, Textile, Varnish, and Wearable products. Section 3: Added
+restriction for Adhesive monomers Group I & II. Broadened restriction of Antimony to all Antimony compounds. Added restrictions for Benzene, Chlorinated Organic Solvents, and n-Hexane. Updated scope and restriction
+thresholds for Hexavalent Chromium and its compounds. Updated restriction scope of Lead compounds to include “No intentional use” in all other materials besides those exempted by the EU. Lowered restriction threshold for
+Mercury and its compounds. Added Natural rubber, latex restriction. Added restrictions for PFCAs (C9-C14), their salts and related substances, and PFHxS, its salts and related substances. Updated restriction thresholds for
+PFOA and updated restriction group to include “its salts, and PFOA-related compounds.” Updated restriction for PFOS to include “and its derivatives.” Updated list of restricted Polybrominated Diphenyl Ethers (PBDEs).
+Updated restriction threshold for Polycyclic Aromatic Hydrocarbons (PAHs). Section 4: Changed Section 4 column “Phase Out Priority” to “Phase-Out & Future Restrictions,” and clarified what is meant by “phase-out.”
+Changed all “Priority 1” substances to “Begin phase-out immediately. Expect future restrictions.” Changed all “Reportable” substances to “Expect future restrictions.” Added Adhesive monomers Group I, Per- and
+Polyfluoroalkyl Substance (PFAS), PFBS and related substances, PFHxA, its salts, and related substances, and Toluene to Section 4 with explicit timelines for phase-out. Expanded the list of reportable Bisphenol Chemicals.
+Added Formaldehyde-releasing substances. Changed the phase-out and future restriction for Parts/Components utilizing RoHS exemptions from just reportable to “Begin phase-out immediately. Expect future restrictions.”
+Added Skin sensitizing substances. Added reference to the Apple VOC Specification for Volatile Organic Compounds (VOCs). Added Melamine
+and N-Ethyl-2-pyrrolidone to “Expect future restrictions.” Section 6: Increased scope of Benzene, Brominated Organic Solvents, n-Hexane, and Chlorinated Organic Solvents to include “No intentional use for all other
+manufacturing process chemicals.” Added Methanol restriction for “No intentional use for cleaning agents, degreasers, and demolder solutions.” Section 7: Added Ethyl Benzene, Formaldehyde, Hydrogen Fluoride (HF),
+Methanol, and Xylene. Changed instances of “Reportable” to “Expect future restrictions.” Section 8: Added Apple Volatile Organic Compound (VOC) Specification, 099-22549, and Safeguarding Substances Specification,
+080-03584. Updated text for Apple Regulated Substances Specification for Prolonged Skin Contact Materials, 099-3470, and Conflict Minerals Restrictions, 069-5202. Section 9: Updated scope of materials in “Test results
+required for” for Beryllium and PFOS, PFOA. Added “Any other substance listed in this specification” in which test results are required for “Any material if requested by Apple.” Updated test report requirements. Other Sections:
+Updated description of Waiver Process (Section 10), Full Material Disclosure (FMD; Section 11), and Chemical Safety Disclosure (CSD; Section 12). Modified Appendix D. Removed SF6 from Appendix I. Created Appendices M,
+N, O, P, and Q.
+K March 30, 2018 Updated Scope to include supplier requirements. Updated restriction on BPA. Split PFOA and PFOS into separate listings and updated PFOA restriction. Added restriction on REACH Candidate List of SVHCs, HBCDD. Moved
+listing for Radioactive Substances from reportable to restricted. Updated restrictions for Cadmium, Chlorine, Bromine, Hexavalent Chromium, Lead, and Mercury to include “compounds.” Created separate restriction listing for
+Heavy Metals in packaging. Updated scope for restriction on PAHs to External Materials. Updated threshold for reportable listings Benzene, Chlorinated Organic Solvents, and Toluene to reference wet formulation. Changed
+Parts/Components utilizing RoHS exemptions from priority phase-out 3 to 2. Added reportable listings, priority 2 phase-out listings Bisphenol F/Bisphenol S and VOCs. Added reportable listings for EDCs, Additive Phosphorous
+Flame Retardants, IEC 62474 substances, Indium Phosphide, PFAS, and Biocides. Changed the priority phase out for several listings to “Reportable.” Added Section “Notifying Apple of Chemical Phase Out and Reformulation
+from Suppliers.” Added restriction on nPB in manufacturing process. Created new section “Reportable Substances and Future Restrictions in Manufacturing Processes.” Changed Beryllium test results required for Metals and
+Ceramics. Added requirement for test results for DEHP, BBP, DBP, and DIBP. Added test report requirement for PFOA/PFOS for leather, textiles, and coatings. Added manufacturing chemical test report requirements for nPB.
+Removed test reports being valid for the life of the component. Added additional requirements for test reports. Updated Appendices D, E, F, and I with additional substances. Created Appendices K, L, and M.
+J March 21, 2016 Folded the following specifications into 069-0135-J: Apple RoHS Compliance Specification (069-1111), Apple Specification on Restriction of Beryllium (099-3471), and Apple Specification on the Restriction of Bromine and
+Chlorine (069-1857). Added additional asbestos compounds. Updated Azo dyes, Arylamines, and Anilines into Appendix A. Updated formaldehyde content restrictions. Updated restrictions for lead. Additional CAS numbers
+added for Perchlorates. Added Appendix B for Chlorinated Paraffins. Added Appendix C for Organotin compounds, Appendix D for Perfluorinated compounds, Appendix E for Phthalates. Lowered the thresholds for PAHs.
+Lowered the threshold for PCBs. Added reporting requirements for benzene, toluene, and chlorinated solvents, proposition 65 list, Washington State’s List of Chemicals of High Concern, and substances allowed due to RoHS
+exemptions in Section 4. Phase out priorities added to all the items in reportable Section 4. Added Manufacturing Process restrictions for NMP and Toluene in Section 5. Updated content restriction values for Benzene,
+Chlorinated Organic Solvents, n-Hexane, and Toluene in Section 5. Updated Supplementary Specifications. Updated Section 7, Demonstrating Compliance. Added testing requirements for manufacturing process chemicals.
+Added Section 9 relating to Full Material Disclosure (FMD).
+H June 20, 2014 Updated definition of Homogeneous Material, Separated Reportable Substances into new section; updated requirements for azo dyes, beryllium, BPA, cadmium, halogenated biphenyl methanes, Lacey Act, lead, organic tin,
+PFOS, PFOA, phthalates, PVC, REACH SVHCs, TBBPA, benzene, n-Hexane, chlorinated solvents, nPB in ODC, conflict minerals; removed Halogens; addition of Soft Goods Regulated Substances and Beryllium Restriction
+Specifications in Section 6 for Supplementary Specifications; addition of alternative assessment verbiage and testing requirements for cleaning agents and degreasers in Section 7 for Demonstrating Compliance.
+G April 11, 2013 Updated REACH SVHCs, arsenic, asbestos, beryllium requirements, new nickel standard. Added REACH 1907/2006 and amendments, reference to RoHS Recast (RoHS 2), CEPA substances, perchlorate, new phthalates, lead
+in surface coating, PFOA, BPA reporting, benzotriazole, new PAHs, Lacey Act, and EU Timber Regulation, additional ODCs, benzene and n-Hexane restrictions in manufacturing. Removed polystyrene, gallium. Added reference
+to 069-8496 for supplier QA. Updated Conflict Minerals reference. Added PFOA/PFOS testing requirement for ink and paints.
+F January 6, 2010 Added restrictions on DMF, PAH, PFOS, organic tin compounds, formaldehyde in textiles, and certain phthalates. Added notification requirements and restrictions for substances regulated by REACH. Adjusted arsenic limit and
+added test report requirement for arsenic in glass. Added reference to Conflict Minerals Restriction specification.
+E October 9, 2007 Updated format; introduced restrictions on Br, Cl, TBBA, red phosphorus, gallium; updated limits on As, Pb, Cd, Hg, Cr(VI), asbestos, chlorinated paraffins, formaldehyde, diphenyl methanes, nickel, organic Sn, PCB, PCN, PCT,
+PVC, radioactive substances; added Be to watch list; limited scope restrictions on Chlorinated Organic Solvents.
+D October 26, 2004 Updated plastics Pb limit; merged plastics and cables section; added appendix for guidance on Pb restrictions; added appendix with summary table of permissible limits.
+C August 18, 2004 Changed format, new substances added, included permissible limits.
+B February 12, 2003 Initial release
+A December 10, 2002 Initial release
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 18\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+14. Referenced Documents
+069-5202: Conflict Minerals Restriction, Apple Inc.
+069-8496: Apple Environmental Quality Specification, Apple Inc.
+080-00316: Apple FMD Data Requirements for Part Suppliers, Apple Inc.
+080-00967: Apple FMD Data Use Policy, Apple Inc.
+080-01462: Apple FMD Data Requirements for Material Suppliers, Apple Inc.
+099-3470: Apple Regulated Substances Specification; Prolonged Skin Contact Materials
+099-39076: Engineering Requirements Specification: PFAS and PFHxA Definitions and Substances
+94/62/EC: Directive of the European Parliament and of the Council on Packaging
+and Packaging waste, 94/62/EC, December 1994.
+2019/1021/EU: European Parliament and the Council of the European Union recasted a Regulation on persistent organic pollutants (2019/1021/EC) amended the regulation
+(2004/850/EC) in July 2019
+2009/425/EC: Commission Decision 2009/425/EC of 28 May 2009 amending Council Directive 76/769/EEC: As regards restrictions on the marketing and use of organostannic
+compounds for the purpose of adapting its Annex I to technical progress.
+2010/153/EU: Prolonging the validity of Decision 2009/251/EC requiring Member States to ensure that products containing the biocide dimethylfumarate are not
+placed or made available on the market.
+2011/65/EU: The restriction of the use of certain hazardous substances in electrical and electronic equipment (“RoHS Recast”). This directive replaces the directive 2002/95/EC of
+the European Parliament and of the Council of 27 January 2003 on
+the restriction of the use of certain hazardous substances in electrical and electronic equipment.
+2011/696/EU: Commission recommendation of 18 October 2011 on the definition
+of nanomaterial.
+2013/56/EU: 2013/56/EU Directive amended 2006/66/EC Directive of the European Parliament and of the Council of 6 September 2006 on batteries and accumulators and waste
+batteries and accumulators, and repealing Directive 91/157/EEC.
+ACGIH: American Conference of Governmental Industrial Hygienist (ACGIH), Guide to Occupational Exposure Values, 2013.
+This document contains proprietary information of Apple Inc.
+Apple Regulat ed Substances Specification—069-0135-M | March 2023 19\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+AIHA TWA: The AIHA Guideline Foundation Workplace Environmental Exposure Levels® (WEELs®) provide guidance for protecting most workers from adverse health effects related to
+occupational chemical exposures expressed as time-weighted average (TWA).
+Apple Supplier Code of Conduct and Supplier Responsibility Standards: See supplier requirements at www.apple.com/supplier-responsibility.
+ASTM D6499: Standard Test Method for Immunological Measurement of Antigenic Protein in Hevea Natural Rubber (HNR) and its Products.
+ASTM D7359 - 14a: Standard Test Method for Total Fluorine, Chlorine and Sulfur in Aromatic Hydrocarbons and Their Mixtures by Oxidative Pyrohydrolytic Combustion followed
+by Ion Chromatography Detection (Combustion Ion Chromatography-CIC).
+Bedarfsgegenstande Verordnung: German National Law (consumer article regulation).
+CA DTSC: California Department of Toxic Substances Control; Perchlorate Contamination Prevention Act of 2003, AB 826.
+Cal OSHA: California Department of Public Health, Occupational Health Branch,
+PELs, Title 8, section 5155/AC-1.
+California Prop 65: The Safe Drinking Water and Toxic Enforcement Act of 1986, California Health and Safety Code, Division 20, Chapter 6.5, sections 25249.5 through 25249.13.
+Canadian Environmental Protection Act, 1999 (CEPA 1999): Chemicals Management Plan, Section 71.
+ChemVerbotsV: Chemical Prohibition Ordinance, Germany.
+Children’s Safe Products Act (CSPA): Washington State’s Children’s Safe Products Act reporting List of Chemicals of High Concern to Children (CHCC), US.
+China RoHS: Administration methods for use of hazardous substance in electrical
+and electronic products, Ministry of Industry and Information Technology of People’s Republic of China, Order#32, January 21, 2016.
+CLP Regulation (EC) No. 1272/2008: Classification, Labeling and Packaging complements Dangerous Substances Directive (67/548/EEC) and the Dangerous Preparations
+Directive (1999/45/EC) replaced by EU REACH Directive.
+CPSIA, 2008: Consumer Product Safety Improvement Act of 2008–Public Law 110-314; US.
+CRS 001/1983: Executive Directive CRS 001/1983 Regulates Procedures for the Handling, Storage, and Transport of PCB-Contaminated Equipment in Brazil.
+DIN 53474:2017-12: Testing of plastics, rubber and elastomers - Determination of the chlorine content.
+DIN CEN/TS 15968: Determination of extractable perfluorooctane sulfonates (PFOS) in coated and impregnated solid articles, liquids, and fire fighting foams.
+DIN EN ISO 17075: Leather–Chemical Tests–Determination of chromium(VI) content
+EC No. 2037/2000: Regulation (EC) No. 2037/2000 of the European Parliament and of the Council of 29 June 2000 on substances that deplete the ozone layer.
+EC/757/2010: Commission Regulation (EU) No. 757/2010 amending Regulation (EC) No. 850/2004 of the European Parliament and of the Council on persistent organic pollutants
+(perfluorooctane sulfonates) as regards Annexes IV and V.
+ECHA/NA/15/29: SEAC (Committee for Socio Economic Analysis) concludes on Bisphenol A, DecaBDE, and PFOA restrictions and finalizes two opinions for authorization,
+September 2015.
+EN 14372:2004: Child use and care articles. Cutlery and feeding utensils. Safety requirements and tests.
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 20\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+EN 1811:2011+A1:2015: Reference test method for release of nickel from all post assemblies that are articles intended to come into direct and prolonged contact with the skin.
+Replaces BS EN 1811:2011
+EN 14582:2016: Characterization of waste. Halogen and sulfur content. Oxygen combustion in closed systems and determination methods. British Standards Institute, 2016.
+EPA SW-846 5050/9056: Bomb preparation method for solid waste; Method 9056: Determination of inorganic anions by ion chromatography. EPA,1994.
+EU/1272/2013: Commission Regulation (EU) No. 1272/2013 to amend Entry 50 of Annex XVII to REACH Regulation (EC) No. 1907/2006 on the restrictions of polycyclic aromatic
+hydrocarbons (PAH).
+EU 2017/1000: Commission Regulation (EU) 2017/1000 of 13 June 2017 amending Annex XVII to Regulation (EC) No 1907/2006 of the European Parliament and of the Council
+concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH) as regards perfluorooctanoic acid (PFOA), its salts and PFOA-related substances.
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 21\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+EU No. 528/2012 (BPR): Regulation (EU) No 528/2012 of the European Parliament and of the Council of 22 May 2012 concerning the making available on the market
+and use of biocidal products.
+EU Timber Regulation: Regulation laying down the obligations of operators who place timber and timber products on the market: (EU) No. 995/2010.
+France Decree No. 2012-232, Environmental Code Article L. 523-4: Annual declaration of nanoparticles in substances.
+GB 18401: Chinese National General Safety Technical Code for Textile Products:
+GB 18401–2010.
+GB 20400: Limit of Harmful Matters in Leather and Fur, 2006 (Chinese mandatory standard).
+GB/T 26572: Chinese Standards on the Requirements of Concentration Limits for Certain Restricted Substances in Electrical and Electronic Products, 2011.
+GBZ 2.1-2007: Occupational exposure limits for hazardous agents in the workplace
+in China, 1 November 2007.
+IEC 62321: Determination of certain substances in electrotechnical products. IEC, 2008. Updates in 2013 and 2015.
+IEC 62474: Material Declaration for Products of and for the Electrotechnical Industry.
+IEEE 1680.1-2018: IEEE Standard for Environmental and Social Responsibility Assessment of Computers and Displays, IEEE, 2018.
+ISO17075-2:2017: Leather — Chemical determination of chromium(VI) content in leather — Part 2: Chromatographic method, 2017.
+Japan Chemical Substances Control Law (CSCL): Japanese Chemical Substances Control Law (CSCL) and amendments, 2011.
+Japanese Laws: Japanese Laws for the Regulation of Nuclear Source Material, Nuclear Fuel Material, and Reactors, 1986.
+Lacey Act (16 U.S.C. §§ 3371–3378): Amended in the Food, Conservation, and Energy Act of 2008 (Pub. L. 110-234, H.R. 2419, 122 Stat. 923, enacted May 22, 2008),
+expanded its protection to a broader range of plants and plant products (Section 8204. Prevention of Illegal Logging Practices).
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 22\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Montreal Protocol: Montreal Protocol on Substances that Deplete the Ozone Layer, September 1987.
+NIOSH: National Institute for Occupational Safety and Health (NIOSH) Pocket Guide
+to Chemical Hazards, Center for Disease Control and Prevention (CDC), 2014.
+Norway FOR-2004-06-01-922: Regulations relating to restrictions on the use of health-hazardous chemicals and other products (Product Regulations).
+REACH: Regulation (EC) No. 1907/2006 of the European Parliament and of the Council of 18 December 2006 concerning the Registration, Evaluation, Authorisation and Restriction
+of Chemicals (REACH).
+REACH 1907/2006 and amendments: Annex XVII of Regulation (EC) No. 1907/2006 of the European Parliament and of the Council of 18 December 2006 concerning the
+Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH). This Annex replaces the following directives:
+• 76/769/EEC (Azocolorants, Arsenic)
+• 85/467/EEC (PCB/PCT)
+• 91/659/EEC (Asbestos)
+• 94/27/EC (Nickel)
+• 2002/45/EEC (Short-Chained Chlorinated Paraffins)
+• 2002/61/EC (Azocolorants)
+• 2003/3/EC (Blue Azocolorants)
+• 2009/425/EC (Organotin Compounds)
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 23\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+REACH, Article 59 (10): Candidate List of substances of very high concern for Authorisation under REACH regulation.
+Sweden Chemical Tax (2016:1067): Tax enacted on July 1, 2017, levied on chemicals in certain electronics.
+SZJG 54-2017: Technical Specification for Low Volatile Organic Compound Content Paint.
+Taiwan BSMI RoHS: CNS 15663 is the technique standards of Taiwan BSMI RoHS.
+UL 110: UL Standard 110, Edition 2, UL 110 Standard for Sustainability for Mobile Phones, UL, 2017.
+US EPA 3050B: EPA method describing acid digestion of sediments, sludges,
+and soils.
+US EPA 3052: EPA method describing microwave assisted acid digestion of siliceous and organically based matrices.
+US EPA 5021A: Method to determine volatile organic compounds in soils and other solid matrices using equilibrium headspace analysis.
+US EPA, SNUR 2070-AJ73: EPA’s significant new use rule for short-chain chlorinated paraffins, under TSCA Section 5(a)(2), December 2014.
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 24\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+15. Appendices
+Appendix A: Azo Dyes, Arylamines, and Anilines Appendix B: Chlorinated Paraffins (SCCP and MCCP)
+Azo Dyes, Arylamines, and Anilines [24 items] CAS No. Chlorinated Paraffins (SCCP and MCCP) CAS No.
+4-Aminoazobenzene 60-09-3 Short-Chain Chlorinated Paraffins (SCCPs) CxH2x+2-yCly where x=10-13 and Examples
+y=1-13 [4+ items]
+o-Aminoazotoluene 97-56-3
+Alkanes, C10-13, chloro 85535-84-8
+2-Amino-4-nitrotoluene 99-55-8
+Alkanes, C10-21, chloro 84082-38-2
+o-Anisidine 90-04-0
+Alkanes, C12-13, chloro 71011-12-6
+Benzidine 92-87-5
+Alkanes, C12-14, chloro 85536-22-7
+2,2'-dichloro-4,4'-methylenedianiline (MOCA) 101-14-4
+Medium-Chain Chlorinated Paraffins (MCCPs) CxH2x+2-yCly, where x=14-17 and Example
+4-Biphenylamine 92-67-1 y=1-17 [1 item]
+4-Chloroaniline 106-47-8 Alkanes, C14-17, chloro 85535-85-9
+4-Chloro-2-toluidine 95-69-2
+p-Cresidine 120-71-8 Appendix C: Organotin Compounds
+2,4-Diaminoanisole 615-05-4
+Organotin Compounds [9 items] CAS No.
+4,4’-Diaminodiphenylmethane 101-77-9
+Dibutyltin (DBT) Compounds Multiple
+2,4-Diaminotoluene 95-80-7
+Dioctyltin (DOT) Compounds Multiple
+3,3’-Dichlorobenzidine 91-94-1
+Monobutyltin (MBT) Compounds Multiple
+3,3’-Dimethoxybenzidine 119-90-4
+Monoctyltin (MOT) Compounds Multiple
+3,3’-Dimethylbenzidine 119-93-7
+Tetrabutyltin (TeBT) Multiple
+3,3’-Dimethyl-4,4’-diaminodiphenylmethane 838-88-0
+Tetraoctyltin (TeOT) Multiple
+2-Naphthylamine 91-59-8
+Tributyltin (TBT) Compounds Multiple
+4,4’-Oxydianiline 101-80-4
+Tricyclohexyltin (TCyT) Compounds Multiple
+4,4’-Thiodianiline 139-65-1
+Triphenyltin (TPhT) Compounds Multiple
+o-Toluidine 95-53-4
+2,4,5-Trimethylaniline 137-17-7
+2,4-Xylidine 95-68-1
+2,6-Xylidine 87-62-7
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 25\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix D: PFAS Compounds
+PFAS Compounds [7 items] Chemical Group Definition and CAS No.[s]
+PFAS compounds
+Compounds containing at least one perfluoroalkyl moiety, –CnF2n–. Including but not limited to compounds on pages 45-78 in: www.oecd.org/officialdocuments/
+publicdisplaydocumentpdf/?doclanguage=en&cote=env/jm/mono(2006)15
+PFOA and its salts and compounds that degrade to PFOA, including any substances (including salts and polymers) having a linear or branched perfluoroheptyl
+Perfluorooctanoic Acid (PFOA), its salts and PFOA-related compounds group with the moiety (C7F15)C as one of the structural elements. Including but not limited to compounds on pages 79-81 in: www.oecd.org/
+officialdocuments/publicdisplaydocumentpdf/?doclanguage=en&cote=env/jm/mono(2006)15
+Compounds with the formula C8F17SO3H, their salts and any combinations thereof. This includes any substance having a perfluoroalkyl group (linear or branched)
+Perfluorooctane Sulfonate (PFOS) and its derivatives C8F17- directly attached to a sulfur atom. Including but not limited to compounds on pages 24-44 in: http://www.oecd.org/officialdocuments/
+publicdisplaydocumentpdf/?doclanguage=en&cote=env/jm/mono(2006)15
+Compounds with the formula C4F9SO3H, their salts and any combinations thereof. This includes any substance having a perfluoroalkyl group (linear or branched)
+Perfluorobutane Sulfonate (PFBS), its salts and related substances C4F9- directly attached to a sulfur atom. Including but not limited to the list of compounds on pages 14, 15, 24, and 25 in: www.miljodirektoratet.no/globalassets/
+publikasjoner/M759/M759.pdf
+Compounds that are perfluoroalkyl carboxylic acids (branched and/or linear) with the formula: CF3-(CF2)n-, n=8-13 as a structural element, including their salts. In
+addition, any related substance (including its salts and polymers) with the above defined linear and/or branched perfluoroalkyl structural elements that can degrade to
+Perfluorocarboxylic Acids (PFCAs; C9-C14), their salts and related substances
+C9-C14 PFCA. Including but not limited to compounds listed on pages 31, 56, and 198-205 in: echa.europa.eu/documents/10162/2ec5dfdd-0e63-0b49-
+d756-4dc1bae7ec61
+Perfluorohexanoic Acid (PFHxA), its salts and related substances
+Compounds (including salts and polymers) having a linear or branched perfluoropentyl group with the formula C5F11- directly attached to another carbon atom.
+Including but not limited to compounds listed in: echa.europa.eu/documents/10162/7da473c1-7f27-df34-9e6a-46152ef10d4b
+Compounds with the formula C6F13SO3H, their salts and any combinations thereof. This includes any substance having a perfluoroalkyl group (linear or branched)
+Perfluorohexane Sulfonate (PFHxS), its salts and related substances C6F13- directly attached to a sulfur atom. Including but not limited to compounds listed on pages 168-192 in: echa.europa.eu/documents/10162/
+a22da803-0749-81d8-bc6d-ef551fc24e19
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 26\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix E: Phthalates Appendix F: Polycyclic Aromatic Hydrocarbons (PAHs)
+Phthalates [21 items] CAS No. Polycyclic Aromatic Hydrocarbons (PAHs) [27 items] CAS No.
+1,2-Benzenedicarboxylic acid, di-C6-8-branched alkyl esters, C7-rich (DIHP) 71888-89-6 Acenaphthene 83-32-9
+1,2-Benzenedicarboxylic acid, di-C6-10-alkyl esters; 1,2-Benzenedicar- boxylic 68515-51-5 Acenaphthylene 208-96-8
+acid, mixed decyl and hexyl and octyl diesters with ≥ 0.3% of dihexyl phthalate 68648-93-1
+Anthracene 120-12-7
+1,2-Benzenedicarboxylic acid, di-C7-11-branched and linear alkyl esters (DHNUP) 68515-42-4
+Benzo(a)anthracene 56-55-3; 1718-53-2
+1,2-Benzenedicarboxylic acid, dipentylester, branched and linear (DPP) 84777-06-0
+Benzo(a)phenanthrene (chrysene) 218-01-9
+Bis-(2-methoxyethyl) phthalate (DMEP) 117-82-8
+Benzo(a)pyrene 50-32-8
+Butylbenzyl phthalate (BBP) 85-68-7
+Benzo(b)fluoranthene 205-99-2
+Dibutyl phthalate (DBP) 84-74-2
+Benzo(e)pyrene 192-97-2
+Diethyl phthalate (DEP) 84-66-2
+Benzo(g,h,i)perylene 191-24-2
+Diethylhexyl phthalate (DEHP) 117-81-7
+Benzo(j)fluoranthene 205-82-3
+Diisobutyl phthalate (DIBP) 84-69-5
+Benzo(k)fluoranthene 207-08-9
+26761-40-0
+Di-isodecyl phthalate (DIDP)
+68515-49-1 Benzo(j,k)fluorene (Fluoranthene) 206-44-0; 93951-69-0
+Diisononyl phthalate (DINP) 28553-12-0 Benzo(r,s,t)pentaphene 189-55-9
+68515-48-0
+Dibenz(a,h)acridine 226-36-8
+Di-iso-pentyl phthalate (DIPP) 605-50-5
+Dibenz(a,j)acridine 224-42-0
+Dimethyl phthalate (DMP) 131-11-3
+Dibenzo(a,h)anthracene 53-70-3
+Di-n-hexyl phthalate (DnHP) 84-75-3
+Dibenzo(a,e)fluoranthene 5385-75-1
+Di-n-Octyl phthalate (DNOP) 117-84-0
+Dibenzo(a,e)pyrene 192-65-4
+Di-n-pentyl phthalate (DnPP) 131-18-0
+Dibenzo(a,h)pyrene 189-64-0
+n-Pentyl-isopentyl phthalate (nPIPP) 776297-69-9
+Dibenzo(a,l)pyrene 191-30-0
+Diundecyl phthalate (DuDP) 3648-20-2
+7H-Dibenzo(c,g)carbazole 194-59-2
+Dicyclohexyl phthalate (DCHP) 84-61-7
+Fluorene 86-73-7
+Diisohexyl phthalate (DiHP) 68515-50-4
+Indeno(1,2,3-cd)pyrene 193-39-5
+5-Methylchrysene 3697-24-3
+Naphthalene 91-20-3
+Phenanthrene 85-01-8
+Pyrene 129-00-0; 1718-52-1
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 27\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix G: Chlorinated Organic Solvents
+Chlorinated Organic Solvents CAS No.
+Chlorinated Methanes [6 items]
+Bromodichloromethane 75-27-4
+Carbon tetrachloride 56-23-5
+Chloroform 67-66-3
+Dibromochloromethane 124-48-1
+Methylene chloride 75-09-2
+Methyl chloride 74-87-3
+Chlorinated Ethanes [9 items]
+Chloroethane 75-00-3
+1,1-Dichloroethane 75-34-3
+1,2-Dichloroethane 107-06-2
+Hexachloroethane 67-72-1
+Pentachloroethane 76-01-7
+1,1,1,2-Tetrachloroethane 630-20-6
+1,1,2,2-Tetrachloroethane 79-34-5
+1,1,1-Trichloroethane 71-55-6
+1,1,2-Trichloroethane 79-00-5
+Chlorinated Ethylenes [5 items]
+1,1-Dichloroethylene 75-35-4
+cis-1,2-Dichloroethylene 156-59-2
+trans-1,2-Dichloroethylene 156-60-5
+Tetrachloroethylene 127-18-4
+Trichloroethylene 79-01-6
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 28\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix H: Ozone Depleting Chemicals
+Ozone Depleting Chemicals [62 items] CAS No. Ozone Depleting Chemicals CAS No.
+1,1,1-Trichloroethane (methyl chloroform) 71-55-6 Dibromopentafluoropropane 431-78-7
+and its isomers except 1,1,2-trichloroethane
+Dibromotetrafluoroethane (Halon 2402) 124-73-2
+1,1,2-Trichloro-1,2,2 trifluoroethane (CFC-113) 76-13-1
+Dibromotetrafluoropropane –
+1,1,1-Trichloro-2,2,2 trifluoroethane (CFC-113a) 354-58-5
+Dibromotrifluoroethane 354-04-1
+1,1,2,2-Tetrachloro-1,2-difluoroethane (CFC-112) 76-12-0
+1,1,1,2-Tetrachloro-2,2-difluoroethane (CFC-112a) 76-11-9 Dibromotrifluoropropane 431-21-0
+1,2,2-Trichloropentafluoropropane (CFC-215aa) 1599-41-3 Dichlorodifluoromethane (CFC-12) 75-71-8
+1,2,3-Trichloropentafluoropropane (CFC-215ba) 76-17-5 Dichlorohexafluoropropane (CFC-216) 661-97-2
+1,1,2-Trichloropentafluoropropane (CFC-215bb) –
+1,1,3-Trichloropentafluoropropane (CFC-215ca) – Dichlorotetrafluoroethane (CFC-114) 76-14-2
+1,1,1-Trichloropentafluoropropane (CFC-215cb) 4259-43-2
+Heptachlorofluoropropane (CFC-211) 135401-87-5
+Bromochlorodifluoromethane (Halon 1211) 353-59-3 1,1,1,2,2,3,3-Heptachloro-3-fluoropropane (CFC-211aa) 422-78-6
+1,1,1,2,3,3,3-Heptachloro-2-fluoropropane (CFC-211ba) 422-81-1
+Bromochloromethane 74-97-5
+Hexabromofluoropropane –
+Bromodifluoroethane 420-47-3, 357188-74-0
+Hexachlorodifluoropropane (CFC-212) 3182-26-1
+Bromodifluoromethane 1511-62-2
+Monochloroheptafluoropropane (CFC-217) 422-86-6, 76-18-6
+Bromodifluoropropane –
+Monochloropentafluoroethane (CFC-115) 76-15-3
+Bromoethane (ethyl bromide) 74-96-4
+Pentabromodifluoropropane –
+Bromofluoroethane 762-49-2
+Pentabromofluoropropane –
+Bromofluoromethane 373-52-4
+Pentachlorofluoroethane (CFC-111) 354-56-3
+Bromofluoropropane 1871-72-3
+Pentachlorotrifluoropropane (CFC-213) 2354-06-5; 134237-31-3
+Bromohexafluoropropane 2252-78-0
+Tetrabromodifluoropropane –
+Bromomethane (methyl bromide) 74-83-9
+Tetrabromofluoroethane 306-80-9
+Bromopentafluoropropane 460-88-8
+Tetrabromofluoropropane –
+Bromotetrafluoroethane 124-72-1
+Tetrabromotrifluoropropane –
+Bromotetrafluoropropane 679-84-5
+Tetrachloromethane (carbon tetrachloride) 56-23-5
+Bromotrifluoroethane 421-06-7
+Tetrachlorotetrafluoropropane (CFC-214) 29255-31-0
+Bromotrifluoromethane (Halon 1301) 75-63-8 1,2,2,3-Tetrachloro-1,1,3,3-tetrafluoropropane (CFC-214aa) 2268-46-4
+Bromotrifluoropropane 421-46-5 1,1,1,3-Tetrachloro-2,2,3,3-tetrafluoropropane (CFC-214cb) –
+Chloromethane (methyl chloride) 74-87-3 Tribromodifluoroethane –
+Chlorotrifluoromethane (CFC-13) 75-72-9 Tribromodifluoropropane 70192-80-2
+Dibromodifluoroethane 75-82-1 Tribromofluoroethane –
+Dibromodifluoromethane (Halon 1202) 75-61-6 Tribromofluoropropane 75372-14-4
+Dibromodifluoropropane 460-25-3 Tribromotetrafluoropropane –
+Dibromofluoroethane 358-97-4 Tribromotrifluoropropane –
+Dibromofluoromethane 1868-53-7 Trichlorofluoromethane (CFC-11) 75-69-4
+Dibromofluoropropane 51584-26-0 Trifluoroiodomethane (trifluoromethyl iodide) 2314-97-8
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 29\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix I: Ozone Depleting Chemicals—Hydrochlorofluorocarbons
+Hydrochlorofluorocarbons [34 items] CAS No. Hydrochlorofluorocarbons CAS No.
+1,1,2,2-Tetrachloro-1-fluoroethane (HCFC-121) 354-11-0 Chlorofluoroethane (HCFC-151) 110587-14-9
+1,1,1,2-Tetrachloro-2-fluoroethane (HCFC-121a) 354-14-3 1-Chloro-2-fluoroethane (HCFC-151) 762-50-5
+1-Chloro-1-fluoroethane (HCFC-151a) 1615-75-4
+Chlorodifluoroethane (HCFC-142) 25497-29-4
+2-Chloro-1,1-difluoroethane (HCFC-142) 338-65-8 Chlorohexafluoropropane (HCFC-226) 134308-72-8
+1-Chloro-1,1-difluoroethane (HCFC-142b) 75-68-3 2-Chloro-1,1,1,3,3,3-hexafluoro-propane (HCFC-226da) 431-87-8
+1-Chloro-1,2-difluoroethane (HCFC-142a) 338-64-7
+Chloropentafluoropropane (HCFC-235) 134237-41-5
+Chlorodifluoromethane (HCFC-22) 75-45-6 1-Chloro-1,1,3,3,3-pentafluoropropane (HCFC-235fa) 460-92-4
+Chlorofluoromethane (HCFC-31) 593-70-4 Dichloropentafluoropropane (HCFC-225) 127564-92-5
+2,2-Dichloro-1,1,1,3,3-pentafluoropropane (HCFC-225aa) 128903-21-9
+Chlorotetrafluoroethane (HCFC-124) 63938-10-3 2,3-Dichloro-1,1,1,2,3-pentafluoropropane (HCFC-225ba) 422-48-0
+2-chloro-1,1,1,2-tetrafluoroethane 2837-89-0 1,2-Dichloro-1,1,2,3,3-pentafluoropropane (HCFC-225bb) 422-44-6
+1-chloro-1,1,2,2-tetrafluoroethane (HCFC-124a) 354-25-6 3,3-Dichloro-1,1,1,2,2-pentafluoropropane (HCFC-225ca) 422-56-0
+1,3-Dichloro-1,1,2,2,3-pentafluoropropane (HCFC-225cb) 507-55-1
+Chlorotrifluoroethane (HCFC-133) 431-07-2
+1,1-Dichloro-1,2,2,3,3-pentafluoropropane (HCFC-225cc) 13474-88-9
+1-Chloro-1,2,2-trifluoroethane (HCFC-133) 1330-45-6
+1,2-Dichloro-1,1,3,3,3-pentafluoropropane (HCFC-225da) 431-86-7
+2-Chloro-1,1,1-trifluoroethane (HCFC-133a) 75-88-7
+1,3-Dichloro-1,1,2,3,3-pentafluoropropane (HCFC-225ea) 136013-79-1
+1-Chloro-1,1,2-trifluoroethane (HCFC-133b) 421-04-5
+1,1-Dichloro-1,2,3,3,3-pentafluoropropane (HCFC-225eb) 111512-56-2
+Dichlorodifluoroethane (HCFC-132) 25915-78-0
+Dichlorotetrafluoropropane (HCFC-234) 127564-83-4
+1,2-Dichloro-1,2-difluoroethane (HCFC-132) 431-06-1
+1,2-Dichloro-1,2,3,3-tetrafluoropropane (HCFC-234db) 425-94-5
+1,1-Dichloro-2,2-difluoroethane (HCFC-132a) 471-43-2
+1,2-Dichloro-1,1-difluoroethane (HCFC-132b) 1649-08-7 Hexachlorofluoropropane (HCFC-221) 134237-35-7, 29470-94-8
+1,1-Dichloro-1,2-difluoroethane (HCFC-132c) 1842-05-3 1,1,1,2,2,3-Hexachloro-3-fluoropropane (HCFC-221ab) 422-26-4
+Dichlorofluoroethane (HCFC-141) 25167-88-8 Pentachlorodifluoropropane (HCFC-222) 134237-36-8
+1,2-Dichloro-1-fluoroethane (HCFC-141) 430-57-9 1,1,1,3,3-pentachloro-2,2-difluoropropane (HCFC-222ca) 422-49-1
+1,1-Dichloro-2-fluoroethane (HCFC-141a) 430-53-5 1,2,2,3,3-pentachloro-1,1-difluoropropane (HCFC-222aa) 422-30-0
+1,1-Dichloro-1-fluoroethane (HCFC-141b) 1717-00-6
+Pentachlorofluoropropane (HCFC-231) 134190-48-0
+Dichlorofluoromethane (HCFC-21) 75-43-4 1,1,1,2,3-pentachloro-2-fluoro-propane (HCFC-231bb) 421-94-3
+Dichlorotrifluoroethane (HCFC-123) 34077-87-7 Tetrachlorodifluoropropane (HCFC-232) 134237-39-1
+Dichloro-1,1,2-trifluoroethane 90454-18-5 1,1,1,3-Tetrachloro-3,3-difluoropropane (HCFC-232fc) 460-89-9
+2,2-dichloro-1,1,1-trifluroethane 306-83-2
+1,2-dichloro-1,1,2-trifluroethane (HCFC-123a) 354-23-4 Tetrachlorofluoropropane (HCFC-241) 134190-49-1
+1,1-dichloro-1,2,2-trifluroethane (HCFC-123b) 812-04-4 1,1,2,3-Tetrachloro-1-fluoropropane (HCFC-241db) 666-27-3
+Trichlorodifluoroethane (HCFC-122) 41834-16-6 Tetrachlorotrifluoropropane (HCFC-223) 134237-37-9
+1,2,2-Trichloro-1,1-difluoroethane (HCFC-122) 354-21-2 1,1,3,3-Tetrachloro-1,2,2-trifluoropropane (HCFC-223ca) 422-52-6
+1,1,2-Trichloro-1,2-difluoroethane (HCFC-122a) 354-15-4 1,1,1,3-Tetrachloro-2,2,3-trifluoropropane (HCFC-223cb) 422-50-4
+1,1,1-Trichloro-2,2-difluoroethane (HCFC-122b) 354-12-1
+Trichlorotetrafluoropropane (HCFC-224) 134237-38-0
+Trichlorofluoroethane (HCFC-131) 27154-33-2 1,3,3-Trichloro-1,1,2,2-tetrafluoropropane (HCFC-224ca) 422-54-8
+1-Fluoro-1,2,2-trichloroethan 359-28-4 1,1,3-Trichloro-1,2,2,3-tetrafluoropropane (HCFC-224cb) 422-53-7
+1,1,2-Trichloro-1-fluoroethane (HCFC-131a) 811-95-0 1,1,1-Trichloro-2,2,3,3-tetrafluoropropane (HCFC-224cc) 422-51-5
+1,1,1-trichloro-2-fluoroethane (HCFC-131b) 2366-36-1
+134237-40-4
+Trichlorotrifluoropropane (HCFC-233)
+7125-84-0
+1,1,1-Trichloro-3,3,3-trifluoropropane (HCFC-233fb)
+7125-83-9
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 30\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix I: Ozone Depleting Chemicals—Hydrochlorofluorocarbons Appendix J: Endocrine Disruptors
+continued
+Hydrochlorofluorocarbons CAS No. Endocrine Disruptors [11 items] CAS No.
+Chlorodifluoropropane (HCFC-262) 134190-53-7 3-Benzylidene camphor 3-BC 15087-24-8
+1-Chloro-2,2-difluoropropane (HCFC-262ca) 420-99-5
+2-Chloro-1,3-difluoropropane (HCFC-262da) 102738-79-4 4-nitrophenol 100-02-7
+1-Chloro-1,1-difluoropropane (HCFC-262fc) 421-02-3
+4,4 ́-Dihydroxybenzophenone 611-99-4
+Chlorofluoropropane (HCFC-271) 134190-54-8
+2-Chloro-2-fluoropropane (HCFC-271ba) 420-44-0 Butylated hydroxytoluene 128-37-0
+1-Chloro-1-fluoropropane (HCFC-271fb) 430-55-7
+Metam natrium 137-42-8
+Chlorotetrafluoropropane (HCFC-244) 134190-50-4
+3-Chloro-1,1,2,2-tetrafluoropropane (HCFC-244ca) 679-85-6 Resorcinol 108-46-3
+1-Chloro-1,1,2,2-tetrafluoropropane (HCFC-244cc) 421-75-0
+Tert-butylhydroxyanisole (BHA) 25013-16-5
+Chlorotrifluoropropane (HCFC-253) 134237-44-8
+3-chloro-1,1,1-trifluoropropane (HCFC-253fb) 460-35-5 Thiram 137-26-8
+Dichlorodifluoropropane (HCFC-252) 134190-52-6 Triphenyl phosphate (TPHP) 115-86-6
+1,3-Dicloro-1,1-difluoropropane (HCFC-252fb) 819-00-1
+Zineb 12122-67-7
+Dichlorofluoropropane (HCFC-261) 134237-45-9
+1,1-Dichloro-1-fluoropropane (HCFC-261fc) 7799-56-6 Ziram 137-30-4
+1,2-Dichloro-2-fluoro-propane (HCFC-261ba) 420-97-3
+Dichlorotrifluoropropane (HCFC-243) 134237-43-7
+1,1-dichloro-1,2,2-trifluoropropane 7125-99-7 Appendix K: Additive Phosphorous Flame Retardants
+2,3-dichloro-1,1,1-trifluoropropane 338-75-0
+3,3-dichloro-1,1,1-trifluoropropane 460-69-5
+Additive Phosphorus Flame Retardants [27 items] CAS No.
+Trichlorodifluoropropane (HCFC-242) 134237-42-6
+1,3,3,Trichloro-1,1-difluoropropane (HCFC-242fa) 460-63-9 2-Ethylhexyl diphenyl phosphate 1241-94-7
+Trichlorofluoropropane (HCFC-251) 134190-51-5 Aluminum diethylphosphinate 225789-38-8
+1,1,3-Trichloro-1-fluoropropane (HCFC-251fb) 818-99-5
+1,1,2-Trichloro-1-fluoropropane (HCFC-251dc) 421-41-0 Cetyl diphenyl phosphate 56827-92-0
+Diethyl ethanephosphonate 78-38-6
+Diethyl N,N’-bis(2-hydroxyethyl)aminomethylphosphonate 2781-11-5
+Diphenyl cresyl phosphate 26444-49-5
+Diphenyl octyl phosphate 115-88-8
+Dodecyl diphenyl phosphate 27460-02-2
+Isopropylated triphenyl phosphate 26967-76-0, 72668-27-0
+Resorcinol bis(diphenyl phosphate) 57583-54-7
+Tri-n-butyl phosphate 126-73-8
+Tricresyl phosphate 1330-78-5
+Triphenyl phosphate 115-86-6
+Trixylyl phosphate 25155-23-1
+Zinc diethylphosphinate 284685-45-6
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 31\n\nScope | Definitions | Restricted Substances in Products | Reportable Substances and Future Restrictions in Products | Notifying Apple of Chemical Phase Out and Reformulation from Suppliers | Restrictions in Manufacturing Processes | Reportable Substances and
+Future Restrictions in Manufacturing Processes | Supplementary Specifications | Demonstrating Compliance | Waiver Process | Full Material Disclosure (FMD) | Chemical Safety Disclosure (CSD) | Revision History | Referenced Documents | Appendices
+Appendix K: Additive Phosphorous Flame Retardants continued Appendix L: Bisphenol Chemicals
+Additive Phosphorus Flame Retardants CAS No. Bisphenol Chemicals [20 items] CAS No.
+Isodecyl diphenyl phosphate 29761-21-5 2,2-bis(2-hydroxy-5-biphenylyl)propane [BPBP] 24038-68-4
+Melamine phosphate 41583-09-9 4,4'-(1- methylpropylidene)bisphenol [BPB] 77-40-7
+Piperazine pyrophosphate 66034-17-1 4,4'-(1-Phenylethylidene)bisphenol [BPAP] 1571-75-1
+Red phosphorous 7723-14-0 4,4'-(1,3-phenylene-bis(1-methylethylidene))bisphenol [BPM] 13595-25-0
+Tetrakis(hydroxymethyl)phosphonium sulphate 55566-30-8 4,4'-(1,4-Phenylenediisopropylidene)bisphenol [BPP] 2167-51-3
+Tri-m-cresyl phosphate 563-04-2 4,4'-(dichlorovinylidene)diphenol [BPC12] 14868-03-2
+Tri-o-cresyl phosphate 78-30-8 4,4'-[2,2,2-trifluoro-1-(trifluoromethyl)ethylidene]diphenol [BPAF] 1478-61-1
+Tri-p-cresyl phosphate 78-32-0 4,4'-cyclohexylidenebisphenol [BPZ] 843-55-0
+Triethyl phosphate 78-40-0 4,4'-ihydroxytetraphenylmethane [BPPH] 1844-01-5
+Tris(2-butoxyethyl) phosphate 78-51-3 4,4'-isopropylidenedi-o-cresol [BPC] 79-97-0
+Tris(2-ethylhexyl) phosphate 78-42-2 4,4'-isopropylidenediphenol [BPA] 80-05-7
+Tris(4-tert-butylphenyl) phosphate 78-33-1 4,4'-methylenediphenol [BPF] 620-92-8
+4,4'-sulphonyldiphenol [BPS] 80-09-1
+Appendix M: Brominated Organic Solvents 4,4′-Ethylidenebisphenol [BPE] 2081-08-5
+9,9-Bis(4-hydroxyphenyl)fluorene [BPFL] 3236-71-3
+Brominated Organic Solvents [7 items] CAS No.
+Biphenyl-4,4'-diol [BP4,4’] 92-88-6
+1-Bromobutane 109-65-9
+Bis(2-hydroxyphenyl)methane [BIS2] 2467-02-9
+1-Bromopropane 106-94-5
+p,p’-oxybisphenol [DHDPE] 1965-09-9
+2-Bromopropane 75-26-3
+Bromodichloromethane 75-27-4
+Bromoethane 74-96-4
+Bromomethane 74-83-9
+Dibromochloromethane 124-48-1
+© 2023 Apple Inc. All rights reserved. Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. Other product and company names mentioned herein may be trademarks of their respective companies. No part of
+this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, mechanical, electronic, photocopying, recording, or otherwise, without prior written permission of Apple Inc., with the following exceptions: Any
+person is hereby authorized to store documentation on a single computer for personal use only and to print copies of documentation for personal use provided that the documentation contains Apple’s copyright notice. May 2023
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 32\n\nAppendix N: Polybrominated Diphenyl Ethers (PBDEs) Appendix O: Adhesive monomers Group I
+Polybrominated Diphenyl Ethers (PBDEs) [10 items] CAS No. Adhesive monomers Group I [10+ items] CAS No.
+2,2',3,4,4'-Pentabromodiphenyl ether 182346-21-0 Butanediol diacrylate 1070-70-8
+2,2',3,4,4',5'-Hexabromodiphenyl ether 182677-30-1 Tetrahydrofurfuryl acrylate 2399-48-6
+2,3',4,4'-Tetrabromodiphenyl ether 189084-61-5 4-tert-Butylcyclohexyl acrylate (TBCHA) 84100-23-2
+2,3',4,4',6-Pentabromodiphenyl ether 189084-66-0 2-Acryloyloxyethyl butylcarbamate 63225-53-6
+2,4,4',6-Tetrabromodiphenyl ether 189084-63-7 Isobornyl acrylate 5888-33-5
+Bis(pentabromophenyl) ether 1163-19-5 1,6-Hexanediol diacrylate 13048-33-4
+Diphenyl ether, heptabromo derivative 68928-80-3 2-(2-Ethoxyethoxy)ethyl acrylate 7328-17-8
+Diphenyl ether, hexabromo derivative 36483-60-0 Trimethylolpropane triacrylate 15625-89-5
+Diphenyl ether, pentabromo derivative 32534-81-9 2-Phenoxyethyl acrylate (PHEA) 48145-04-6
+Diphenyl ether, tetrabromo derivative 40088-47-9 Tripropylene glycol diacrylate 42978-66-5
+Other adhesive monomers with similar properties Multiple
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 33\n\nAppendix P: Adhesive monomers Group II
+Adhesive monomers Group II [19+ items] CAS No.
+Cyclic trimethylol-propane formal acrylate (CTFA) 66492-51-1
+2-hydroxyethyl acrylate (HEA) 818-61-1
+Tricyclododecane dimethanol diacrylate (TCDDMDA) 42594-17-2
+Benzyl acrylate (BZA) 2495-35-4
+Methyl phenylglyoxalate 15206-55-0
+3,3,5-Trimethylcyclohexyl acrylate (TMCHA) 86178-38-3
+4-Acryloylmorpholine (ACMO) 5117-12-4
+Butyl acrylate 141-32-2
+tert-Butyl acrylate 1663-39-4
+Isobutyl acrylate 106-63-8
+Acrylic acid 79-10-7
+Isodecyl acrylate 1330-61-6
+Ethyl trimethylbenzoyl phenylphosphinate 84434-11-7
+2-Ethylhexyl acrylate 103-11-7
+Methyl acrylate 96-33-3
+N,N-Dimethylacrylamide 2680-03-7
+Isobutyl methacrylate 97-86-9
+Ethyl acrylate 140-88-5
+Isobornyl methacrylate 7534-94-3
+Other adhesive monomers with similar properties Multiple
+This document contains proprietary information of Apple Inc.
+A pple Regulat ed Substances Specification—069-0135-M | March 2023 34

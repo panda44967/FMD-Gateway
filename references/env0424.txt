@@ -1,0 +1,3312 @@
+Dell Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+DELL CONTROLLED PRINT
+Materials Restricted for Use
+Document Number: ENV0424
+Revision: A14-00
+Author: Frans Loen
+Owner: Frans Loen
+Approval Approval
+Authorities Signatures Revision Approval Date
+Maureen Martinez Maureen Martinez A01-00 09/23/2015
+Stephen Greene Stephen Greene A02-00 03/17/2017
+Markus Stutz Markus Stutz A03-00 01/03/2018
+Markus Stutz Markus Stutz A04-00 08/13/2018
+Markus Stutz Markus Stutz A05-00 11/14/2018
+Markus Stutz Markus Stutz A06-00 04/29/2019
+Markus Stutz Markus Stutz A07-00 06/29/2020
+Markus Stutz Markus Stutz A08-00 04/29/2021
+Markus Stutz Markus Stutz A09-00 11/30/2021
+Katie Reilly Katie Reilly A10-00 11/23/2022
+Katie Reilly Katie Reilly A11-00 04/09/2024
+Katie Reilly Katie Reilly A12-00 09/23/2024
+Scott O’Connell Scott O’Connell A13-00 02/04/2025
+Scott O’Connell Scott O’Connell A14-00 12/04/2025\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table of Contents
+1. REVISION HISTORY ................................................................................................................................................ 3
+2. INTRODUCTION ..................................................................................................................................................... 5
+2.1 PURPOSE ................................................................................................................................................................. 5
+2.2 SCOPE .................................................................................................................................................................... 5
+2.3 REFERENCES............................................................................................................................................................. 5
+2.4 DEFINITIONS ............................................................................................................................................................ 7
+3. PRODUCT CONTENT RESTRICTIONS...................................................................................................................... 9
+3.1 MATERIAL RESTRICTION REQUIREMENTS ....................................................................................................................... 9
+3.2 MATERIAL DECLARATION REQUIREMENTS .................................................................................................................... 17
+3.3 BFR/CFR/PVC-FREE “HALOGEN FREE” REQUIREMENTS ............................................................................................... 26
+3.4 EPEAT SUBSTANCE REQUIREMENTS ........................................................................................................................... 26
+3.5 TCO SUBSTANCE REQUIREMENTS ............................................................................................................................... 27
+3.6 TAIWAN GREEN MARK SUBSTANCE REQUIREMENTS ....................................................................................................... 28
+4. PRODUCT PACKAGING CONTENT RESTRICTIONS ................................................................................................... 29
+5. BATTERY CONTENT RESTRICTIONS ......................................................................................................................... 31
+6. NON-ELECTRICAL/NON-ELECTRONIC PARTS AND PRODUCTS REQUIREMENTS ................................................... 31
+7. ANTIMICROBIAL & BIOCIDAL SUBSTANCE RESTRICTIONS ..................................................................................... 32
+8. EXPECTATIONS ON SUPPLIERS ................................................................................................................................ 33
+8.1 CHANGE NOTIFICATION ............................................................................................................................................ 33
+8.2 NON-COMPLIANCE RESOLUTION ................................................................................................................................ 33
+APPENDIX A: APPLICABLE ROHS EXEMPTIONS .......................................................................................................... 34
+APPENDIX B: LIST OF CAS NUMBERS .......................................................................................................................... 37
+APPENDIX C : MATERIALS COMPLIANCE TESTING ..................................................................................................... 53
+APPENDIX D: FULL MATERIAL DISCLOSURE ............................................................................................................... 56
+APPENDIX E: REVISION HISTORY FOR REVISIONS PRIOR TO LAST ............................................................................ 57
+Dell Technologies Page 2 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+1. Revision History
+For revision history of previous versions, please refer to Appendix D.
+Rev. PCO # Revision Description Approved Date
+A14 PCO56586 2.3 References Scott 10/22/2025
+O’Connell
+1. Updated references
+Table 1:
+2. Added Decabromo-diphenyl-ethane (DBDPE,
+84852-53-9)
+3. Updated entry on Long chain
+perfluorocarboxylic acids (C9-14 PFCAs to C9-
+21 PFCAs)
+Table 2:
+4. Added Bis(α,α-dimethylbenzyl) peroxide, 80-
+43-3
+5. Added 6-[(C10-C13)-alkyl-(branched,
+unsaturated)-2,5-dioxopyrrolidin-1-
+yl]hexanoic acid, 2156592-54-8
+6. Added O,O,O-triphenyl phosphorothioate,
+597-82-0
+7. Added Octamethyltrisiloxane, 107-51-7
+8. Added Perfluamine, 338-83-0
+9. reaction mass of: triphenylthiophosphate and
+tertiary butylated phenyl derivatives,
+192268-65-8
+10. Added 1,1,1,3,5,5,5-heptamethyl-3-
+[(trimethylsilyl)oxy]trisiloxane, 17928-28-8
+11. Added Decamethyltetrasiloxane, 141-62-8
+Table 5, packaging content restrictions:
+12. Added arsenic compounds for wood
+preservation
+13. Added ortho-phthalates
+Appendix A:
+14. Aligned 6(a)-I / 6(a)-II exemptions with
+amended legislation
+15. Added sunset dates for RoHS exemptions
+6(b)-I and 6(b)-II
+16. Aligned 7(a) exemptions with amended
+legislation
+Dell Technologies Page 3 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Rev. PCO # Revision Description Approved Date
+17. Aligned 7(c) exemptions with amended
+legislation
+Appendix B
+18. Updated Table Y, Long chain
+perfluorocarboxylic acids (C9-21 PFCAs), their
+salts and related compounds, added CAS
+numbers 141074-63-7, 67905-19-5, 57475-
+95-3, 16517-11-6, 133921-38-7, 68310-12-3
+Appendix D
+19. Added new appendix about Dell full material
+declaration requirements
+Dell Technologies Page 4 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+2. Introduction
+Dell Technologies’ vision is to avoid the use of substances in its products that could seriously harm the
+environment or human health and to ensure that we act responsibly and with caution. Dell Technologies
+material restrictions are based on consideration for legal requirements, international treaties and
+conventions, and specific market requirements.
+This specification lists substances banned or restricted for use in Dell Technologies products and in the
+manufacture of Dell Technologies products. If restricted substances are introduced and/or detected in
+products, potential courses of action may include developing corrective actions to requalify parts to meet this
+specification, delaying the launch of products and/or removing non-compliant suppliers from the Dell
+Technologies approved vendor lists.
+2.1 Purpose
+To communicate to Dell Technologies design teams and suppliers materials restrictions required for parts
+in all Dell Technologies-branded products. The specification should be used when selecting materials for
+product parts and packaging.
+2.2 Scope
+All parts in Dell Technologies-branded products that are supplied to Dell Technologies and/or designed by
+Dell Technologies Inc. must meet this specification. Compliance with this specification is communicated to
+Dell via Full Material Declaration (FMD), which will be requested by Dell Technologies compliance
+systems. The scope includes all of the components, parts, assemblies, batteries and packaging of each
+product. The restricted substances cannot be contained in the product and its components above the
+designated thresholds for the controlled applications listed in Section 3. Some restrictions also apply to
+the manufacturing of components or products.
+2.3 References
+Dell Specifications:
+1. Dell P/N ENV0199, Dell BFR/CFR/PVC-Free Specification (formerly “halogen-free”)
+2. Dell P/N ENG0014187, Dell Regulatory Critical Components Peripheral Guide Sheets
+3. Regulatory Quality Procedure – RQP4.10/004
+European Union Regulations / Directives / Decisions:
+4. Regulation of the European Parliament and of the Council on the Registration, Evaluation,
+Authorization and Restriction of Chemicals, 1907/2006/EC, December 2006 (REACH Regulation)
+5. Directive of the European Parliament and of the Council on the Restriction of the Use of Certain
+Hazardous Substances in Electrical and Electronic Equipment, 2011/65/EU, June 2011 (RoHS
+Directive) and 2015/863/EU, June 2015 (addition of four phthalates)
+6. Regulation of the European Parliament and of the Council on persistent organic pollutants (EU)
+2019/1021
+7. Regulation of the European Parliament and of the Council on fluorinated greenhouse gases,
+573/2024, February 2024
+8. Regulation of the European Parliament and of the Council on substances that deplete the ozone layer
+(EU) 2024/590
+Dell Technologies Page 5 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+9. Regulation (EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 on
+packaging and packaging waste
+10. Regulation (EU) 2023/1542 of the European Parliament and of the Council of 12 July 2023 concerning
+batteries and waste batteries (Battery Regulation)
+11. Directive 2012/19/EU of the European Parliament and the Council on Waste Electrical and Electronic
+Equipment, July 2012 (WEEE directive)
+Other Reduction of Hazardous Substance Regulations outside of European Union:
+12. Restriction of Hazardous Substances (RoHS) in Electrical and Electronic Equipment (EEE) in Singapore
+(Singapore RoHS)
+13. Guidance to reduction of the restricted chemical substances in electrical and electronic equipment,
+CNS15663 (Taiwan RoHS)
+14. Regulating the permitted limits for a number of hazardous substances in electric and electronic
+products, in Circular 30/2011/TT-BCT (Vietnam RoHS)
+15. E-Waste (Management) Rules, Ministry of Environment & Forests, Government of India (India RoHS)
+16. Management Methods for Restriction of the Use of Hazardous Substances in Electrical and Electronic
+Products (China RoHS 2)
+17. Technical Regulation on restrictions as to the use of some dangerous substances in electric and
+electronic devices (Ukraine RoHS)
+18. Technical Regulations for Limiting Hazardous Substances in Electrical and Electronic Devices (Saudi
+Arabia RoHS)
+19. The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment
+Regulations (UK RoHS)
+20. The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment
+(Turkey RoHS)
+21. The Hazardous Waste (E-waste) Management Rules, Ministry of Environment, Forests & Climate
+Change, Government of the People’s Republic of Bangladesh (Bangladesh RoHS)
+Other Regulations / Standards by Country:
+22. Registration, Evaluation, Authorization and Restriction of Chemicals, statutory instrument 2019/758
+(UK REACH)
+23. Canada Prohibition of Certain Toxic Substances Regulations, 2012 (SOR/2012-285)
+24. California Safe Drinking Water and Toxic Enforcement Act of 1986 (Section 25249.5- 25249.13 of the
+California Health and Safety Code), commonly referred to as “California Proposition 65”
+25. California Electronic Waste Recycling Act SB 20, as amended by SB 1215
+26. China CEC technical requirement for environmental labeling products for computers and displays and
+server
+27. Geprüfte Sicherheit for ProdSG / Safety Mark certification for German Product Safety
+28. Japanese Law concerning the Examination and Regulation of Manufacture etc. of Chemical
+Substances (Class 1 chemical substances)
+29. Japan revised Law for Promotion of Effective Utilization of Resources (J-MOSS)
+30. Japanese Law Concerning the Protection of the Ozone Layer through the Control of Specified
+Substances and others
+Dell Technologies Page 6 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+31. Japan Law Concerning Prevention from Radiation Hazards, 1986
+32. Japan Mercury Law
+33. Norway Product Regulations FOR-2004-06-01-922
+34. 1990 revision of Article 611 of the US Clean Air Act
+35. American Apparel & Footwear Association (AAFA) Restricted Substance List
+36. EPA Federal Insecticide, Fungicide and Rodenticide Act (FIFRA)
+37. U.S. Consumer Product Safety Improvement Act
+38. U.S. Nuclear Regulatory Commission Title 10 CFR Part 20 (Appendix C)
+39. United States: Toxic Substances Control Act (TSCA)
+40. Washington State Safer Products Program
+41. IEC62474 Material Declaration for Products of and for the Electrotechnical Industry
+42. IEEE 1608.1 Standard for Environmental Assessment of Personal Computer Products, Including
+Notebook Personal Computers, Desktop Personal Computers, and Personal Computer Displays, 2018
+43. NSF/ANSI 426 – 2017 Environmental Leadership and Corporate Social Responsibility Assessment of
+Servers
+44. EPEAT COC 2025 - Reduction of Chemicals of Concern Criteria
+45. TCO Development: TCO Certified Desktops; TCO Certified Displays; TCO Certified Notebooks; TCO
+Certified Projectors; TCO Certified Tablets
+2.4 Definitions
+Agile PG&C: Compliance system used to combine compliance data from suppliers with product bills of
+materials.
+Antimicrobial: An agent that prevents or inhibits microorganisms
+Article: Object which during production is given a special shape, surface or design which determines its
+function to a greater degree than does its chemical composition (e.g. all Dell parts and products are
+classified as Articles).
+Assembly: An integrated set of components. A populated printed circuit board is an assembly and not a
+component because individually functioning components can be removed.
+CAS #: Chemical Abstract System numbers are assigned to chemicals for unique identification. The CAS
+numbering system is an international convention. For example, the CAS# for lead is 7439-92-1.
+Component: a combination of homogeneous materials that have been formed into a single manufactured
+mechanical or electrical part. Examples of components may include microprocessors, plastic enclosures,
+coin cell batteries, capacitors, etc. Sub-assemblies and semi-finished goods are not considered
+components. Examples of sub-assemblies/semi-finished goods may include populated
+motherboards/daughter cards, power supplies and adaptors, hard drives, tape drives, mouse, etc.
+Elemental chlorine free (ECF): Packaging material produced with pulp that has been bleached using a
+chlorine compound such as chlorine dioxide (ClO2), but without the use of elemental chlorine (Cl).
+External cables: cables and cords that are likely to be accessible to the consumer during ordinary use
+Halogenated plastics: Plastics/polymers that contain or are treated with one or more of the following
+elements: fluorine, chlorine, bromine, iodine, and/or astatine. Examples include, but are not limited to,
+polyvinyl chloride (PVC) and tetrafluoroethylene (TFE, “Teflon”).
+Dell Technologies Page 7 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Homogeneous material: one material of uniform composition throughout or a material, consisting of a
+combination of materials, that cannot be disjointed or separated into different materials by mechanical
+actions such as unscrewing, cutting, crushing, grinding and abrasive processes.
+Intentionally added: deliberate use of a substance in the formulation of a part or product, where the
+presence of the substance in the final product provides a specific characteristic, appearance or quality
+Mechanical plastic part: plastic parts that do not internally carry an electrical signal such as housings,
+brackets, bezels, latches, etc. that form the basic structure of the product and/or have mechanical
+functions. Plastic parts such as fans, connectors, printer fuser assemblies, etc. are not considered
+“mechanical plastic parts” in the context of this specification.
+Non-compliance: A failure to meet the requirements of the specification. Non-compliance requires
+corrective action.
+Non-electrical/Non-electronic parts and products (Dell Technologies-Branded): Electricity is not required
+to operate these parts and products. Examples include, but not limited to, apparel products (e.g. shirts,
+pants, hats…), stationary products (e.g. pens, pencils, erasers, staplers, key chains, paper pads and
+notebooks …), office equipment accessories (e.g. computer bags, locks, mouse pads…) and toys. Packaging
+materials are excluded from this definition.
+Not detectable: a substance in a part or homogeneous material is not detected at the lowest detectable
+limit using standard analytical techniques.
+Packaging: Materials used to protect products from damage due to storage or transportation (e.g., boxes,
+shipping supplies, cushioning & foam, bags, shrink wrap, tape/adhesives). Includes inks and dyes used to
+label packages.
+PPM: parts per million, unit of measurement for weight percentage. 1 ppm = 1 mg/kg = 0.0001 % by
+weight.
+Processed chlorine free (PCF): Packaging material produced with pulp from virgin and/or recycled content
+that has been bleached without any type of chlorine, or that has not been bleached at all. Recycled
+content may have originally been bleached with chlorine or chlorine compounds.
+RoHS substances: Those substances restricted under the European RoHS Directives 2011/65/EU and
+2015/863/EU and other RoHS-type legislation (China, India, Turkey, Ukraine, Bangladesh etc.), including
+cadmium, chromium VI, lead, mercury, polybrominated biphenyls (PBB) and polybrominated diphenyl
+ethers (PBDE), Bis(2-ethylhexyl) phthalate (DEHP), Butyl benzyl phthalate (BBP), Dibutyl phthalate (DBP)
+and Diisobutyl phthalate (DIBP).
+Solder (in reference to the RoHS exemption for lead in solders for servers, storage and networking
+products): alloys used to create metallurgical bonds between two or more metal surfaces to achieve an
+electrical and/or physical connection”. In this context, the term ‘solder’ also includes all materials that
+become part of the final solder joint, including solder finishes on components or printed circuit boards.
+Substance: a chemical element and its compounds in the natural state or obtained by any manufacturing
+process, including any additive necessary to preserve its stability and any impurity deriving from the
+process used, but excluding any solvent which may be separated without affecting the stability of the
+substance or changing its composition
+Threshold Limit: the maximum concentration at which a restricted substance can be present or above
+which a declarable substance needs to be reported.
+Totally chlorine free (TCF): Packaging material produced with pulp from virgin content that has been
+bleached without any type of chlorine, or that has not been bleached at all.
+Dell Technologies Page 8 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+3. Product Content Restrictions
+3.1 Material Restriction Requirements
+Table 1 lists substances that Dell Technologies has banned or restricted. For each listed substance, a
+threshold limit has been established to account for unavoidable impurities consistent with regulatory
+requirements. Table 1 also lists allowed exemptions and references to specific restricted substances and
+CAS numbers (Appendix B). Refer to Appendix C for substance testing protocols and requirements.
+Compliance with this specification is communicated to Dell Technologies via Full Material Declaration
+(FMD). In the case of groups, e.g. substance xyz and its compounds, the restriction in Table 1 covers all the
+substances and compounds. Substances and CAS numbers referred to in Appendix B lists are examples of
+the restricted substances.
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Restriction applies to ear contact parts
+75 Table B
+Cadmium and its compounds of headphones, headsets.
+100 Restriction applies for other materials. Table B
+Chromium VI and its
+1000 Table D
+compounds
+Mercury and its compounds 1000 Table G
+Polybrominated Biphenyls Substances may not be intentionally
+1000 Table I
+(PBB) added to parts/products.
+Polybrominated Diphenyl Substances may not be intentionally
+1000 Table I
+Ethers (PBDE) added to parts/products.
+Restriction applies to paint or surface
+90 coatings of on ear contact parts of Table F
+headphones, headsets.
+Restriction applies to lead and
+compounds in cable jacketing material
+Lead and its compounds 300 of frequently handled external cables Table F
+as well as ear contact parts of
+headphones, headsets
+Restriction applies for all other lead
+1000 applications. See Appendix A for Table F
+applicable RoHS exemptions.
+Alkanes C10-C13, chloro, Short
+Chained Chlorinated Paraffins 1000 Table S
+(SCCP)
+Alkanes C14-C17, chloro,
+Medium Chain Chlorinated 1000 Table S
+Paraffins (MCCPs)
+Dell Technologies Page 9 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Restriction applies to mechanical
+Antimony and its compounds 1000 Table V
+plastic parts above 25 grams.
+Asbestos and its compounds Not detectable Table A
+Restriction only applies to textile and
+leather articles that may come into
+Azocolorants and Azodyes 30 Table K
+direct and prolonged contact with the
+human skin or oral cavity.
+1,2-Benzenedicarboxylic acid,
+di-C6-8-branched alkyl esters, 1000 71888-89-6
+C7-rich
+1,2-Benzenedicarboxylic acid,
+dipentylester, branched and 1000 84777-06-0
+linear
+1,2-benzenedicarboxylic acid,
+di-C6-10-alkyl esters; 1,2-
+benzenedicarboxylic acid, 68515-51-5,
+1000
+mixed decyl and hexyl and octyl 68648-93-1
+diesters with ≥ 0.3% of dihexyl
+phthalate (EC No. 201-559-5)
+1,6,7,8,9,14,15,16,17,17,18,18-
+Dodecachloropentacyclo[12.2.1 13560-89-9
+Substances may not be intentionally
+.16,9.02,13.05,10]octadeca- No intentional use 135821-74-8
+added to parts/products.
+7,15-diene (“Dechlorane 135821-03-3
+Plus”™)
+2-(2H-benzotriazol-2-yl)-4,6- Substances may not be intentionally
+No intentional use 25973-55-1
+ditertpentylphenol (UV-328) added to parts/products.
+2,4-di-tert-butyl-6-(5-
+chlorobenzotriazol-2-yl)phenol 1000 3864-99-1
+(UV-327)
+2-(2H-benzotriazol-2-yl)-4-(tert-
+butyl)-6-(sec-butyl)phenol (UV- 1000 36437-37-3
+350)
+2-ethylhexyl 10-ethyl-4,4-
+dioctyl-7-oxo-8-oxa-3,5-dithia- 1000 15571-58-1
+4-stannatetradecanoate (DOTE)
+Dell Technologies Page 10 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Reaction mass of 2-ethylhexyl
+10-ethyl-4,4-dioctyl-7-oxo-8-
+oxa-3,5-dithia-4-
+stannatetradecanoate and 2-
+ethylhexyl 10-ethyl-4-[[2-[(2-
+1000
+ethylhexyl)oxy]-2-
+oxoethyl]thio]-4-octyl-7-oxo-8-
+oxa-3,5-dithia-4-
+stannatetradecanoate (reaction
+mass of DOTE and MOTE)
+Bis(2-methoxyethyl) ether 1000 111-96-6
+4-(1,1,3,3-
+1000 140-66-9
+tetramethylbutyl)phenol
+4-Aminoazobenzene 1000 60-09-3
+26027-38-3
+7311-27-5
+20427-84-3
+34166-38-6
+4-Nonylphenol, branched and 27942-27-4
+1000
+linear, ethoxylated 14409-72-4
+104-35-8
+37205-87-1
+127087-87-0
+156609-10-8
+Bisphenol-A (4,4’- 300 Restriction applies to external plastics
+80-05-7
+isopropylidenediphenol) 1000
+Restriction applies to mechanical
+plastic parts; plastic parts greater than
+25 grams. Exemption applies to
+internal plastic components such as
+Brominated/Chlorinated flame
+circuit boards, electronic components,
+retardants (excluding PBB, 1000 Table L
+fans, cables, printer fuser assembly
+PBDE)
+and electrical assemblies contained in
+Dell products unless designated as
+Halogen Free or BFR/CFR-Free
+products.
+Restriction effective September 1,
+No intentional use.
+Decabromo-diphenyl-ethane 2026 for newly launched Dell parts /
+500 ppm trace 84852-53-9
+(DBDPE) products and September 1, 2035 for all
+contaminant only
+sustaining parts / products
+Dell Technologies Page 11 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Substances may not be intentionally
+added to external enclosure parts of
+Halogenated flame retardants No intentional use displays, notebooks, AIO, mobile
+workstations, tablets, and display
+stands
+Diarsenic pentaoxide 1000 Semiconductors exempt. 1303-28-2
+Diarsenic trioxide 1000 Semiconductors exempt. 1327-53-3
+Dibutyltin (DBT) compounds 1000 Threshold relates to the mass of tin. Table T
+Restriction applies to (a) textile and
+leather articles intended to come into
+contact with the skin, (b) childcare
+Dioctyltin (DOT) compounds 1000 Table T
+articles, (c) two-component room
+temperature vulcanization molding kits
+(RTV-2 molding kits).
+Dimethyl Fumarate (DMF) 0.1 624-49-7
+Disodium 4-amino-3-[[4'-[(2,4-
+diaminophenyl)azo][1,1'-
+biphenyl]-4-yl]azo]-5-hydroxy-
+1000 1937-37-7
+6-(phenylazo)naphthalene-2,7-
+disulphonate (C.I. Direct Black
+38)
+Ethylhexyl diphenyl phosphate
+1000 1241-94-7
+(EHDPP)
+Restriction applies to both
+Fluorinated greenhouse gases
+Not detectable manufacturing processes and Table Q
+(GHG) (HFC, PFC, SF6)
+products.
+Restriction only applies to wood
+Formaldehyde Not detectable 50-00-0
+products.
+25637-99-4;
+Hexabromocyclododecane 3194-55-6;
+Substances may not be intentionally
+(HBCDD) and all major 100 134237-50-6;
+added to parts/products.
+diastereoisomers 134237-51-7;
+134237-52-8
+Imidazolidine-2-thione; (2-
+1000 96-45-7
+imidazoline-2-thiol)
+Lead Chromate 1000 7758-97-6
+Dell Technologies Page 12 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Metallic nickel or nickel alloy exempt
+in all applications except external
+chassis/case parts likely to result in
+prolonged skin exposure (10 minutes
+Nickel and its compounds 1000 on three or more occasions within two Table H
+weeks, or 30 minutes on one or more
+occasions within two weeks). No
+exemptions for organo-nickel
+compounds.
+N,N-dimethylformamide 1000 68-12-2
+Table C, E. See
+also
+Ozone depleting substances Restriction applies to both
+Annexes A, B,
+(Class I & Class II CFCs and Not detectable manufacturing processes and
+C, E of
+HCFCs) products.
+Montreal
+Protocol
+Pentazinc chromate
+1000 49663-84-5
+octahydroxide
+25 ppb for PFHxS
+355-46-4 and
+including its salts
+others
+Perfluorohexane-1-sulphonic 1000 ppb for the
+acid (PFHxS), its salts and individual PFHxS-
+Regulation
+PFHxS-related compounds related compounds or
+(EU)
+a combination of those
+2019/1021
+compounds
+25 ppb for the sum of
+C9-C21 PFCAs and
+Long chain perfluorocarboxylic
+their salts or 260 ppb
+acids (C9-21 PFCAs), their salts Table Y
+for the sum of C9-C21
+and related compounds
+PFCA-related
+substances
+Intentionally added or
+1 microgram/m2 of
+Perfluorooctane sulfonates coated material for
+(PFOS), C8F17SO2X (X = OH, textiles or other
+metal salt (O-M*), halide, coated m aterials Table O
+amide, and other derivatives Intentionally added or
+including polymers) 1000 for all other
+materials (as the sum
+of PFOS)
+Perfluorooctanoic acid (PFOA),
+25 ppb unintentional Substances may not be used 335-67-1
+and its salts ;
+trace contaminant only intentionally Table W
+Pentadecafluorooctanoic acid
+Dell Technologies Page 13 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+1 ppm unintentional Substances may not be used
+PFOA-related compounds Table W
+trace contaminant only intentionally
+Phenol,2-(2H-benzotriazol-2-yl)-
+Not detectable 3846-71-7
+4,6-bis(1,1-dimethylethyl)-
+Phenol, Isopropylated Substance may not be intentionally
+No intentional use 68937-41-7
+Phosphate (3:1) – ‘PIP (3:1)’ added to parts/products.
+Phthalate: 1,2-
+Benzenedicarboxylic acid, di-C7-
+1000 68515-42-4
+11-branched and linear alkyl
+esters (DHNUP)
+Phthalate: 1,2-
+Benzenedicarboxylic acid,
+1000 68515-50-4
+dihexyl ester, branched and
+linear
+1000 Restriction applies to paint or surface
+(sum of DEHP, BBP and coatings of on ear contact parts of
+Phthalate: Bis (2-
+DBP) headphones, headsets. 117-81-7
+ethylhexyl)phthalate (DEHP)
+Restriction applies for all other
+1000
+applications.
+1000 Restriction applies to paint or surface
+(sum of DEHP, BBP and coatings of on ear contact parts of
+Phthalate: Benzyl butyl
+DBP) headphones, headsets. 85-68-7
+phthalate (BBP)
+Restriction applies for all other
+1000
+applications.
+Phthalate: Benzyl Chloride 1000 100-44-7
+1000 Restriction applies to paint or surface
+(sum of DEHP, BBP and coatings of on ear contact parts of
+Phthalate: Dibutyl phthalate
+DBP) headphones, headsets. 84-74-2
+(DBP)
+Restriction applies for all other
+1000
+applications.
+Phthalate: Dihexyl phthalate
+1000 84-75-3
+(DnHP)
+Phthalate: Diisobutyl (DIBP) 1000 84-69-5
+Phthalate: Diisodecyl phthalate 26761-40-0
+1000
+(DIDP) 68515-49-1
+Phthalate: Diisononyl phthalate 68515-48-0
+1000
+(DINP) 28553-12-0
+Phthalate: Di(methoxyethyl)
+1000 117-82-8
+phthalate (DMEP)
+Diisopentyl phthalate (DIPP) 1000 605-50-5
+Dell Technologies Page 14 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Phthalate: Dipentyl phthalate
+1000 131-18-0
+(DPP)
+Phthalate: Di-n-octyl phthalate
+1000 117-84-0
+(DNOP)
+Phthalate: N-pentyl-
+1000 776297-69-9
+isopentylphthalate (nPiPP)
+Phthalate: Diethyl phthalate
+1000 84-66-2
+(DEP)
+Phthalate: Tris(o-cresyl)-
+1000 78-30-8
+phosphate
+Polychlorinated Biphenyls
+Not detectable Table J
+(PCBs) and Terphenyls (PCTs)
+Polychlorinated naphthalene
+Not detectable Table N
+(PCNs)
+10 PPM (Sum of 18
+PAH) and 1 PPM each
+Restriction applies to external plastics
+for:
+and soft surfaces that can experience
+Benzo[a]pyren,
+Polycyclic Aromatic Benzo[e]pyrene, frequent skin contact. Refer to Dell
+Table P
+Hydrocarbons (PAH) Benzo[a]anthracene, specification ENG0014187 for
+Chrysen,
+additional details. Concentration limit
+Benzo[b]fluoranthene,
+is the sum of all 18 PAHs.
+Benzo[j]fluoranthene,
+Benzo[k]fluoranthene,
+Dibenzo[a,h]-anthracene
+Restriction applies to mechanical
+plastic parts, plastic parts greater than
+25 grams. Cables, connectors,
+electronic components, battery trays,
+Polyvinyl chloride (PVC) 1000 9002-86-2
+magnetic tape, and similar non-
+mechanical plastic parts are exempt
+unless designated as Halogen Free or
+PVC-Free products.
+Potassium
+hydroxyoctaoxodizincatedichro 1000 11103-86-9
+mate
+Radioactive substances Not detectable Table R
+Restriction applies to Red Phosphorous
+Red Phosphorous 1000 flame retardants in molding 7723-14-0
+compounds.
+Strontium chromate 1000 7789-06-2
+Dell Technologies Page 15 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 1 - Banned or Restricted Substances
+Threshold Limit (mg
+Reference
+substance / kg Explanations / Exemptions / Effective
+Substance Appendix B /
+homogeneous dates
+CAS #
+material =ppm)
+Tributyl tin (TBT), Triphenyl tin
+(TPT) and Tributyl Tin Oxide Not detectable Table M
+(TBTO) compounds
+Restriction applies to exterior product
+Tri-n-butyl phosphate (TNBP) 1000 126-73-8
+enclosures.
+Restriction applies to mechanical
+Tri-o-cresyl phosphate or plastic parts above 25 grams. 78-30-8;
+1000
+Tricresyl phosphate (TCP) Exempted in PCB laminates, electronic 1330-78-5
+components and cable insulations.
+Restriction applies to exterior product
+Triphenyl phosphate 1000 115-86-6
+enclosures.
+Tris(2-chloroethyl)phosphate
+1000 115-96-8
+(TCEP)
+Trixylyl phosphate 1000 25155-23-1
+Dell Technologies Page 16 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+3.2 Material Declaration Requirements
+To encourage industry alignment with IEC 62474 “Material Declaration for Products of and for the
+Electrotechnical Industry”, Dell Technologies is requesting supplier disclosure of the list of substances
+(Table 2 below). It is important to note that the thresholds listed in Table 2 are at the homogeneous
+material level although the regulation or standard where the substance is listed may be specified at the
+article or product level.
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Pigment, paint, catalyst, lead
+free solder, stabilizer, n-type
+Antimony and its compounds 1000 Table V
+dopant, flame retardant
+catalyst.
+Additive flame retardant in ABS,
+1,1'-[ethane-1,2-diylbisoxy]bis[2,4,6-
+1000 PC HIPS, thermoplastics and 37853-59-1
+tribromobenzene]
+thermoset resins, coatings
+1,1,1,3,5,5,5-heptamethyl-3-
+1000 Surface treatments and coatings 17928-28-8
+[(trimethylsilyl)oxy]trisiloxane
+Solvent may be used in battery
+1,2-bis(2-methoxyethoxy)ethane electrolytes for lithium
+1000 112-49-2
+(TEGDME; triglyme) batteries. May be in found in
+printing inks.
+Solvent used in electrolytes for
+1,2-Diethoxyethane 1000 629-14-1
+lithium batteries.
+Solvent used in battery
+1,2-dimethoxyethane; ethylene glycol electrolytes for lithium
+1000 110-71-4
+dimethyl ether (EGDME) batteries. May be in found in
+printing inks and paint strippers.
+Electrolyte fluid of rechargeable
+1,3-propanesultone 1000 1120-71-4
+lithium ion batteries
+e.g. Raw material for epoxy
+resins, Raw materials for
+polycarbonate resin, Surface
+coatings, Synthetic resin
+additives, Liquid crystal
+2,2-bis(4'-hydroxyphenyl)-4-
+1000 materials, Photosensitizers, 6807-17-6
+methylpentane
+Information recording agents,
+Engineering plastic materials,
+Electronic functional materials;
+may be used as substitute for
+BPA
+Dell Technologies Page 17 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Additive flame retardant in ABS,
+2,2',6,6'-tetrabromo-4,4'-
+1000 PC HIPS, thermoplastics and 79-94-7
+isopropylidenediphenol
+thermoset resins, coatings
+UV absorber/protection agent.
+Typical applications include air
+care products, coating products,
+2-(2H-benzotriazol-2-yl)-4-(1,1,3,3- adhesives and sealants,
+1000 3147-75-9
+tetramethylbutyl)phenol (UV-329) lubricants and greases, polishes
+and waxes, and polycarbonate
+covers, such as those for sensors
+and lights.
+May be used either as an
+intermediate to or directly as an
+2,4,6-tri-tert-butylphenol 1000 732-26-3
+antoxidant/stabiliser in plastic
+materials
+Photo-initiator for UV inks and
+2-(dimethylamino)-2-[(4-
+coatings. Typical applications
+methylphenyl)methyl]-1-[4-(morpholin-4- 1000 119344-86-4
+include displays, coatings, inks,
+yl)phenyl]butan-1-one
+resists.
+Antioxidant for plasticizer and
+PVC, ink, paint and adhesive;
+4,4'-(1-methylpropylidene)bisphenol 1000 77-40-7
+used as monomer in epoxy
+resins and plastics
+4,4'-Dihydroxybenzophenone 1000 Manufacture of plastics 611-99-4
+Adhesives, sealants, lubricants,
+6,6'-di-tert-butyl-2,2'-methylenedi-p- fuels, hydraulic fluids, metal
+1000 119-47-1
+cresol working, antioxidant/stabilizer
+for rubber and plastics
+6-[(C10-C13)-alkyl-(branched,
+Hydraulic fluids, lubricants and
+unsaturated)-2,5-dioxopyrrolidin-1- 1000 2156592-54-8
+greases
+yl]hexanoic acid
+Thermal insulation for high
+Aluminosilicate Refractory Ceramic Fibers 1000 -
+temperature test equipment.
+APFO is used as an emulsion
+stabilizer to manufacture
+polyvinylidine fluoride (PVDF)
+Ammonium pentadecafluorooctanoate
+1000 and other fluorinated polymers 3825-26-1
+(APFO)
+and elastomers and can be
+found in concentrations up to
+1% w/w in these plastics.
+Dell Technologies Page 18 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Used in paints and coatings and
+Barium diboron tetraoxide 1000 in some ceramic electronic 13701-59-2
+components
+Impurities in carbon black,
+which is used as coloring agent
+Benzo[ghi]perylene 1000 191-24-2
+in plastics and softener in
+rubbers
+Impurities in carbon black,
+which is used as coloring agent
+in plastics and softener in
+rubbers. Note that substance is
+Benzo[k]fluoranthene 1000 207-08-9
+restricted (threshold 1 ppm) for
+external plastics and soft
+surfaces that can experience
+frequent skin contact
+Ceramics, metal alloy, copper-
+beryllium alloy, catalyst,
+Beryllium and its compounds 1000 precipitation hardening alloy, Table U
+copper-beryllium alloy for
+spring, solder.
+Beryllium oxide 1000 Ceramics 1304-56-9
+Solvent in electrolyte in lithium-
+Bis(2-(2-methoxyethoxy)ethyl)ether 1000 143-24-8
+ion batteries
+Used as an additive flame
+retardant and as a plasticiser for
+flexible polyvinylchloride and for
+Bis(2-ethylhexyl) tetrabromophthalate 1000 use in wire and cable insulation, 26040-51-7
+film and sheeting, carpet
+backing, coated fabrics, wall
+coverings, sealant and adhesives
+Additive for thermoplastic resin
+(fluoroethane) and
+Bis(4-chlorophenyl) sulphone 1000 80-07-9
+fluoropolymers for rubber
+production
+Polymerization catalyst and
+Bis(α,α-dimethylbenzyl) peroxide 1000 80-43-3
+vulcanizing agent
+Bisphenol-F (4,4'-methylenediphenol) 1000 Manufacture of plastics 620-92-8
+Manufacture of polycarbonate
+Bisphenol-S (4,4'-sulphonyldiphenol) 1000 80-09-1
+resins (PC)
+Dell Technologies Page 19 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+In wood veneers/ pressed
+wooden panels as starch
+additive, flame retardant and
+10043-35-3,
+Boric acid 1000 stabilizer in amino-plastic resin,
+11113-50-1
+wood preservative, as flame
+retardant in wood, cotton and
+other plant derived material.
+Flame retardant use on
+Brominated Flame Retardant (excl. PBB,
+1000 electrical and mechanical Table L
+PBDE, HBCDD and TBBPA)
+components.
+UV protection agent.
+Formulations are used for
+coatings, textile dyes and
+impregnation products,
+production of polymers like
+Bumetrizole (UV-326) 1000 3896-11-5
+rubber production and
+processing and rigid foams and
+flexible foams, adhesives and
+sealants, lubricants, and
+greases.
+Flame retardant use on
+Chlorinated Flame Retardant 1000 electrical and mechanical Table L
+components.
+Reporting requirement applies
+Cobalt 1000 7440-48-4
+to batteries only
+Pneumatic panels to indicate
+Cobalt dichloride 1000 7646-79-9
+water contamination.
+Any presence of Flame retardant. Note upcoming
+Decabromo-diphenyl-ethane (DBDPE) 84852-53-9
+substance restriction in Table 1
+Siloxanes are monomers used to
+manufacture silicones. Residuals
+Decamethylcyclopentasiloxane 1000 541-02-6
+may remain in silicone polymers
+and copolymers.
+Lubricants and greases, surface
+Decamethyltetrasiloxane 1000 treatments and heat transfer 141-62-8
+fluid
+Found in wood veneers,
+Diboron trioxide 1000 glass/fiber optics and ceramics - 1303-86-2
+for industrial applications.
+Dell Technologies Page 20 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Used as biocides and as
+stabilisers in plastics. Used also
+as a catalyst and in the
+Dibutylbis(pentane-2,4-dionato-O,O')tin 1000 manufacturing of adhesives, 22673-19-4
+sealants, coatings, dyes,
+polymer preparations, resins
+and rubber.
+Ingredient in some paint thinner
+Dibutyltin dichloride (DBTC) 1000 683-18-1
+and as heat stabilizer for PVC.
+Diisooctyl phthalate 1000 27554-26-3
+Stabilisers and catalysts in the
+production of e.g. plastics and
+Dioctyltin dilaurate, stannane, dioctyl-, rubber. Used for the
+bis(coco acyloxy) derivs., and any other manufacture of the follow
+3648-18-8
+stannane, dioctyl-, bis(fatty acyloxy) 1000 article categories: plastic
+91648-39-4
+derivs. wherein C12 is the predominant products, fabrics, textiles,
+carbon number of the fatty acyloxy moiety apparel, and leather.
+Professional application of
+coatings and inks.
+Photopolymerization initiator;
+Coating material/paint; UV-
+curable resin; Resin additive; Silk
+Diphenyl(2,4,6-
+1000 screen printing ink; Cable 75980-60-8
+trimethylbenzoyl)phosphine oxide
+assembly (adhesive); Surface
+treatment marking ink; Solder
+mask (photoinitiator)
+Wooden veneer sheets and
+pressed wooden panels (as a
+constituent within the starch
+adhesive), as a flame retardant,
+Disodium octaborate 1000 12008-41-2
+as stabilizer in aminoplastic
+resins, and as a biocide in
+professional and industrial wood
+preservation.
+In wood veneers/ pressed
+1303-96-4,
+wooden panels as starch
+1330-43-4,
+Disodium tetraborate, anhydrous 1000 additive, flame retardant and
+12179-04-3,
+stabilizer in amino-plastic resin,
+wood preservative.
+Disodium 3,3'-[[1,1'-biphenyl]-4,4'-
+diylbis(azo)]bis(4-aminonaphthalene-1- 1000 Dye for textiles and paper 573-58-0
+sulphonate) (C.I. Direct Red 28)
+Dell Technologies Page 21 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+[Phthalato(2-)]dioxotrilead 1000 Heat stabilizer for plastics, for
+example for wiring and cabling 69011-06-9
+insulation
+Dioxobis(stearato)trilead 1000 Heat stabilizer for plastics, for
+example for wiring and cabling 12578-12-0
+insulation
+Dodecamethylcyclohexasiloxane 1000 Siloxanes are monomers used 540-97-6
+to manufacture silicones. They
+may remain as unreacted in
+silicone polymers and
+copolymers, used in many
+electrotechnical equipment
+product categories.
+Heat stabilizer for plastics, for
+Fatty acids, C16-18, lead salts 1000 example for wiring and cabling 91031-62-8
+insulation
+Impurities in carbon black,
+which is used as coloring agent
+in plastics and softener in
+rubbers. Note that substance is 206-44-0;
+Fluoranthene 1000
+restricted (threshold 1 ppm) for 93951-69-0
+external plastics and soft
+surfaces that can experience
+frequent skin contact
+Primary use is as a hardener for
+Hexahydromethylphthalic anhydride 1000 25550-51-0
+epoxy resins.
+Primary use is as a hardener for
+Hexahydro-4-methylphthalic anhydride 1000 19438-60-9
+epoxy resins.
+Primary use is as a hardener for
+Hexahydro-1-methylphthalic anhydride 1000 48122-14-1
+epoxy resins.
+Primary use is as a hardener for
+Hexahydro-3-methylphthalic anhydride 1000 57110-29-9
+epoxy resins.
+Used in the manufacture of
+substances and in coating
+Isobutyl 4-hydroxybenzoate 1000 products, fillers, putties, 4247-02-3
+plasters, modelling clay, and
+inks and toners.
+Used in anticorrosion coatings
+Lead cyanamidate 1000 20837-86-9
+e.g. steel articles
+Dell Technologies Page 22 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Heat stabilizer in nylon and
+polyesters, also used as a
+Lead dinitrate 1000 10099-74-8
+coating on paper for photo
+thermography
+Heat stabilizer for PVC used for
+Lead oxide sulfate 1000 12036-76-9
+wiring and cabling insulation
+In piezoelectric components,
+ultrasound transducers, gas
+igniters, ultrasonic motors,
+Lead titanium zirconium oxide 1000 12626-81-2
+ceramic capacitors and other
+electronic components that use
+piezoelectric materials
+A monomer combined with
+formaldehyde and other agents
+to produce melamine resins.
+Used as an intermediate
+Melamine 1000 108-78-1
+chemical for the production of
+flame retardants and as flame
+retardant itself. Used in coatings
+and inks.
+Reporting requirement applies
+Neodymium 1000 7440-00-8
+only to HDD and their parts
+335-76-2
+Nonadecafluorodecanoic acid (PFDA) and Plasticizer, lubricant, corrosion
+1000 3830-45-3
+its sodium and ammonium salts inhibitor
+3108-42-7
+Siloxanes are monomers used to
+manufacture silicones. They may
+remain as unreacted in silicone
+Octamethylcyclotetrasiloxane 1000 556-67-2
+polymers and copolymers, used
+in many electrotechnical
+equipment product categories.
+Elastomer for Conductive Pads,
+Shielding Rubber, EMI Absorber
+Octamethyltrisiloxane 1000 107-51-7
+(Elastomer), paints, coatings and
+adhesives etc
+Protective paints and coatings,
+lacquers and varnishes,
+Oligomerisation and alkylation reaction adhesives and sealants, rubber
+1000 68512-30-1
+products of 2-phenylpropene and phenol formulations, polymer
+production, antioxidant in
+rubber
+Dell Technologies Page 23 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Lubricants, greases, hydraulic
+O,O,O-triphenyl phosphorothioate 1000 fluids, flame retardants and 597-82-0
+plasticizers.
+25747-83-5
+As flame retardant/adhesive 22454-04-2
+ingredients for wood, paper, 14312-40-4
+Orthoboric acid, sodium salt 1000
+cotton and other plant-derived 1333-73-9
+materials; glass manufacturing 13840-56-7
+14890-53-0
+Heat stabilizer for plastics; for
+Pentalead tetraoxide sulphate 1000 12065-90-6
+example, non-transparent PVC
+Any intentional Reduction of friction, prevention
+use of substances of wear, semiconductors,
+in parts/products coatings, battery electrodes,
+capacitors, wiring insulation,
+25 ppb for LCD displays, printed circuit
+unintentional boards
+Per- and polyfluoroalkyl substances
+presence of non- Dell intends to communicate via Table Z
+(PFASs)
+polymeric PFAS this specification restrictions on
+PFAS, possibly as early as mid-
+50 ppm for 2027 for all uses in electronics
+unintentional except where exempted as
+presence of defined in future revisions of
+polymeric PFAS this specification.
+Reporting requirement applies
+Perchlorates 6 ppb to lithium batteries, coin cell Table X
+batteries
+Heat transfer fluid, immersion
+Perfluamine 1000 338-83-0
+cooling.
+A surfactant which can be found
+in protective coatings and
+25628-08-4
+adhesives which are resistant to
+Perfluorobutane sulfonic acid (PFBS) and 34454-97-2
+1000 water, dirt, oils etc. May be used
+its salts 375-73-5
+as a flame retardant agent for
+375-72-4
+polycarbonate and as an anti-
+static additive.
+Greases, textiles and other
+coated products, and emulsifiers 375-85-9
+used for manufacturing the 20109-59-5
+Perfluoroheptanoic acid and its salts 1000
+Fluoropolymers and 6130-43-4
+fluoroelastomers. Used as a 21049-36-5
+stain or water repellent
+Dell Technologies Page 24 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Surfactant in the production of 375-95-1,
+Perfluorononan-1-oic-acid and its sodium
+1000 the fluoropolymer 4149-60-4,
+and ammonium salts
+polyvinylidene fluoride (PVDF) 21049-39-8
+Impurities in carbon black,
+which is used as coloring agent
+in plastics and softener in
+rubbers. Note that substance is
+Phenanthrene 1000 85-01-8
+restricted (threshold 1 ppm) for
+external plastics and soft
+surfaces that can experience
+frequent skin contact.
+plasticizer, dye, pigment, paint,
+Phthalate: Dicyclohexyl phthalate 1000 ink, manufacture of adhesive, 84-61-7
+lubricant
+Phthalate: Diundecyl phthalate (DuDP) 1000 plasticizer 3648-20-2
+Used as a plasticizer for certain
+Phthalate: Diisohexyl phthalate 1000 71850-09-4
+plastics and rubbers
+Cables, connectors, electronic
+Polyvinyl Chloride (PVC) components, battery trays,
+1000 9002-86-2
+magnetic tape, and similar non-
+mechanical plastic parts.
+Impurities in carbon black,
+which is used as coloring agent
+in plastics and softener in
+rubbers. Note that substance is 129-00-0
+Pyrene 1000
+restricted (threshold 1 ppm) for 1718-52-1
+external plastics and soft
+surfaces that can experience
+frequent skin contact
+Used as yellow pigment for
+Pyrochlore, antimony lead yellow 1000 8012-00-8
+coloring plastics and paint
+reaction mass of 2,2,3,3,5,5,6,6-
+octafluoro-4-(1,1,1,2,3,3,3-
+heptafluoropropan-2-yl)morpholine and 1000 Heat transfer fluid
+2,2,3,3,5,5,6,6-octafluoro-4-
+(heptafluoropropyl)morpholine
+reaction mass of: triphenylthiophosphate Hydraulic fluids, lubricants and
+1000 192268-65-8
+and tertiary butylated phenyl derivatives greases
+Silicic acid (H2Si2O5), barium salt (1:1), Used in UV emitting light bulbs
+1000 68784-75-8
+lead-doped and lamps
+Dell Technologies Page 25 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+TABLE 2 – Material Declaration Requirements at Homogeneous Material Level
+Threshold Limit
+Reference
+(mg substance /
+Substance Examples of Use Appendix B /
+kg homogeneous
+CAS #
+weight =ppm)
+Heat stabilizer for PVC, for
+Sulfurous acid, lead salt, dibasic 1000 example for wiring and cabling 62229-08-7
+insulation
+Plasticizers, sealants, epoxy
+Terphenyl, hydrogenated 1000 61788-32-7
+adhesives, paints and heat sinks
+In wood veneers/ pressed
+wooden panels as starch
+Tetraboron disodium heptaoxide, hydrate 1000 additive, flame retardant and 12267-73-1
+stabilizer in aminoplastic resin,
+wood preservative
+Flame retardant used in PCB
+Tetrabromobisphenol A (TBBPA) additive
+1000 Laminates and other electrical 30496-13-0
+and reactive
+components.
+Heat stabilizer for PVC, for
+Trilead dioxide phosphonate 1000 example for wiring and cabling 12141-20-7
+insulation
+Stabilizer and antioxidant in the
+Tris(4-nonylphenyl, branched and linear) 3050-88-2
+processing of various plastic
+phosphite (TNPP) with ≥ 0.1% w/w of 4- 1000 31631-13-7
+materials such as PVC,
+nonylphenol, branched and linear (4-NP) 106599-06-8
+Polyolefines or rubbers
+Zirconia Aluminosilicate Refractory Thermal insulation for high
+1000 -
+Ceramic Fiber temperature test equipment.
+3.3 BFR/CFR/PVC-Free “Halogen Free” Requirements
+All parts and/or products designed to satisfy “halogen-free” requirements must satisfy Dell Technologies’
+BFR/CFR/PVC-Free Specification (formerly “Dell Halogen-Free Specification”), p/n ENV0199 (in Agile) in
+addition to this specification. Parts and/or products without a “halogen-free” requirement are not
+required to comply with ENV0199 but with this specification.
+3.4 EPEAT substance requirements
+Products which are required to be registered with EPEAT must meet the requirements listed in the Dell
+specification ENV0425.
+Table 3 references optional EPEAT criteria that individual products may need to comply with depending
+on EPEAT registration. Individual product requirements are communicated to suppliers separately.
+Dell Technologies Page 26 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table 3 – Optional EPEAT criteria
+Criterion Explanation
+Reduction of substances on the European Union REACH
+See EPEAT-COC-2025 Criterion 6.1.4
+Regulation Candidate List of SVHCs for Authorization
+Further reduction of bromine and chlorine content of
+See EPEAT-COC-2025 criterion 6.1.6
+plastic materials / in plastic parts
+Reduction of PFAS content in plastic parts See EPEAT-COC-2025 Criterion 6.1.7
+Reduction of beryllium content See EPEAT-COC-2025 criterion 6.1.8
+Suitability and risk assessment of materials in prolonged See EPEAT-COC-2025 criterion 6.1.9
+skin contact
+Required for all products, not only for EPEAT registered
+Record of declarable substances
+products.
+Required for all products, not only for EPEAT registered
+Restriction of PFAS in packaging
+products.
+Flame retardants and plasticizers in plastic parts > 25 g
+must be assessed in accordance with the GreenScreen
+Chemical assessment and selection for Safer Chemicals method and assigned a
+GreenScreen Benchmark score of 2 or more.
+Exemptions listed in IEEE Std 1680.1™-2018 and in
+NSF/ANSI 426 – 2018 apply.
+Record of IEC 62474 declarable substances Required for all products
+3.5 TCO substance requirements
+Following requirements apply for products designed to be TCO certified:
+Halogens (mandate 7.2.1, TCO Certified Generation 10):
+• Product housing, printed circuit board (PCB) laminates, and external cable parts above 0.5 grams
+must not contain intentionally added (additive or reactive) halogenated flame retardant,
+plasticizer or vinyl polymer stabilizer substances.
+• Exempted are all other parts, such as electronic components and PCB laminates sealed inside
+electronic components.
+• The largest PCB by area in the power supply unit (internal/external) must be tested for bromine
+and chlorine.
+Maximum concentration values tolerated for a restricted substance is 0.1% by weight of the material in
+homogeneous materials.
+Non-halogenated substances (mandate 7.3.1, TCO Certified Generation 10):
+Dell Technologies Page 27 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+• Product housing parts, printed circuit board (PCB) laminates, and external cable parts above 0.5
+grams must only contain intentionally added (additive or reactive) non-halogenated flame
+retardants and vinyl polymer stabilizers that appear on TCO Certified Accepted Substance List. .
+• Exempted are all other parts, such as electronic components and PCB laminates sealed inside
+electronic components.
+Plasticizers (mandate 7.4.1, TCO Certified Generation 10):
+• Product housing and cable/wire parts above 0.5 grams must only contain intentionally added
+plasticizers that appear on TCO Certified Accepted Substance List. Exempted are connectors and
+wires sealed inside electronic components.
+• The product must not contain Bis (2-ethylhexyl) phthalate (DEHP), Butyl benzyl phthalate (BBP),
+Dibutyl phthalate (DBP), and Diisobutyl phthalate (DIBP). No parts of the product are exempted.
+• All substances of a plasticizer mixture must be accounted for. Non-accepted ingredients must not
+exceed concentration levels of 0.1% by weight of the plasticizer.
+3.6 Taiwan Green Mark substance requirements
+Parts and/or products designed to be eligible for the Taiwan Green Mark must satisfy substance
+restrictions listed in Table 4.
+Table 4 – Taiwan Green Mark Substance Restrictions
+Threshold Limit
+Reference
+(mg substance / Explanation / Exemption /
+Substance Appendix B /
+kg homogeneous Effective Date
+CAS #
+weight =ppm)
+Restriction applies to plastic
+Cadmium and its compounds 2 Table B
+parts greater than 25 grams.
+Cadmium and its compounds 5 Built-in batteries Table B
+Restriction applies to plastic
+Chromium VI and its compounds 10 Table D
+parts greater than 25 grams.
+Restriction applies to plastic
+Lead and its compounds 2 Table F
+parts greater than 25 grams.
+Lead and its compounds 15 Built-in batteries Table F
+Dell Technologies Page 28 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table 4 – Taiwan Green Mark Substance Restrictions
+Threshold Limit
+Reference
+(mg substance / Explanation / Exemption /
+Substance Appendix B /
+kg homogeneous Effective Date
+CAS #
+weight =ppm)
+Restriction applies to plastic
+Mercury and its compounds 2 Table G
+parts greater than 25 grams.
+Mercury and its compounds 0,25 Built-in batteries Table G
+Restriction applies to plastic
+Brominated flame retardants PBB & PBDE 10 Table I
+parts greater than 25 grams.
+Restriction applies to plastic
+Short Chained Chlorinated Paraffins (SCCP) 10 Table S
+parts greater than 25 grams.
+4. Product Packaging Content Restrictions
+Table 5 lists substances that Dell Technologies has banned or restricted in product packaging materials
+supplied to or designed by Dell Technologies Inc. These substances cannot be used in the manufacturing of or
+contained in product packaging materials supplied to or designed by Dell Technologies Inc. In some instances,
+a threshold limit has been established to account for unavoidable impurities. The material is acceptable if the
+restricted substances are present at a quantity below the threshold limit for a controlled application. For
+packaging recycle marking requirements (SPI marks and country-specific marks), please see Dell Technologies
+WW Packaging Recycle Marking Specification (ENV0427, in Agile).
+Refer to Appendix B for a detailed list of CAS #’s for each substance below.
+Table 5 – Packaging Content Restrictions
+Threshold Limit
+(mg substance / Explanation / Exemption / Reference
+Substance
+kg homogeneous Effective Date Appendix B / CAS #
+weight =ppm)
+100
+Cadmium, Chromium VI, Lead and Mercury
+(sum of None Tables B, D, F, G
+compounds
+concentrations)
+Table C, E. See also
+Ozone depleting substances (Class I & Class Annexes A, B, C, E
+Not detectable None
+II CFCs and HCFCs) of Montreal
+Protocol
+See Section 2.4 for
+Halogenated plastics or polymers (ex: PVC) Not detectable None
+definition
+Dell Technologies Page 29 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table 5 – Packaging Content Restrictions
+Threshold Limit
+(mg substance / Explanation / Exemption / Reference
+Substance
+kg homogeneous Effective Date Appendix B / CAS #
+weight =ppm)
+Restriction only applies to
+wood products.
+Formaldehyde Not detectable Transportation pallets are 50-00-0
+excluded from this
+restriction
+REACH restriction,
+Shall not be used in the
+Arsenic compounds Not detectable Various CAS
+preservation of wood
+numbers
+0,1% mass
+Mineral oil aromatic hydrocarbons (MOAH)
+concentration in
+with 1 to 7 aromatic rings
+the ink
+1ppm mass
+Mineral oil aromatic hydrocarbons (MOAH)
+concentration in
+with 3 to 7 aromatic rings
+the ink
+0,1% mass
+Mineral oil saturated hydrocarbons (MOSH)
+concentration in
+with 16 to 35 carbon atoms
+the ink
+Substances shall not be
+Ortho-phthalates
+intentionally added to any
+(listed on either EU
+package or packaging
+No intentional RoHS and/or EU
+Ortho-phthalates component. The sum of the
+use REACH Annex XIV
+combined concentrations
+(Authorization
+of ortho-phthalates must
+List))
+be ≤ 500ppm.
+Substances may not be
+intentionally added to
+packaging /packaging
+component. Total fluorine
+present in any packaging
+component due to
+No intentional
+Per- and polyfluoroalkyl substances (PFASs) unintentional presence of Table Z
+use
+PFAS shall not exceed 100
+ppm by weight (1000 ppm
+if the packaging component
+contains ≥ 25% post-
+consumer recycled (PCR)
+content)
+Use of elemental chlorine as a bleaching agent to bleach virgin or recovered fibers in product packaging and
+printed documentation is prohibited. The use of recovered fibers that were previously bleached is acceptable.
+Packaging materials that are elemental chlorine free (ECF), processed chlorine free (PCF), or totally chlorine
+free (TCF) meet Dell’s requirement.
+Dell Technologies Page 30 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Dell Technologies restricts the use of free-rise polyurethane based foam-in-place.
+5. Battery Content Restrictions
+Table 6 lists substances that Dell Technologies has restricted in batteries supplied to or designed by Dell
+Technologies Inc. above the indicated threshold limit for unavoidable impurities. Battery technology used in
+Dell Technologies products cannot be based on lead**, mercury or cadmium. Further batteries must comply
+with applicable restrictions set out Regulation (EC) No 1907/2006 (REACH)
+Refer to Appendix B for a detailed list of CAS #’s for each substance below.
+Dell Technologies requires reporting of the use of Perchlorates if those are contained in lithium batteries, coin
+cell batteries at a concentration of 1000 ppm or more (see Table 2 and refer to Table X for CAS #’s).
+Table 6 – Battery Content Restrictions
+Threshold Limit
+Substance Exemptions Reference Appendix B
+(mg/kg=ppm)
+Cadmium and its compounds 5 None Table B
+Lead-acid batteries
+Lead and its compounds 40 weighing 5kg or more Table F
+(UPS)**
+Mercury and its compounds 1 None Table G
+** Uninterruptible Power Supply (UPS) units with batteries weighing more than 5kg may utilize lead-acid
+technology. Batteries for this application are subject to certain fees and material labeling requirements.
+.
+6. Non-Electrical/Non-Electronic Parts and Products Requirements
+All Dell Technologies branded non-electrical and non-electronic parts and/or products must satisfy the
+minimum requirements below (this list may not be comprehensive and suppliers should comply with local
+laws and regulations where the products are sold):
+Table 7 - Non-Electrical/Non-Electronic Parts and Products Content Restrictions
+Threshold Limit
+Substance
+(mg/kg=ppm)
+Lead and its compounds (Pb) 90 PPM
+Cadmium and its compounds (Cd) 100 PPM
+Mercury and its compounds (Hg) Not Detectable
+Hexavalent Chromium and its compounds (Cr+6) Not Detectable
+Phthalate DEHP, BBP, DBP, DINP, DIDP, DNOP, DIBP and
+1000 PPM for each phthalate
+all other phthalates
+Dell Technologies Page 31 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table 7 - Non-Electrical/Non-Electronic Parts and Products Content Restrictions
+Threshold Limit
+Substance
+(mg/kg=ppm)
+1000 PPM on all surfaces with expected direct and
+prolonged skin exposure (10 minutes on three or more
+Nickel and its compounds
+occasions within two weeks, or 30 minutes on one or
+more occasions within two weeks).
+No intentional use. < 1 microgram/m2 of coated
+Perfluorooctane sulfonates (PFOS) and its derivatives material for textiles or other coated materials
+(Table O) No intentional use. <25 ppb for PFOS and its salts,
+<1000 ppm for the sum of PFOS-related compounds
+30 PPM. Restriction applies to textile and leather
+articles that may come into direct and prolonged
+Azocolorants and Azodyes
+contact with the human skin or oral cavity. Refer to
+Table K.
+Additional requirements for textiles, and apparels only Adhere to the latest requirements from the American
+(e.g. shirts, pants, coats, hats, gloves, shoes, backpacks, Apparel & Footwear Association (AAFA) Restricted
+sleeves, cases…) Substance List (RSL)
+No intentional use. 50 ppm of fluorine for unintentional
+Per- and polyfluoroalkyl substances (PFASs)
+presence only. Refer to Table Z.
+Table 8 - Non-Electrical/Non-Electronic Parts and Products Material Declaration
+Requirement
+Threshold Limit
+(mg substance / Reference Appendix B
+Substance Examples of Use
+kg homogeneous / CAS #
+weight =ppm)
+Refer to ECHA
+Candidate List of
+Substances of Very High Concern 1000 substances of very
+high concern for
+Authorisation
+7. Antimicrobial & Biocidal Substance Restrictions
+Antimicrobial and/or Biocidal substances not limited to those defined by US EPA FIFRA and EU Biocidal
+Products Regulation 528/2012 (BPR) are restricted worldwide for use in all Dell Technologies products, even if
+the antimicrobial/biocidal substance is approved for use by the US EPA or EU BPR.
+Dell Technologies Page 32 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+8. Expectations on suppliers
+8.1 Change notification
+If the material, component, assembly or product being supplied to Dell does not meet one or more of the
+applicable requirements of this specification, the supplier must immediately notify Dell. This notification also
+applies if the supplier or a subcontractor(s) makes changes in their operations that will cause a material,
+component, assembly or product to no longer comply with this specification.
+8.2 Non-compliance resolution
+If a restricted substance is used in a nonexempt application above the threshold limit, the following actions
+may be required to resolve any deviations from this specification:
+1. Requalification of parts to comply with specification/ phase out and replacement of use, which may
+result in removal of non-compliant suppliers from the Dell AVL
+2. Delay of product launch
+3. Stop ship of product to affected regions
+Dell Technologies Page 33 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Appendix A: Applicable RoHS Exemptions
+Only the following RoHS exemptions can be used on Dell parts, unless specified otherwise in the ‘Scope and
+dates of applicability’ column of the below table.
+Exemption Scope and dates of
+Exemption
+Number applicability
+Lead as an alloying element in steel for machining purposes containing
+6(a)-I
+up to 0.35% by weight1
+Lead as an alloying element in batch hot-dip galvanised steel
+6(a)-II
+components containing up to 0,2% lead by weight1
+Lead as an alloying element in aluminium containing up to 0,4 % lead by Applicable until July 29,
+6(b)-I
+weight, provided it stems from lead-bearing aluminium scrap recycling1 2026
+Lead as an alloying element in aluminium for machining purposes with a Applicable until January
+6(b)-II
+lead content up to 0,4 % by weight1 27, 2027
+6(c) Copper alloy containing up to 4 % lead by weight1
+Lead in high melting temperature type solders (i.e. lead- based alloys Applicable until
+7(a)
+containing 85 % by weight or more lead) February 15, 2027
+Lead in high melting temperature type solders (i.e. lead-based alloys
+containing 85 % by weight or more lead)
+for internal interconnections for attaching die, or other components
+7(a)-I
+along with a die in semiconductor assembly with steady state or
+transient/impulse currents of 0,1 A or greater or blocking voltages
+beyond 10 V, or die edge sizes larger than 0,3 mm × 0,3 mm
+Lead in high melting temperature type solders (i.e. lead-based alloys
+containing 85 % by weight or more lead)
+for integral (meaning internal and external) connections of die attach in
+electrical and electronic components, if all the following conditions are
+met:
+7(a)-II
+• the thermal conductivity of the cured/sintered die-attach
+material is > 35 W/(m × K),
+• the electrical conductivity of the cured/sintered die-attach
+material is > 4,7 MS/m,
+• solidus melting temperature is higher than 260 °C
+1 The exemption shall not cover EEE for supply to the general public where the EEE or accessible part thereof may,
+during normal or foreseeable conditions of use, be placed in the mouth by children. However, the exemption shall
+apply where the following can be both demonstrated:
+— the rate of lead release from such an EEE or any accessible part, whether coated or uncoated, does not exceed
+0,05 μg/cm2 per hour (equivalent to 0,05 μg/g/h),
+— for coated articles, that the coating is sufficient to ensure that this release rate is not exceeded for a period of at
+least two years of normal or reasonably foreseeable conditions of use of the EEE.
+For the purpose of this footnote, it is considered that an EEE or accessible part of an EEE may be placed in the
+mouth by children if it is smaller than 5 cm in one dimension or has a detachable or protruding part of that size.
+Dell Technologies Page 34 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Exemption Scope and dates of
+Exemption
+Number applicability
+Lead in high melting temperature type solders (i.e. lead-based alloys
+containing 85 % by weight or more lead)
+in first level solder joints (internal or integral connections – meaning
+7(a)-III internal and external) for manufacturing components so that
+subsequent mounting of electronic components onto subassemblies
+(i.e. modules, sub-circuit boards, substrates, or point-to-point
+soldering) with a secondary solder does not reflow the first level solder.
+This sub-entry excludes die attach applications and hermetic sealings
+Lead in high melting temperature type solders (i.e. lead-based alloys
+containing 85 % by weight or more lead)
+in second level solder joints for the attachment of components to
+7(a)-IV printed circuit board or lead frames:
+1. in solder balls for the attachment of ceramic ball-grid-array
+(BGA);
+2. in high temperature plastic overmouldings (> 220 °C)
+Electrical and electronic components containing lead in a glass or
+7(c)-I ceramic other than dielectric ceramic in capacitors, e.g. piezoelectronic
+devices, or in a glass or ceramic matrix compound
+Except applications
+Lead in dielectric ceramic in capacitors for a rated voltage of 125 V AC
+7(c)-II covered by point 7(c)-I
+or 250 V DC or higher
+or 7(c)-IV
+Electrical and electronic components containing lead in a glass or glass
+matrix compound that fulfils any of the following functions:
+1. for protection and electrical insulation in glass beads of high-
+voltage diodes and glass layers for wafers;
+2. for hermetic sealing between ceramic, metal and/or glass
+parts;
+3. for bonding purposes in a process parameter window for <
+7(c)-V 500 °C combined with a viscosity of 1 013,3 dPas (‘glass-
+transition temperature’);
+4. for use as a resistive material such as ink, with a resistivity
+range from 1 ohm/square to 100 megohm/square, excluding
+trimmer potentiometers;
+5. for use in chemically modified glass surfaces for microchannel
+plates (MCPs), channel electron multipliers (CEMs) and
+resistive glass products (RGPs).
+Electrical and electronic components containing lead in a ceramic that
+fulfils any of the following functions:
+7(c)-VI 1. for use in piezoelectric lead zirconium titanate (PZT) ceramics;
+2. for providing ceramics with a positive temperature coefficient
+(PTC).
+13(a) Lead in white glasses used for optical applications
+Dell Technologies Page 35 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Exemption Scope and dates of
+Exemption
+Number applicability
+Lead in solders to complete a viable electrical connection between the
+semiconductor die and carrier within integrated circuit flip chip
+packages where at least one of the following criteria applies:
+• a semiconductor technology node of 90 nm or larger;
+15(a)
+• a single die of 300 mm2 or larger in any semiconductor
+technology node;
+• stacked die packages with die of 300 mm2 or larger, or silicon
+interposers of 300 mm2 or larger.
+Dell Technologies Page 36 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Appendix B: List of CAS Numbers
+Table A – Asbestos and its Compounds
+Example Compounds CAS Number
+Asbestos 1332-21-4
+Actinolite 77536-66-4
+Amosite (Grunerite) 12172-73-5
+Anthophyllite 77536-67-5
+Chrysotile 12001-29-5
+Crocidolite 12001-28-4
+Tremolite 77536-68-6
+Table B - Cadmium and its Compounds
+Example Compounds CAS Number
+Cadmium 7440-43-9
+Cadmium oxide 1306-19-0
+Cadmium sulfide 1306-23-6
+Cadmium chloride 10108-64-2
+Cadmium sulfate 10124-36-4
+Other cadmium compounds -
+Table C – Chlorofluorocarbons (CFC’s)
+Example Compounds CAS Number
+Trichlorofluoromethane 75-69-4
+Dichlorodifluoromethane (CFC12) 75-71-8
+Chlorotrifluoromethane (CFC 13) 75-72-9
+Pentachlorofluoroethane (CFC 111) 354-56-3
+Tetrachlorodifluoroethane (CFC 112) 76-12-0
+Trichlorotrifluoroethane (CFC 113) 354-58-5
+1,1,2 Trichloro-1,2,2 trifluoroethane 76-13-1
+Dichlorotetrafluoroethane (CFC 114) 76-14-2
+Monochloropentafluoroethane (CFC 115) 76-15-3
+422-78-6
+Heptachlorofluoropropane (CFC 211)
+135401-87-5
+Hexachlorodifluoropropane (CFC 212) 3182-26-1
+2354-06-5
+Pentachlorotrifluoropropane (CFC 213)
+134237-31-3
+Tetrachlorotetrafluoropropane (CFC 214) 29255-31-0
+1,1,1,3-Tetrachlorotetrafluoropropane 2268-46-4
+Dell Technologies Page 37 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table C – Chlorofluorocarbons (CFC’s)
+Example Compounds CAS Number
+Trichloropentafluoropropane (CFC 215) 1599-41-3
+1,1,1-Trichloropentafluoropropane 4259-43-2
+1,2,3-Trichloropentafluoropropane 76-17-5
+Dichlorohexafluoropropane (CFC 216) 661-97-2
+Monochloroheptafluoropropane (CFC 217) 422-86-6
+Bromochlorodifluoromethane (Halon 1211) 353-59-3
+Bromotrifluoromethane (Halon 1301) 75-63-8
+Dibromotetrafluoroethane (Halon 2402) 124-73-2
+Carbon Tetrachloride (Tetrachloromethane) 56-23-5
+1,1,1, - Trichloroethane (methyl chloroform) and its isomers except
+71-55-6
+1,1,2-trichloroethane
+Bromomethane (Methyl Bromide) 74-83-9
+Bromodifluoromethane and isomers (HBFC’s) 1511-62-2
+Other Chlorofluorocarbons -
+Table D - Chromium VI and its Compounds
+Example Compounds CAS Number
+Chromium (VI) oxide 1333-82-0
+Barium chromate 10294-40-3
+Calcium chromate 13765-19-0
+Chromic acetate 1066-30-4
+Chromium trioxide 1333-82-0
+Lead (II) chromate 7758-97-6
+Sodium chromate 7775-11-3
+Sodium dichromate 10588-01-9
+Strontium chromate 7789-06-2
+Potassium dichromate 7778-50-9
+Potassium chromate 7789-00-6
+Zinc chromate 13530-65-9
+Other hexavalent chromium compounds -
+Table E – Hydrochlorofluorocarbons (HCFC’s)
+Example Compounds CAS Number
+Dichlorofluoromethane (HCFC 21) 75-43-4
+Chlorodifluoromethane (HCFC 22) 75-45-6
+Chlorofluoromethane (HCFC 31) 593-70-4
+Dell Technologies Page 38 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table E – Hydrochlorofluorocarbons (HCFC’s)
+Example Compounds CAS Number
+Tetrachlorofluoroethane (HCFC 121) 134237-32-4
+1,1,1,2-tetrachloro-2-fluoroethane (HCFC 121a) 354-11-0
+1,1,2,2-tetracloro-1-fluoroethane 354-14-3
+Trichlorodifluoroethane (HCFC 122) 41834-16-6
+1,2,2-trichloro-1,1-difluoroethane 354-21-2
+Dichlorotrifluoroethane(HCFC 123) 34077-87-7
+Dichloro-1,1,2-trifluoroethane 90454-18-5
+2,2-dichloro-1,1,1-trifluroethane 306-83-2
+1,2-dichloro-1,1,2-trifluroethane (HCFC-123a) 354-23-4
+1,1-dichloro-1,2,2-trifluroethane (HCFC-123b) 812-04-4
+2,2-dichloro-1,1,2-trifluroethane (HCFC-123b) 812-04-4
+Chlorotetrafluoroethane (HCFC 124) 63938-10-3
+2-chloro-1,1,1,2-tetrafluoroethane 2837-89-0
+1-chloro-1,1,2,2-tetrafluoroethane (HCFC 124a) 354-25-6
+Trichlorofluoroethane (HCFC 131) 27154-33-2;(134237-34-6)
+1-Fluoro-1,2,2-trichloroethane 359-28-4
+1,1,1-trichloro-2-fluoroethane (HCFC131b) 811-95-0
+Dichlorodifluoroethane (HCFC 132) 25915-78-0
+1,2-dichloro-1,1-difluoroethane (HCFC 132b) 1649-08-7
+1,1-dichloro-1,2-difluoroethane (HFCF 132c) 1842-05-3
+1,1-dichloro-2,2-difluoroethane 471-43-2
+1,2-dichloro-1,2-difluoroethane 431-06-1
+Chlorotrifluoroethane (HCFC 133) 1330-45-6
+1-chloro-1,2,2-trifluoroethane 1330-45-6
+2-chloro-1,1,1-trifluoroethane (HCFC-133a) 75-88-7
+Dichlorofluoroethane(HCFC 141) 1717-00-6; (25167-88-8)
+1,1-dichloro-1-fluoroethane (HCFC-141b) 1717-00-6
+1,2-dichloro-1-fluoroethane 430-57-9
+Chlorodifluoroethane (HCFC 142) 25497-29-4
+1-chloro-1,1-difluoroethane (HCFC142b) 75-68-3
+1-chloro-1,2-difluoroethane (HCFC142a) 25497-29-4
+Hexachlorofluoropropane (HCFC 221) 134237-35-7
+Pentachlorodifluoropropane (HCFC 222) 134237-36-8
+Tetrachlorotrifluropropane (HCFC 223) 134237-37-9
+Trichlorotetrafluoropropane (HCFC 224) 134237-38-0
+Dell Technologies Page 39 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table E – Hydrochlorofluorocarbons (HCFC’s)
+Example Compounds CAS Number
+Dichloropentafluoropropane, (Ethyne, fluoro-) (HCFC 225) 127564-92-5; (2713-09-9)
+2,2-Dichloro-1,1,1,3,3-pentafluoropropane(HCFC 225aa) 128903-21-9
+2,3-Dichloro-1,1,1,2,3-pentafluoropropane (HCFC 225ba) 422-48-0
+1,2-Dichloro-1,1,2,3,3-pentafluoropropane (HCFC 225bb) 422-44-6
+3,3-Dichloro-1,1,1,2,2-pentafluoropropane (HCFC 225ca) 422-56-0
+1,3-Dichloro-1,1,2,2,3-pentafluoropropane (HCFC 225cb) 507-55-1
+1,1-Dichloro-1,2,2,3,3-pentafluoropropane(HCFC 225cc) 13474-88-9
+1,2-Dichloro-1,1,3,3,3-pentafluoropropane (HCFC 225da) 431-86-7
+1,3-Dichloro-1,1,2,3,3-pentafluoropropane (HCFC 225ea) 136013-79-1
+1,1-Dichloro-1,2,3,3,3-pentafluoropropane(HCFC 225eb) 111512-56-2
+Chlorohexafluoropropane (HCFC 226) 134308-72-8
+Pentachlorofluoropropane (HCFC 231) 134190-48-0
+Tetrachlorodifluoropropane (HCFC 232) 134237-39-1
+Trichlorotrifluoropropane (HCFC 233) 134237-40-4
+1,1,1-Trichloro-3,3,3-trifluoropropane 7125-83-9
+Dichlorotetrafluoropropane (HCFC 234) 127564-83-4
+Chloropentafluoropropane (HCFC 235) 134237-41-5
+1-Chloro-1,1,3,3,3-pentafluoropropane 460-92-4
+Tetrachlorofluoropropane (HCFC 241) 134190-49-1
+Trichlorodifluoropropane (HCFC 242) 134237-42-6
+Dichlorotrifluoropropane (HCFC 243) 134237-43-7
+1,1-dichloro-1,2,2-trifluoropropane 7125-99-7
+2,3-dichloro-1,1,1-trifluoropropane 338-75-0
+3,3-Dichloro-1,1,1-trifluoropropane 460-69-5
+Chlorotetrafluoropropane (HCFC 244) 134190-50-4
+3-chloro-1,1,2,2-tetrafluoropropane 679-85-6
+Trichlorofluoropropane (HCFC 251) 134190-51-5
+1,1,3-trichloro-1-fluoropropane 818-99-5
+Dichlorodifluoropropane (HCFC 252) 134190-52-6
+Chlorotrifluoropropane (HCFC 253) 134237-44-8
+3-chloro-1,1,1-trifluoropropane (HCFC 253fb) 460-35-5
+Dichlorofluoropropane (HCFC 261) 134237-45-9
+1,1-dichloro-1-fluoropropane 7799-56-6
+Chlorodifluoropropane (HCFC 262) 134190-53-7
+2-chloro-1,3-difluoropropane 102738-79-4
+Chlorofluoropropane (HCFC 271) 134190-54-8
+2-chloro-2-fluoropropane 420-44-0
+Other Hydrofluorocarbons -
+Dell Technologies Page 40 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table F - Lead and its Compounds
+Example Compounds CAS Number
+Lead 7439-92-1
+Lead (II) sulfate 7446-14-2
+Lead (II) carbonate 598-63-0
+Lead chromate molybdate sulphate red 12656-85-8
+Lead hydrocarbonate 1319-46-6
+Lead acetate 301-04-2
+Lead (II) acetate, trihydrate 6080-56-4
+Lead phosphate 7446-27-7
+Lead selenide 12069-00-0
+Lead (IV) oxide 1309-60-0
+Lead (II,IV) oxide 1314-41-6
+Lead (II) sulfide 1314-87-0
+Lead (II) oxide 1317-36-8
+Lead (II) carbonate basic 1319-46-6
+Lead hydroxidcarbonate 1344-36-1
+Lead (II) phosphate 7446-27-7
+Lead (II) chromate 7758-97-6
+Lead (II) titanate 12060-00-3
+Lead sulfate, sulphuric acid, lead salt 15739-80-7
+Lead sulfochromate yellow 1344-37-2
+Lead sulphate, tribasic 12202-17-4
+Lead stearate 1072-35-1
+Other lead compounds -
+Table G - Mercury and its Compounds
+Example Compounds CAS Number
+Mercury 7439-97-6
+Mercuric chloride 33631-63-9
+Mercury (II) chloride 7487-94-7
+Mercuric sulfate 7783-35-9
+Mercuric nitrate 10045-94-0
+Mercuric (II) oxide 21908-53-2
+Mercuric sulfide 1344-48-5
+Other mercury compounds -
+Dell Technologies Page 41 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table H - Nickel and its Compounds
+Example Compounds CAS Number
+Nickel 7440-02-0
+Nickel acetate 373-02-4
+Nickel carbonate 3333-67-3
+Nickel carbonyl 13463-39-3
+Nickel hydroxide 12054-48-7 or 11113-74-9
+Nickelocene 1271-28-9
+Nickel oxide 1313-99-1
+Nickel subsulfide 12035-72-2
+Other nickel compounds -
+Table I – Polybrominated Biphenyls (PBBs) and their Ethers / Oxides (PBDEs)
+Example Compounds CAS Number
+2052-07-5 (2-Bromobiphenyl)
+2113-57-7 (3-Bromobiphenyl
+Bromobiphenyl and its ethers
+92-66-0 (4-Bromobiphenyl)
+101-55-3 (ether)
+13654-09-6
+Decabromobiphenyl and its ethers
+1163-19-5 (ether)
+92-86-4
+Dibromobiphenyl and its ethers
+2050-47-7 (ether)
+68928-80-3
+Heptabromobiphenylether
+446255-20-5
+59080-40-9
+36355-01-8 (hexabromo-1,1’-biphenyl)
+Hexabromobiphenyl and its ethers 67774-32-7 (Firemaster FF-1)
+36483-60-0 (ether)
+446255-03-4 (ether)
+Nonabromobiphenylether 63936-56-1
+61288-13-9
+Octabromobiphenyl and its ethers
+32536-52-0 (ether)
+Pentabromobidphenyl ether (note: Commercially available PeBDPO
+32534-81-9 (CAS number used for
+is a complex reaction mixture containing a variety of brominated
+commercial grades of PeBDPO)
+diphenyloxides.
+Polybrominated Biphenyls 59536-65-1
+40088-45-7
+Tetrabromobiphenyl and its ethers
+40088-47-9 (ether)
+Tribromobiphenyl ether 49690-94-0
+Other PBBs / PBDEs -
+Dell Technologies Page 42 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table J - Polychlorinated Biphenyls (PCBs) and Terphenyls (PCTs)
+Example Compounds CAS Number
+Polychlorinated Biphenyls 1336-36-3
+Aroclor 12767-79-2
+Chlorodiphenyl (Aroclor 1260) 11096-82-5
+Kanechlor 500 27323-18-8
+Aroclor 1254 11097-69-1
+Terphenyls 26140-60-3
+Other PCBs and PCTs -
+Table K – Azo colorants (aromatic amines that may be formed by azo dyes)
+Example Compounds CAS Number
+biphenyl-4-ylamine 92-67-1
+benzidine 92-87-5
+4-chloro-o-toluidine 95-69-2
+2-naphthylamine 91-59-8
+o-aminoazotoluene 97-56-3
+5-nitro-o-toluidine 99-55-8
+4-chloroaniline 106-47-8
+4-methoxy-m-phenylenediamine 615-05-4
+4,4'-methylenedianiline 101-77-9
+3,3'-dichlorobenzidine 91-94-1
+3,3'-dimethoxybenzidine 119-90-4
+3,3'-dimethylbenzidine 119-93-7
+4,4'-methylenedi-o-toluidine 838-88-0
+6-methoxy-m-toluidine 120-71-8
+4,4'-methylene-bis(2-chloroaniline) 101-14-4
+4,4'-oxydianiline 101-80-4
+4,4'-thiodianiline 139-65-1
+o-toluidine 95-53-4
+4-methyl-m-phenylenediamine 95-80-7
+2,4,5-trimethylaniline 137-17-7
+o-anisidine 90-04-0
+4-amino azobenzene -
+Dell Technologies Page 43 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table L – Brominated/Chlorinated flame retardants/additives (other than PBBs, PBDEs, HBCD and HBCDD)
+Example Compounds CAS Number
+Brominated flame retardant which comes under notation of ISO
+1043-4 code number FR(14) -
+[Aliphatic/alicyclic brominated compounds]
+Brominated flame retardant which comes under notation of ISO
+1043-4 code number FR(15)
+-
+[Aliphatic/alicyclic brominated compounds in combination with
+antimony compounds]
+Brominated flame retardant which comes under notation of ISO
+1043-4 code number FR(16)
+-
+[Aromatic brominated compounds excluding brominated diphenyl
+ether and biphenyls)]
+Brominated flame retardant which comes under notation of ISO
+1043-4 code number FR(17)
+-
+[Aromatic brominated compounds excluding brominated diphenyl
+ether and biphenyls) in combination with antimony compounds]
+Brominated flame retardant which comes under notation of ISO
+1043-4 code number FR(22) [Aliphatic/alicyclic chlorinated and -
+brominated compounds]
+Brominated flame retardant which comes under notation of ISO
+1043-4 code number FR(42) [Brominated organic phosphorus -
+compounds]
+Poly(2,6-dibromo-phenylene oxide) 69882-11-7
+Tetra-decabromo-diphenoxy-benzene 58965-66-5
+1,2-Bis(2,4,6-tribromo-phenoxy) ethane 37853-59-1
+3,5,3’,5’-Tetrabromo-bisphenol A (TBBA) 79-94-7
+TBBA, unspecified 30496-13-0
+TBBA-epichlorhydrin oligomer 40039-93-8
+TBBA-TBBA-diglycidyl-ether oligomer 70682-74-5
+TBBA carbonate oligomer 28906-13-0
+TBBA carbonate oligomer, phenoxy end capped 94334-64-2
+TBBA carbonate oligomer, 2,4,6-tribromo-phenol terminated 71342-77-3
+TBBA-bisphenol A-phosgene polymer 32844-27-2
+Brominated epoxy resin end-capped with tribromophenol 139638-58-7
+Brominated epoxy resin end-capped with tribromophenol 135229-48-0
+TBBA-(2,3-dibromo-propyl-ether) 21850-44-2
+TBBA bis-(2-hydroxy-ethyl-ether) 4162-45-2
+TBBA-bis-(allyl-ether) 25327-89-3
+TBBA-dimethyl-ether 37853-61-5
+Tetrabromo-bisphenol S 39635-79-5
+TBBS-bis-(2,3-dibromo-propyl-ether) 42757-55-1
+Dell Technologies Page 44 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table L – Brominated/Chlorinated flame retardants/additives (other than PBBs, PBDEs, HBCD and HBCDD)
+Example Compounds CAS Number
+2,4-Dibromo-phenol 615-58-7
+2,4,6-tribromo-phenol 118-79-6
+Pentabromo-phenol 608-71-9
+2,4,6-Tribromo-phenyl-alltl-ether 3278-89-5
+Tribromo-phenyl-allyl-ether, unspecified 26762-91-4
+Bis(methyl)tetrabromo-phtalate 55481-60-2
+Bis(2-ethlhexyl)tetrabromo-phtalate 26040-51-7
+2-Hydroxy-propyl-2-(2-hydroxy-ethoxy)-ethyl-TBP 20566-35-2
+TBPA, glycol-and propylene-oxide esters 75790-69-1
+N,N’-Ethylene –bis-(tetrabromo-phthalimide) 32588-76-4
+Ethylene-bis85,6-dibromo-norbornane-2,3-dicarboximide) 52907-07-0
+2,3-Dibromo-2-butene-1,4-diol 3234-02-4
+Dibromo-neopentyl-glycol 3296-90-0
+Dibromo-propanol 96-13-9
+Tribromo-neopentyl-alcohol 36483-57-5
+Poly tribromo-styrene 57137-10-7
+Tribromo-styrene 61368-34-1
+Dibromo-styrene grafted PP 171091-06-8
+Poly-dibromo-styrene 31780-26-4
+Bromo-/Chloro-paraffins 68955-41-9
+Bromo-/Chloro-alpha-olefin 82600-56-4
+Vinylbromide 593-60-2
+Tris-(2,3-dibromo-propyl)-isocyanurate 52434-90-9
+Tris(2,4-Dibromo-phenyl) phosphate 49690-63-3
+Tris(tribromo-neopentyl) phosphate 19186-97-1
+Chlorinated and brominated phosphate esther 125997-20-8
+Pentabromo-toluene 87-83-2
+Pentabromo-benzyl bromide 38521-51-6
+1,3-Butadiene homopolymer,brominated 68441-46-3
+Pentabromo-benzyl-acrylate, monomer 59447-55-1
+Pentabromo-benzyl-acrylate, polymer 59447-57-3
+Decabromo-diphenyl-ethane 84852-53-9
+Tribromo-bisphenyl-maleinimide 59789-51-4
+Brominated trimethylphenyl-lindane 59789-51-4
+Tetrabromo-chyclo-octane 31454-48-5
+1,2-Dibromo-4-(1,2 dibromo-methyl)-cyclo-hexane 3322-93-8
+TBPA Na salt 25357-79-3
+Dell Technologies Page 45 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table L – Brominated/Chlorinated flame retardants/additives (other than PBBs, PBDEs, HBCD and HBCDD)
+Example Compounds CAS Number
+Tetrabromo phthalic anhydride 632-79-1
+Other Brominated Flame Retardants -
+Tetrakis(2-chloroethyl) dichloroisopentyldiphosphate 38051-10-4
+Tris(1-chloro-2-propyl)phosphate 13674-84-5
+Tris(1,3-dichloro-2-propyl)phosphate 13674-87-8
+Tris(2,3-dichloro-1-propyl)phosphate 66108-37-0
+Other Chlorinated Flame Retardants -
+Table M – Tributyl tin (TBT), Triphenyl tin (TPT) and Triphenyl tin oxide (TPTO)
+Example Compounds CAS Number
+Tributyl tin bromide 1461-23-0
+Tributyl tin oxide 56-35-9
+Tributyl tin acetate 56-36-0
+Tributyl tin laurate 3090-36-6
+Tributyl tin fluoride 1983-10-4
+Triphenyl tin 668-34-8
+Triphenyl tin chloride 639-58-7
+Triphenyl tin hydroxide 76-87-9
+Triphenyl tin acetate 900-95-8
+Triphenyl tin fluoride 379-52-2
+Table N – Polychlorinated Naphthalene (PCN)
+Example Compounds CAS Number
+Trichloronaphthalene 1321-65-9
+Tetrachloronaphthalene 1335-88-2
+Pentachloronaphthalene 1321-64-8
+Octachloronaphthalene 2234-13-1
+Table O – Perfluorooctane sulfonic acid (PFOS), its salts and perfluorooctane sulfonyl fluoride (PFOSF)
+Example Compounds CAS Number
+Perfluorooctanesulfonyl fluoride 307-35-7
+2-Propenoic acid, 2-methyl-, 2-
+376-14-7
+[ethyl[(heptadecafluorooctyl)sulfonyl]amino] ethyl ester
+Dell Technologies Page 46 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table O – Perfluorooctane sulfonic acid (PFOS), its salts and perfluorooctane sulfonyl fluoride (PFOSF)
+Example Compounds CAS Number
+2-Propenoic acid, 2-
+383-07-3
+[butyl[(heptadecafluorooctyl)sulfonyl]amino]ethyl ester
+2-Propenoic acid, 2-
+423-82-5
+[ethyl[(heptadecafluorooctyl)sulfonyl]amino]ethyl ester
+N-allylheptadecafluorooctanesulphonamide 423-86-9
+heptadecafluorooctanesulphonamide 754-91-6
+1-Propanaminium, 3-[[(heptadecafluorooctyl)sulfonyl]amino]-N,N,N-
+1652-63-7
+trimethyl-,iodide
+Heptadecafluorooctanesulfonic acid 1763-23-1
+Potassium heptadecafluoro-1-octanesulfonate 2795-39-3
+Lithium heptadecafluorooctanesulphonate 29457-72-5
+Ammonium heptadecafluoro-1-octanesulfonate 29081-56-9
+Bis(2-hydroxyethyl)ammonium perfluorooctanesulfonate 70225-14-8
+Heptadecafluorooctanesulfonic acid tetraethylammonium salt 56773-42-3
+1-Decanaminium, N-decyl-N,N-dimethyl-, salt with
+1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluoro-1-octanesulfonic
+acid (1:1;1-Decanaminium, N-decyl-N,N-dimethyl-, salt with 251099-16-8
+1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluoro-1-octanesulfonic
+acid (1:1)
+N-ethyl-1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluorooctane-1-
+4151-50-2
+sulfonamide
+1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluoro-N-methyloctane-1-
+31506-32-8
+sulfonamide
+N-ethylheptadecafluoro-N-(2-hydroxyethyl)octanesulphonamide 1691-99-2
+Heptadecafluoro-N-(2-hydroxyethyl)-N-methyloctanesulphonamide 24448-09-7
+Table P – Polycyclic Aromatic Hydrocarbons (PAHs)
+Example Compounds CAS Number
+Acenaphthen 83-32-9
+Acenaphthylen 208-96-8
+Anthracen 120-12-7
+Benzo[a]anthracen 56-55-3
+Benzo[b]fluoranthen 205-99-2
+Benzo[j]fluoranthen 205-82-3
+Benzo[k]fluoranthen 207-08-9
+Benzo[ghi]perylen 191-24-2
+Benzo[a]pyren 50-32-8
+Dell Technologies Page 47 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table P – Polycyclic Aromatic Hydrocarbons (PAHs)
+Example Compounds CAS Number
+Benzo[e]pyren 192-97-2
+Chrysene 218-01-9
+Dibenzo[a,h]anthracen 53-70-3
+Fluoranthen 206-44-0
+Fluoren 86-73-7
+Indeno[1,2,3-cd]pyren 193-39-5
+Naphthalin 91-20-3
+Phenanthrene 85-01-8
+Pyrene 129-00-0
+Other PAHs -
+Table Q – Fluorinated Greenhouse Gases
+Example Compounds CAS Number
+Carbon tetrafluoride (Perfluoromethane) 75-73-0
+Perfluoroethane (Hexafluoroethane) 76-16-4
+Perfluoropropane (Octafluoroproane) 76-19-7
+Perfluorobutane (Decafluorobutane) 355-25-9
+Perfluoropentane (Dodecafluoropentane) 678-26-2
+Perfluorohexane (Tetradecafluorohexane) 355-42-0
+Perfluorocyclobutane 115-25-3
+Sulfur Hexafluoride (SF6) 2551-62-4
+HFC-23 CHF3 75-46-7
+HFC-32 CH2F2 75-10-5
+HFC-41 CH3F 593-53-3
+HFC-43-10mee C5H2F10 138495-42-8
+HFC-125 C2HF5 354-33-6
+HFC-134 C2H2F4 359-35-3
+HFC-134a CH2FCF3 811-97-2
+HFC-152a C2H4F2 75-37-6
+HFC-143 C2H3F3 430-66-0
+HFC-143a C2H3F3 420-46-2
+HFC-227ea C3HF7 431-89-0
+HFC-236cb CH2FCF2CF3 677-56-5
+HFC-236ea CHF2CHFCF3 431-63-0
+HFC-236fa C3H2F6 690-39-1
+Dell Technologies Page 48 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table Q – Fluorinated Greenhouse Gases
+Example Compounds CAS Number
+HFC-245ca C3H3F5 679-86-7
+HFC-245fa CHF2CH2CF3 460-73-1
+HFC-365mfc CF3CH2CF2CH3 406-58-6
+Table R – Radioactive Substances
+Example Compounds CAS Number
+Uranium-238 7440-61-1
+Radon 10043-92-2
+Americium-241 14596-10-2
+Thorium-232 7440-29-1
+Cesium (Radioactive Isotopes only) 7440-46-2 (Cs-137 010045-97-3)
+Strontium (Radioactive Isotopes only) (elemental 7440-24-6) (Sr-90 10098-97-2)
+Other radioactive substances -
+Table S – Alkanes, Short Chain Chlorinated Paraffins C (SCCPs) and Medium Chain Chlorinated Paraffins C
+10-13 14-17
+(MCCPs)
+Example Compounds CAS Number
+Alkanes, C10-13, chloro 85535-84-8
+Alkanes, C10-12, chloro 108171-26-2
+Alkanes, C12-13, chloro 71011-12-6
+Alkanes, chloro 61788-76-9
+Other Short Chain Chlorinated Paraffins -
+Tetradecane, chloro derivs. 198840-65-2
+Alkanes, C14-16, chloro 1372804-76-6
+Alkanes, C14-17, chloro 85535-85-9
+di-, tri- and tetrachlorotetradecane -
+Chlorinated polyethylene 64754-90-1
+Table T – Dibutyltin (DBT) and Dioctyltin (DOT) Compounds
+Example Compounds CAS Number
+Dibutyltin oxide 818-08-6
+Dibutyltin diacetate 1067-33-0
+Dibutyltin dilaurate 77-58-7
+Dibutyltin maleate 78-04-6
+Other dibutyltin compounds -
+Dell Technologies Page 49 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table T – Dibutyltin (DBT) and Dioctyltin (DOT) Compounds
+Example Compounds CAS Number
+Dioctyl Tin Oxide 870-08-6
+Dioctyltin dilaurate 3648-18-8
+Other Dioctyltin compounds -
+Table U – Beryllium and compounds
+Example Compounds CAS Number
+Beryllium metal 7440-41-7
+Beryllium-aluminium alloy 12770-50-2
+Beryllium-copper alloy 11133-98-5
+Beryl 1302-52-9
+Beryllium chloride 7787-47-5
+Beryllium fluoride 7787-49-7
+Beryllium hydroxide 13327-32-7
+Beryllium sulfate 13510-49-1
+Beryllium sulfate tetrahydrate 7787-56-6
+Beryllium carbonate basic 1319-43-3
+Beryllium nitrate 13597-99-4
+Beryllium nitrate trihydrate 7787-55-5
+Beryllium nitrate tetrahydrate 13510-48-0
+Beryllium phosphate 13598-15-7
+Beryllium silicate 13598-00-0
+Zinc beryllium silicate 39413-47-3
+Other beryllium compounds
+Table V – Antimony and its compounds
+Example Compounds CAS Number
+Antimony 7440-36-0
+Antimony Trioxide 1309-64-4
+Antimony Pentoxide 1314-60-9
+Dell Technologies Page 50 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table W – Perfluorooctanoic acid (PFOA), its salts and PFOA-related compounds
+Example Compounds CAS Number
+Perfluorooctanoic acid (PFOA), its salts and PFOA-related compounds
+“Perfluorooctanoic acid (PFOA), its salts and PFOA-related
+compounds” means the following:
+(i) perfluorooctanoic acid, including any of its branched
+isomers;
+(ii) (ii) its salts;
+(iii) (iii) PFOA-related compounds which, for the purposes
+of the Convention, are any substances that degrade to
+PFOA, including any substances (including salts and
+polymers) having a linear or branched perfluoroheptyl
+group with the moiety (C7F15)C as one of the structural
+elements.
+The following compounds are not included as PFOA-related
+335-67-1 and others
+compounds:
+(i) C8F17-X, where X = F, Cl, Br;
+(ii) fluoropolymers that are covered by CF3[CF2]n-R’,
+where R’=any group, n> 16;
+(iii) perfluoroalkyl carboxylic acids (including their salts,
+esters, halides and anhydrides) with ≥ 8 perfluorinated
+carbons;
+(iv) perfluoroalkane sulfonic acids and perfluoro
+phosphonic acids (including their salts, esters, halides
+and anhydrides) with ≥ 9 perfluorinated carbons;
+(v) perfluorooctane sulfonic acid and its derivatives (PFOS),
+as listed in this Annex.
+Table X – Perchlorates
+Example Compounds CAS Number
+Lithium Perchlorate 7791-03-9
+Ammonium Perchlorate 7790-98-9
+Barium perchlorate 13465-95-7
+Lead perchlorate 13637-76-8
+Magnesium Perchlorate 10034-81-8
+Nickel perchlorate 13637-71-3
+Potassium Perchlorate 7778-74-7
+Sodium Perchlorate 7601-89-0
+Other Perchlorates
+Dell Technologies Page 51 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Table Y – Long chain perfluorocarboxylic acids (C9-21 PFCAs), their salts and related compounds
+Example Compounds CAS Number
+72629-94-8
+Long chain perfluorocarboxylic acids (C9-21 PFCAs), their salts and
+307-55-1
+related compounds” means the following:
+2058-94-8
+(i) linear and branched perfluorocarboxylic acids of the
+375-95-1
+formula CnF2n+1COOH where 8 ≤ n ≤ 20 (C9-21 PFCAs);
+376-06-7
+(ii) their salts
+335-76-2
+(iii) compounds related to C9-21 PFCAs, which are any
+141074-63-7
+substances that have the potential to degrade or to be
+67905-19-5
+transformed to C9-21 PFCAs, including any substances that
+57475-95-3
+contain the perfluorinated alkyl moiety CnF2n+1 (where 8 ≤
+16517-11-6
+n ≤ 20) as one of the structural elements.
+133921-38-7
+• The following compounds are not included as compounds
+68310-12-3
+related to C9-21 PFCAs: CnF2n+1X, where X = F, Cl or Br.
+and others
+Table Z – Per- and polyfluoroalkyl substances (PFASs)
+Example Compounds CAS Number
+Refer to the ‘Comprehensive Global
+PFASs are defined as fluorinated substances that contain at least one Database of PFASs’ on the OECD Portal on
+fully fluorinated methyl or methylene carbon atom (without any Per and Poly Fluorinated Chemicals.
+H/Cl/Br/I atom attached to it), i.e. with a few noted exceptions, any Portal:
+chemical with at least a perfluorinated methyl group (–CF3) or a https://www.oecd.org/chemicalsafety/por
+perfluorinated methylene group (–CF2–) is a PFAS. (OECD (2021), tal-perfluorinated-chemicals/
+Reconciling Terminology of the Universe of Per- and Polyfluoroalkyl Database:
+Substances: Recommendations and Practical Guidance, OECD Series https://www.oecd.org/chemicalsafety/risk
+on Risk Management, No. 61, OECD Publishing, Paris.) -management/global-database-of-per-
+and-polyfluoroalkyl-substances.xlsx
+Dell Technologies Page 52 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Appendix C : Materials Compliance Testing
+To ensure adequate due diligence is performed to satisfy regulatory material compliance, in addition to Full
+Material Declaration (FMD), Dell Technologies requires suppliers to maintain supporting analytical laboratory data
+on file for parts/products supplied to Dell. Suppliers are required to provide this information to Dell within 10
+business days upon request by Dell.
+Purpose: This section provides instructions on sample preparation, test methods and recommended 3rd party
+laboratories for analytical laboratory testing. Dell expects all suppliers to conform to these requirements as part of
+their material due diligence activities.
+Scope: All parts in Dell-branded products that are supplied to Dell and/or designed by Dell must satisfy this
+specification. Compliance with this specification is communicated to Dell via Full Material Declaration. The scope
+includes all of the components, parts, assemblies and packaging of each product.
+References:
+• Dell P/N ENV0199, Dell BFR/CFR/PVC-Free Specification
+• Directive of the European Parliament and of the Council on the Restriction of the Use of Certain Hazardous
+Substances in Electrical and Electronic Equipment, 2011/65/EU, June 2011 (RoHS Directive) and 2015/863/EU,
+June 2015 (addition of four phthalates)
+• Directive of the European Parliament and of the Council on Packaging and Packaging waste, 94/62/EC.
+December 1994
+• IEC 62321 Determination of certain substances in electrotechnical products – Parts 1 through to 8, updates in
+2013, 2015 and 2017
+Definitions:
+• AAS: Atomic Absorption Spectroscopy
+• AFS: Atomic Fluorescence Spectrometry
+• Brominated/chlorinated flame retardants (BFRs and CFRs): flame retardants that contain or are treated with
+bromine and/or chlorine. These elements are typically added to reduce the flammability of components such
+as epoxy resins and thermoplastics. Examples include, but are not limited to, tetrabromobisphenol-A,
+brominated epoxy oligomer (BEO) and polybrominated diphenyl ethers (PBDEs).
+• CV-AAS: Cold Vapor Atomic Absorption Spectrometry
+• CV-AFS: Cold Vapor Atomic Fluorescence Spectrometry
+• Electronic Component: a combination of homogeneous materials that have been formed into a single
+manufactured mechanical or electrical part. Examples of electronic components may include
+microprocessors, plastic enclosures, capacitors…
+• GC/MS: Gas Chromatography/Mass Spectrometry
+• ICP-OES: Inductively Coupled Plasma Optical Emission Spectrometry
+• ICP-MS: Inductively Coupled Plasma-Mass Spectrometry
+• IEC: International Electro technical Commission http://www.iec.ch/
+• Polymer Material: An organic substance made of many repeating chemical units or molecules. Materials in
+this category include plastics, rubber, elastomers…
+• XRF: X-Ray Fluorescence material screening equipment
+Sample Preparation for RoHS Compliance Testing:
+Disassembly
+Dell Technologies Page 53 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+RoHS compliance thresholds, as provided in ENV0424 apply to each homogeneous material within the
+product/component, NOT to the entire product/component. “Homogeneous material” is defined as a material
+that cannot be mechanically disjointed into different materials. The term is understood as "of uniform composition
+throughout". As it is impractical to test each homogeneous material in a given sample, products may need to be
+disassembled to the sub-component level to approximate the homogeneous material level of compliance.
+For example, a hard disk drive would need to be disassembled into multiple parts – metal casing, plastic casing,
+PCB, electrical components, drive disks themselves, and etc. Each of these parts should be tested individually. For
+a cable - the cable jacket and connector would each similarly need to be tested.
+Laboratory facilities
+All industry and regulatory certified laboratories (e.g. ISO17025 certified laboratories) are acceptable to Dell.
+Laboratories without accreditation will not comply with this specification. Examples of acceptable laboratories are
+listed below
+• SGS Laboratories
+• Intertek Testing Services
+• TUV
+• Bureau Veritas
+• UL
+Each laboratory has individual requirements for the amounts of material needed for testing. Most laboratories
+request between 10 and 20 grams of a homogeneous material to yield accurate results.
+Analytical Testing Methods for RoHS Substances
+Dell will only accept RoHS testing to specification IEC 62321, latest edition. Below summarizes the test
+equipment/procedure used for RoHS testing.
+Substances Polymer and Non-Metals Metals
+Cadmium (Cd) and compounds ICP-OES, ICP-MS, AAS ICP-OES, ICP-MS, AAS
+Hexavalent Chromium (Cr+6) Alkaline Digestion / Colorimetric Spot test procedure / Boiling water
+compounds Method extraction procedure (EPA 3060A is not
+an acceptable test method
+Lead (Pb) and compounds ICP-OES, ICP-MS, AAS ICP-OES, ICP-MS, AAS
+Mercury (Hg) and compounds ICP-OES, ICP-MS, CV-AAS, CVAFS ICP-OES, ICP-MS, CV-AAS, CV-AFS
+PolyBrominated Biphenyls (PBB) GC/MS Not Applicable
+PolyBrominated Diphenyl Ethers GC/MS Not Applicable
+(PBDE)
+Phthalates GC/MS Not Applicable
+Detailed test parameters and methodologies are found in the IEC 62321 specification.
+Recommended Analytical Testing Methods for Halogens - Bromine and Chlorine (“Halogen-Free”)
+A number of test methods have been established for determining the concentration of total bromine and chlorine
+in electronic products. Dell will accept the following tests.
+Articles to be Tested Analytical Testing Method
+Printed circuit board (PCB) laminates IPC-TM-650 2.3.41; IEC 61189-2:2006; EN 14582
+(Method A & B); IEC 62321-3-2:2020
+Other materials IEC 61189-2:2006; EN 14582 (Method A & B); IEC
+62321-3-2:2020
+Tests beyond this list will require approval from Dell.
+X-Ray Fluorescence
+Dell Technologies Page 54 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Bench top/handheld X-ray fluorescence (XRF) can be used as a SCREENING tool only for ENV0424 and/or ENV0199
+as part of the supplier’s active verification programs. Due to accuracy limitations of XRF, Dell will not accept XRF
+results as a substitute to the tests above for official compliance documentation provided to Dell upon request.
+Dell Technologies Page 55 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Appendix D: Full Material Disclosure
+Dell requires that suppliers provide Full Materials Disclosures (FMD) for all parts in Dell Technologies-branded
+products that are supplied to Dell Technologies and/or designed by Dell Technologies Inc. The scope includes all of
+the components, parts, assemblies, batteries and packaging of each product.
+Dell requests that information is provided for 100% of material content. If the part / product being provided by the
+supplier includes substances or special alloys that the supplier considers proprietary, the supplier may wish to have
+these treated as confidential business information (CBI). CBI treatment of the information can be used for no more
+than 5% of the weight of the part / product. Substance identity may only be hidden if it is not listed on the IEC
+62474 DSL or Dell Materials Restricted for Use Specification ENV0424. Dell requires that all IEC 62474 DSL
+substances and substances listed in the ENV0424 specification that are present in the part / product above
+threshold must be declared.
+For more information, please visit Supplier Support.
+Dell Technologies Page 56 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Appendix E: Revision history for revisions prior to last
+A00 PCO29189 Initial Release converted over from 6T198 Matt May 2015
+Marshall
+A01 PCO30586 Scope: Communication of compliance uses Agile PG&C Maureen 09/27/15
+instead of N6685. Martinez
+References: Added legal as well as ecolabel
+references.
+Definitions: A definition of halogenated plastics has
+been re-introduced.
+Table 1:
+1. Dioctyltin (DOT) compounds: Reduced scope of
+restriction to align with EU REACH.
+2. HBCDD: Lowered threshold to 100ppm
+(proposed EU POPs regulation)
+3. Removed Perchlorate.
+4. Added Red Phosphorous.
+Table 2 and Table 3:
+1. Merged into a single table, requiring reporting
+of all substances at the homogeneous material
+level (following judgment by the European
+Court of Justice).
+2. Packaging restrictions: Removed restriction on
+expanded polystyrene (EPS foam). Added a
+restriction on free-rise polyurethane based
+foam-in-place.
+3. Battery restrictions: Deleted Mercury
+exemption for button cell batteries.
+4. Supplier declaration process: Communication
+of compliance uses Agile PG&C instead of
+N6685.
+Appendix A: Deleted exemptions 7(b) and 8(b).
+A02 PCO34984 Table 1 - Banned or Restricted Substances Stephen 3/14/17
+Greene
+1. Chromium VI and its compounds - metallic and
+non-metallic applications unified under a single
+threshold of 1000 PPM
+2. Lead and its compounds – “frequently handled”
+added to restriction on cable jacketing material
+for external cables.
+3. BNST - Exemption added for EMC BNST permit
+for sale of product into Canada in 2016 and
+2017 for any legacy EMC parts designed before
+2015.
+Dell Technologies Page 57 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+4. Dibutyltin (DBT) compounds – “Threshold
+relates to the mass of tin” added to
+explanation.
+5. Hexabromocyclododecane (HBCDD) and all
+major diastereoisomers – “Substances may not
+be intentionally added to parts/product.”
+added to explanation for threshold in Japanese
+Law concerning the Examination and
+Regulation of Manufacture etc. of Chemical
+Substances (Class 1 chemical substances).
+6. Polycyclic Aromatic Hydrocarbons (PAH) –
+Specification changed from 64MNT to
+specification ENG0014187 (additional
+information on PAH and German Safety Mark).
+7. Red Phosphorous – “Restriction applies to Red
+Phosphorous flame retardants in molding
+compounds.” added to clarify specific
+applications where substance is banned.
+Table L - Brominated/Chlorinated flame
+retardants/additives (other than PBBs, PBDEs, HBCD
+and HBCDD)
+8. HBCD and HBCDD now excluded from list of
+BRF because the substances are restricted in
+Table 1
+9. Four CFR added:
+a. 38051-10-4, Tetrakis(2-chloroethyl)
+dichloroisopentyldiphosphate
+b. 13674-84-5, Tris(1-chloro-2-
+propyl)phosphate
+c. 66108-37-0, Tris(2,3-dichloro-1-
+propyl)phosphate
+d. No CAS, Chlorinated Flame Retardants
+(CFR), Other Chlorinated Retardants Flame
+A03 PCO37551 Introduction, references: updated legal references Markus Stutz 01/03/2018
+Table 1
+1. Removed exemption for EMC BNST permit
+for sale of product into Canada in 2016 and
+2017
+2. PFOA and its salts added (including
+references in Table W, new)
+Table 2
+1. Added 1,2-benzenedicarboxylic acid, di-C6-
+10-alkyl esters; 1,2-benzenedicarboxylic acid,
+mixed decyl and hexyl and octyl diesters with
+Dell Technologies Page 58 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+≥ 0.3% of dihexyl phthalate (EC No. 201-559-
+5), 68515-51-5 and 68648-93-1
+2. Added , 1,3-propanesultone, 1120-71-4
+3. Added 2-(2H-benzotriazol-2-yl)-4-(tert-butyl)-
+6-(sec-butyl)phenol (UV-350), 36437-3-37
+4. Added 2-(2H-benzotriazol-2-yl)-4,6-
+ditertpentylphenol (UV-328), 25973-55-1
+5. Added 2-ethylhexyl 10-ethyl-4,4-dioctyl-7-
+oxo-8-oxa-3,5-dithia-4-stannatetradecanoate
+(DOTE), 15571-58-1
+6. Added 2,4-di-tert-butyl-6-(5-
+chlorobenzotriazol-2-yl)phenol (UV-327),
+3864-99-1
+7. Added Cadmium oxide, 1306-23-06
+8. Added CAS 12267-73-3 to the entry on
+Disodium tetraborate, anhydrous
+9. Added Disodium 3,3'-[[1,1'-biphenyl]-4,4'-
+diylbis(azo)]bis(4-aminonaphthalene-1-
+sulphonate) (C.I. Direct Red 28), 573-58-0
+10. Added Disodium 4-amino-3-[[4'-[(2,4-
+diaminophenyl)azo][1,1'-biphenyl]-4-yl]azo]-
+5-hydroxy-6-(phenylazo)naphthalene-2,7-
+disulphonate (C.I. Direct Black 38), 1937-37-7
+11. Added [Phthalato(2-)]dioxotrilead, 69011-06-
+9
+12. Added Dioxobis(stearato)trilead, 12578-12-0
+13. Added Fatty acids, C16-18, lead salts, 91031-
+62-8
+14. Imidazolidine-2-thione; (2-imidazoline-2-
+thiol), 96-45-7
+15. Added Lead chromate, 7758-97-6
+16. Added Lead chromate molybdate sulphate
+red (C.I. Pigment Red 104), 12656-85-8
+17. Added Lead cyanamidate, 20837-86-9
+18. Added Lead dinitrate, 10099-74-8
+19. Added Lead oxide sulfate, 12036-76-9 Lead
+sulfochromate yellow (C.I. Pigment Yellow
+34), 1344-37-2
+20. Added Lead titanium zirconium oxide, 12626-
+81-2
+Dell Technologies Page 59 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+21. Added Nonadecafluorodecanoic acid (PFDA)
+and its sodium and ammonium salts, 335-76-
+2, 3830-45-3 and 3108-42-7
+22. Added Pentalead tetraoxide sulphate, 12065-
+90-6
+23. Added Perfluorohexane-1-sulphonic acid and
+its salts, 355-46-4, 68259-08-5, 3871-99-6
+and 2923-26-4
+24. Added Perfluorononan-1-oic-acid and its
+sodium and ammonium salts, 375-95-1,
+4149-60-4 and 21049-39-8
+25. Added Pyrochlore, antimony lead yellow,
+8012-00-8
+26. Added reaction mass of 2-ethylhexyl 10-
+ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-
+stannatetradecanoate and 2-ethylhexyl 10-
+ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-
+oxoethyl]thio]-4-octyl-7-oxo-8-oxa-3,5-dithia-
+4-stannatetradecanoate (reaction mass of
+DOTE and MOTE), no CAS #
+27. Added Silicic acid (H2Si2O5), barium salt
+(1:1), lead-doped, 68784-75-8
+28. Added Strontium chromate, 7789-06-2
+29. Added Sulfurous acid, lead salt, dibasic,
+62229-08-7
+30. Added Trilead dioxide phosphonate, 12141-
+20-7
+31. Added Trixylyl phosphate, 25155-23-1
+Table 4, packaging restrictions: added Formaldehyde,
+50-00-0
+Appendix A:
+1. Deleted exemption 5(a)
+2. Added time limitation date for exemption
+6(a), added exemption 6(a)-I
+3. Added time limitation date for exemption
+6(b), added exemptions 6(b)-I and 6(b)-II
+Dell Technologies Page 60 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+4. Added time limitation date for exemption
+13(b), added exemptions 13(b)-I, 13(b)-II and
+13(b)-III
+Appendix B: added Table W as reference for the new
+Table 1 entry on PFOA and its salts
+Appendix C: updated reference to Dell BFR/CFR/PVC-
+Free Specification
+A04 PCO39844 Introduction, references: Markus Stutz 08/13/2018
+Table 1
+1. Added Phthalate: Diisononyl phthalate
+(DINP), 68515-48-0 and 28553-12-0
+2. Added 1,2-Benzenedicarboxylic acid, di-C6-8-
+branched alkyl esters, C7-rich, 71888-89-6
+3. Added Phthalate: 1,2-Benzenedicarboxylic
+acid, di-C7-11-branched and linear alkyl
+esters (DHNUP), 68515-42-4
+4. Added Benzyl Chloride, 100-44-7
+5. Added Tris(o-cresyl)-phosphate, 78-30-8
+6. Removed Benzenamine N-phenyl, reaction
+products with styrene and 2,4,4-
+trimethylpentene (BNST), 68921-45-9
+Table 1 / Table L:
+7. Added Tris(1,3-dichloro-2-propyl)phosphate,
+13674-87-8
+Table 1 / Table P:
+8. Added second CAS # (1718-53-2) for
+Benz[a]anthracene
+Table 2:
+9. Added Cadmium hydroxide, 21041-95-2
+10. Added 1,6,7,8,9,14,15,16,17,17,18,18-
+Dodecachloropentacyclo[12.2.1.16,9.02,13.0
+5,10]octadeca-7,15-diene (“Dechlorane
+Plus”™), 13560-89-9, 135821-74-8 and
+135821-03-3
+11. Added CAS numbers for 4-Nonylphenol,
+branched and linear, ethoxylated
+12. Added Beryllium Oxide, 1304-56-9 (moved
+from Table U)
+13. Added Cobalt, 7440-48-4
+14. Added Neodymium, 7440-00-8
+Dell Technologies Page 61 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+15. Deleted Phthalate: Diisononyl phthalate
+(DINP), 28553-12-0
+16. Deleted 1,2-Benzenedicarboxylic acid, di-C6-
+8-branched alkyl esters, C7-rich, 71888-89-6
+17. Deleted Diisoheptyl phthalate (DIHP), 71888-
+89-6
+18. Deleted Phthalate: 1,2-Benzenedicarboxylic
+acid, di-C7-11-branched and linear alkyl
+esters (DHNUP), 68515-42-4
+19. Added Benzo[ghi]perylene, 191-24-2
+20. Added Octamethylcyclotetrasiloxane, 556-
+67-2
+21. Added Decamethylcyclopentasiloxane, 541-
+02-6
+22. Added Dodecamethylcyclohexasiloxane, 540-
+97-6
+23. Added Disodium octaborate, 12008-41-2
+24. Added Terphenyl, hydrogenated, 61788-32-7
+25. Separated the entry for
+Hexahydromethylphthalic anhydride,
+Hexahydro-4-methylphthalic anhydride,
+Hexahydro-1-methylphthalic anhydride and
+Hexahydro-3-methylphthalic anhydride into
+four individual entries.
+Appendix A:
+26. Deleted exemption 3(a)
+27. Deleted exemption 3(b)
+28. Deleted exemption 3(c)
+29. Deleted exemption 4(a)
+30. Deleted exemption 4(b)-I
+31. Deleted exemption 4(b)-II
+32. Deleted exemption 4(b)-III
+33. Deleted exemption 4(c)-I
+34. Deleted exemption 4(c)-II
+35. Deleted exemption 4(c)-III
+36. Deleted exemption 4(e)
+37. Deleted exemption 5(b)
+38. Deleted exemption 6(a)
+39. Deleted exemption 6(b)
+Dell Technologies Page 62 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+40. Added time limitation date for exemption 15,
+added exemption 15(a)
+41. Deleted exemption 34
+Section 4: exempted transportation pallets from the
+formaldehyde restriction on wooden products
+Appendix B:
+Appendix C: Updated introduction
+A05 PCO40734 Table 1: Markus Stutz 11/14/2018
+1. Editorial changes
+2. Removed ‘Phthalates with a GreenScreen
+benchmark score of less than 2’ (requirement
+will be moved to another Dell specification)
+Table 2:
+3. Added 4,4’-Dihydroxybenzophenone, 611-99-
+4
+4. Added Bisphenol-F (4,4’-methylenediphenol),
+620-92-8
+5. Added Bisphenol-S (4,4’-sulphonyldiphenol),
+80-09-1
+6. Added Diundecyl phthalate (DuDP), 3648-20-
+2
+7. Added Phthalate: Dicyclohexyl phthalate, 84-
+61-7
+8. Added Triphenyl phosphate, 115-86-6
+Section 6 / Table 5:
+9. Editorial changes
+Appendix A:
+10. Deleted exemption 13(b)
+11. Editorial changes
+A06 PCO42825 Added section on change notification
+Added section on non-compliance resolution
+Table 1:
+1. Added CAS numbers 134237-50-6; 134237-
+51-7 and 134237-52-8 to the
+Hexabromocyclododecane (HBCDD)
+substance group
+2. Added Bis(2-methoxyethyl) ether (111-96-6)
+3. Added Strontium Chromate (7789-06-2)
+4. Added Potassium
+hydroxyoctaoxodizincatedichromate (11103-
+86-9)
+Dell Technologies Page 63 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+5. Added Pentazinc chromate octahydroxide
+(49663-84-5)
+6. Added Diisopentyl phthalate (DIPP, 605-50-5)
+7. Added 1,2-Benzenedicarboxylic acid,
+dipentylester, branched and linear (84777-
+06-0)
+8. Added Phthalate: Di(methoxyethyl) phthalate
+(DMEP) (117-82-8)
+9. Added Phthalate: Dipentyl phthalate (DPP)
+(131-18-0)
+10. Added Phthalate: N-pentyl-
+isopentylphthalate (nPiPP) (776297-69-9)
+11. Added 4-(1,1,3,3-tetramethylbutyl)phenol
+(140-66-9)
+12. Added 4-Nonylphenol, branched and linear,
+ethoxylated (10 CAS numbers)
+Table 2:
+1. Deleted Bis(2-methoxyethyl) ether (now
+restricted as per Table 1)
+2. Deleted Strontium Chromate
+3. Deleted Potassium
+hydroxyoctaoxodizincatedichromate
+4. Deleted Pentazinc chromate octahydroxide
+5. Deleted Diisopentyl phthalate (DIPP)
+6. Deleted 1,2-Benzenedicarboxylic acid,
+dipentylester, branched and linear
+7. Deleted Phthalate: Di(methoxyethyl)
+phthalate (DMEP)
+8. Deleted Phthalate: Dipentyl phthalate (DPP)
+9. Deleted Phthalate: N-pentyl-
+isopentylphthalate (nPiPP)
+10. Deleted 4-(1,1,3,3-tetramethylbutyl)phenol
+11. Deleted 4-Nonylphenol, branched and linear,
+ethoxylated
+12. Added 2,2-bis(4'-hydroxyphenyl)-4-
+methylpentane (6807-17-6)
+13. Added Benzo[k]fluoranthene (207-08-9)
+14. Added Fluoranthene (206-44-0; 93951-69-0)
+15. Added Phenanthrene (85-01-8)
+16. Added Pyrene (129-00-0, 1718-52-1)
+A07 PCO46108 Introduction, definitions: editorial changes Markus Stutz 11/19/20
+Table 1 - Banned or Restricted Substances:
+1. Added Perfluorohexane-1-sulphonic acid
+(355-46-4)
+2. Table 1 / Table F: Added Lead sulfochromate
+yellow (1344-37-2)
+Dell Technologies Page 64 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+3. Table 1 / Table F: Added Lead chromate
+molybdate sulphate red (12656-85-8)
+4. Added Phthalate: 1,2-Benzenedicarboxylic
+acid, dihexyl ester, branched and linear
+(68515-50-4)
+5. Added Phthalate: Dihexyl phthalate (DnHP)
+(84-75-3)
+6. Added 1,2-benzenedicarboxylic acid, di-C6-
+10-alkyl esters; 1,2-benzenedicarboxylic acid,
+mixed decyl and hexyl and octyl diesters with
+≥ 0.3% of dihexyl phthalate (EC No. 201-559-
+5) (68515-51-5, 68648-93-1)
+7. Added Trixylyl phosphate (25155-23-1)
+8. Added 2-(2H-benzotriazol-2-yl)-4,6-
+ditertpentylphenol (UV-328) (25973-55-1)
+9. Added 2,4-di-tert-butyl-6-(5-
+chlorobenzotriazol-2-yl)phenol (UV-327)
+(3864-99-1)
+10. Added 2-(2H-benzotriazol-2-yl)-4-(tert-butyl)-
+6-(sec-butyl)phenol (UV-350) (36437-37-3)
+11. Added 4-Aminoazobenzene (60-09-3)
+12. Added 1,3-propanesultone (1120-71-4)
+13. Added N,N-dimethylformamide (68-12-2)
+14. Added Disodium 4-amino-3-[[4'-[(2,4-
+diaminophenyl)azo][1,1'-biphenyl]-4-yl]azo]-
+5-hydroxy-6-(phenylazo)naphthalene-2,7-
+disulphonate (C.I. Direct Black 38) (1937-37-
+7)
+15. Added Imidazolidine-2-thione; (2-
+imidazoline-2-thiol) (96-45-7)
+16. Removed exemption for PFOS
+17. Added DBDPE (84852-53-9)
+18. Added Dechlorane Plus (13560-89-9)
+19. Added Triphenyl phosphate (115-86-6)
+20. Added Tri-n-butyl phosphate (TNBP) (126-73-
+8)
+21. Added Diisodecyl phthalate (DIDP) (26761-
+40-0, 68515-49-1)
+22. Added Bisphenol-A (4,4’-
+isopropylidenediphenol) (80-05-7)
+Table 2 – Reporting requirements:
+Dell Technologies Page 65 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+23. Added Tris(4-nonylphenyl, branched and
+linear) phosphite (TNPP) with ≥ 0.1% w/w of
+4-nonylphenol, branched and linear (4-NP)
+(3050-88-2, 31631-13-7, 106599-06-8)
+24. Added Tetraboron disodium heptaoxide,
+hydrate (12267-73-1)
+25. Added Diisohaxyl phthalate (71850-09-4)
+26. Added Perfluorobutane sulfonic acid (PFBS)
+and its salts (25628-08-4, 34454-97-2, 375-
+73-5, 375-72-4
+27. Added Dibutylbis(pentane-2,4-dionato-
+O,O')tin (22673-19-4)
+28. Deleted Perfluorohexane-1-sulphonic acid
+and its salts (355-46-4, 68259-08-5, 3871-99-
+6, 2923-26-4)
+29. Deleted Lead sulfochromate yellow (1344-37-
+2)
+30. Deleted Lead chromate molybdate sulphate
+red (12656-85-8)
+31. Deleted Phthalate: 1,2-Benzenedicarboxylic
+acid, dihexyl ester, branched and linear
+(68515-50-4)
+32. Deleted Phthalate: Dihexyl phthalate (DnHP)
+(84-75-3)
+33. Deleted 1,2-benzenedicarboxylic acid, di-C6-
+10-alkyl esters; 1,2-benzenedicarboxylic acid,
+mixed decyl and hexyl and octyl diesters with
+≥ 0.3% of dihexyl phthalate (EC No. 201-559-
+5) (68515-51-5, 68648-93-1)
+34. Deleted Trixylyl phosphate (25155-23-1)
+35. Deleted 2-(2H-benzotriazol-2-yl)-4,6-
+ditertpentylphenol (UV-328) (25973-55-1)
+36. Deleted 2,4-di-tert-butyl-6-(5-
+chlorobenzotriazol-2-yl)phenol (UV-327)
+(3864-99-1)
+37. Deleted 2-(2H-benzotriazol-2-yl)-4-(tert-
+butyl)-6-(sec-butyl)phenol (UV-350) (36437-
+37-3)
+38. Deleted 4-Aminoazobenzene (60-09-3)
+39. Deleted 1,3-propanesultone (1120-71-4)
+40. Deleted N,N-dimethylformamide (68-12-2)
+41. Deleted Disodium 4-amino-3-[[4'-[(2,4-
+diaminophenyl)azo][1,1'-biphenyl]-4-yl]azo]-
+Dell Technologies Page 66 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+5-hydroxy-6-(phenylazo)naphthalene-2,7-
+disulphonate (C.I. Direct Black 38) (1937-37-
+7)
+42. Imidazolidine-2-thione; (2-imidazoline-2-
+thiol) (96-45-7)
+43. Deleted 1,6,7,8,9,14,15,16,17,17,18,18-
+Dodecachloropentacyclo[12.2.1.16,9.02,13.0
+5,10]octadeca-7,15-diene (“Dechlorane
+Plus”™) (13560-89-9)
+44. Deleted Triphenyl phosphate (115-86-6)
+45. Deleted Diisodecyl phthalate (DIDP) (26761-
+40-0)
+46. Deleted PFOA (335-67-1)
+47. Deleted Bisphenol-A (4,4’-
+isopropylidenediphenol) (80-05-7)
+Eco-label material requirements
+48. Added a section about EPEAT substance
+requirements
+49. Added a section about TCO substance
+requirements
+50. Added a section about Taiwan Green Mark
+substance requirements
+Product packaging content restrictions:
+51. Added restriction on mineral oils & mineral
+oil-based inks
+52. Editorial changes
+Battery content reduction
+53. Added restriction on Perchlorates for lithium
+batteries, coin cell batteries (CAS numbers in
+Table X)
+Appendix A:
+54. Restricted the use of RoHS exemptions 13(b)-
+I, 13(b)-II and 13(b)-III
+55. Editorial changes
+Appendix B
+56. Added Table X (Perchlorates)
+A08 PCO46931 Table 1 - Banned or Restricted Substances: Markus Stutz 04/29/2021
+1. Added Phenol, Isopropylated Phosphate (3:1)
+(68937-41-7)
+Dell Technologies Page 67 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+2. Added Ethylhexyl diphenyl phosphate
+(EHDPP) (1241-94-7)
+Table 2 – Reporting requirements:
+3. Added Bis(2-(2-methoxyethoxy)ethyl)ether
+(143-24-8)
+4. Added Dioctyltin dilaurate, stannane,
+dioctyl-, bis(coco acyloxy) derivs. (3648-18-8,
+91648-39-4)
+A09 PCO48087 Table 1 – Banned or Restricted Substances: Markus Stutz 11/30/2021
+1. Table 1 / Table S: added examples of MCCP
+to Table S
+2. Removed 1,3-propanesultone (1120-71-4)
+3. Aligned PFOS restriction with IEC62474
+4. Removed references to RoHS exemptions for
+Cadmium
+5. Added materials distinction for BPA
+restrictions
+Table 2 – Reporting requirements
+6. Added Orthoboric acid, sodium salt
+7. Added 4,4'-(1-methylpropylidene)bisphenol
+8. Added 1,3-propanesultone (1120-71-4)
+9. Added Perchlorates (CAS #’s in Table X)
+10. Removed CAS 12267-73-3 to the entry on
+Disodium tetraborate, anhydrous
+11. Removed Cadmium hydroxide, 21041-95-2
+12. Removed Cadmium oxide, 1306-19-0
+13. Removed Cadmium sulphide, 1306-23-6
+Table 6 – Battery Content Restrictions
+14. Removed Perchlorates (moved to reporting
+requirement in Table 2)
+Table 7 - Non-Electrical/Non-Electronic Parts and
+Products Content Restrictions
+15. Added PFOS
+Appendix A: Applicable RoHS Exemptions
+16. Deleted exemption 13(b)-I, 13(b)-II and 13(b)-
+III as those had been granted by Dell only
+until February 1, 2021
+Dell Technologies Page 68 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+Appendix B: List of CAS Numbers
+17. Alignments to IEC62474, editorial changes
+A10 PCO51177 Table 1 – Banned or Restricted Substances: Katie Reilly 11/23/2022
+1. Added PFCAs (C9-C14), their salts and related
+substances
+2. Added 2-ethylhexyl 10-ethyl-4,4-dioctyl-7-
+oxo-8-oxa-3,5-dithia-4-stannatetradecanoate
+(DOTE), 15571-58-1
+3. Added Reaction mass of 2-ethylhexyl 10-
+ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-
+stannatetradecanoate and 2-ethylhexyl 10-
+ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-
+oxoethyl]thio]-4-octyl-7-oxo-8-oxa-3,5-dithia-
+4-stannatetradecanoate (reaction mass of
+DOTE and MOTE)
+4. Removed Decabromo-diphenyl-ethane
+(DBDPE) (84852-53-9)
+5. Changed threshold for PIP(3:1)
+6. Added Lead Chromate (7758-97-6)
+Table 2 – Reporting requirements
+7. Added 6,6'-di-tert-butyl-2,2'-methylenedi-p-
+cresol, 119-47-1
+8. Added Per- and polyfluoroalkyl substances
+(PFASs), intentional use in parts/ products
+9. Added Decabromo-diphenyl-ethane (DBDPE)
+(84852-53-9)
+10. Removed Added 2-ethylhexyl 10-ethyl-4,4-
+dioctyl-7-oxo-8-oxa-3,5-dithia-4-
+stannatetradecanoate (DOTE), 15571-58-1
+11. Removed Reaction mass of 2-ethylhexyl 10-
+ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-
+stannatetradecanoate and 2-ethylhexyl 10-
+ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-
+oxoethyl]thio]-4-octyl-7-oxo-8-oxa-3,5-dithia-
+4-stannatetradecanoate (reaction mass of
+DOTE and MOTE)
+12. Added 1,1'-[ethane-1,2-diylbisoxy]bis[2,4,6-
+tribromobenzene] (37853-59-1)
+13. Added 2,2',6,6'-tetrabromo-4,4'-
+isopropylidenediphenol (79-94-7)
+Dell Technologies Page 69 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+14. Added Barium diboron tetraoxide (13701-59-
+2)
+15. Added Bis(2-ethylhexyl) tetrabromophthalate
+(26040-51-7)
+16. Added Isobutyl 4-hydroxybenzoate (4247-02-
+3)
+17. Added Melamine (108-78-1)
+18. Added Perfluoroheptanoic acid and its salts,
+multiple CAS numbers
+19. Added reaction mass of 2,2,3,3,5,5,6,6-
+octafluoro-4-(1,1,1,2,3,3,3-
+heptafluoropropan-2-yl)morpholine and
+2,2,3,3,5,5,6,6-octafluoro-4-
+(heptafluoropropyl)morpholine
+20. Removed Lead Chromate (7758-97-6)
+Section 3.5 TCO substance requirements
+21. Updated requirements
+Table 5 – Packaging Content Restrictions
+22. Added further detail to the restriction on
+mineral oil based inks.
+Table 8 – Non-electrical & non-electronic products
+23. Added material declaration requirements for
+SVHCs and PFAS
+Appendix A, applicable RoHS exemptions :
+24. Added June 1, 2024 sunset date for
+exemption 4(f)
+Appendix B: List of CAS Numbers
+25. Added Table Y, PFCAs (C9-C14), their salts
+and related substances
+26. Alignments to IEC62474, editorial changes
+A11 PCO53093 Table 1 – Banned or Restricted Substances: Katie Reilly 04/09/2024
+1. Adjusted threshold for Perfluorohexane-1-
+sulphonic acid and its salts – ‘PFHxS’
+2. Added restriction for halogenated flame
+retardants in display enclosure parts
+3. Adjusted threshold for Dechlorane Plus
+4. Adjusted threshold for UV-328
+Table 2 – Reporting requirements:
+5. Added Bis(4-chlorophenyl) sulphone (80-07-
+9)
+Dell Technologies Page 70 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+6. Added Diphenyl(2,4,6-
+trimethylbenzoyl)phosphine oxide (75980-
+60-8)
+7. Adjusted threshold for perchlorates
+8. Added 2,4,6-tri-tert-butylphenol (732-26-3)
+9. Added 2-(2H-benzotriazol-2-yl)-4-(1,1,3,3-
+tetramethylbutyl)phenol (UV-329) (3147-75-
+9)
+10. Added 2-(dimethylamino)-2-[(4-
+methylphenyl)methyl]-1-[4-(morpholin-4-
+yl)phenyl]butan-1-one (119344-86-4)
+11. Added Bumetrizole (UV-326) (3896-11-5)
+12. Added Oligomerisation and alkylation
+reaction products of 2-phenylpropene and
+phenol (68512-30-1)
+13. Added Diisooctyl phthalate (27554-26-3)
+14. Added timeline for the restriction of PFAS
+Section 3.5 TCO substance requirements
+Product packaging content restriction
+15. Added Per- and polyfluoroalkyl substances
+(PFASs)
+Battery content restriction
+16. Limited exemption for lead in lead-acid
+batteries to batteries weighing 5kg or less
+17. Removed exemption for lead in solder in
+battery packs
+Non-Electrical/Non-Electronic Parts and Products
+requirements
+18. Added restriction for PFAS
+19. Added restriction for Azocolorants (same
+restriction as in Table 1)
+20. Removed reporting requirement for PFAS
+Appendix A – applicable RoHS exemptions
+21. Removed exemption 4f
+Appendix B – List of CAS Numbers
+Table P: removed CAS number 1718-53-2
+A12 PCO53979 2.3 References Katie Reilly 09/23/2024
+1. Updated references
+Section 3.5 TCO substance requirements
+2. Updated requirements
+Dell Technologies Page 71 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.\n\nDell Technologies Specification Document Number: ENV0424
+Title: Materials Restricted for Use Revision: A14-00
+A13 PCO54708 2.2 Scope Scott 02/04/2025
+O’Connell
+3. Updated material declaration requirement
+from Declaration of Conformity to Full
+Material Declaration,
+Section 3.4 EPEAT substance requirements
+4. Updated requirements
+Appendix C : Materials Compliance Testing
+Changed references from Supplier Declaration of
+Conformity to Full Material Declaration
+Dell Technologies Page 72 of 72
+GPCE & EA Specification
+Copyright © 2025 Dell Technologies Inc. or its subsidiaries. All Rights Reserved. Dell, EMC, and other trademarks are trademarks of
+Dell Technologies Inc. or its subsidiaries. Other trademarks may be trademarks of their respective owners.
